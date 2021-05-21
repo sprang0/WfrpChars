@@ -1,0 +1,17 @@
+﻿@page "/characteristic"
+
+<div class="border border-primary col-1">
+    <span class="font-weight-bold">@Name</span>
+    <br>
+    <span class="font-weight-light">@Score</span>
+</div>
+
+@code {
+
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public int Score { get; set; }
+
+}
