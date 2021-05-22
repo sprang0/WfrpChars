@@ -12,5 +12,6 @@
         int Intelligence { get; }
         int Willpower { get; }
         int Fellowship { get; }
+        int Wounds { get; }
     }
 }

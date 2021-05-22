@@ -6,9 +6,11 @@
 
         public int BallisticSkill => Dice.D10(2, 20);
 
-        public int Strength => Dice.D10(2, 20);
+        private int strength;
+        public int Strength { get { strength = Dice.D10(2, 20); return strength; } }
 
-        public int Toughness => Dice.D10(2, 30);
+        private int toughness;
+        public int Toughness { get { toughness = Dice.D10(2, 30); return toughness; } }
 
         public int Initiative => Dice.D10(2, 20);
 
@@ -18,8 +20,11 @@
 
         public int Intelligence => Dice.D10(2, 20);
 
-        public int Willpower => Dice.D10(2, 40);
+        private int willpower;
+        public int Willpower { get { willpower = Dice.D10(2, 40); return willpower; } }
 
         public int Fellowship => Dice.D10(2, 10);
+
+        public int Wounds => strength.Bonus() + 2 * toughness.Bonus() + willpower.Bonus();
     }
 }

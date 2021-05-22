@@ -18,5 +18,10 @@ namespace WfrpChars.Data
         {
             return i.GetValueOrDefault(0);
         }
+
+        public static int Bonus(this int i)
+        {
+            return i / 10;
+        }
     }
 }
