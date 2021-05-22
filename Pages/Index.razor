@@ -2,8 +2,8 @@
 
 <h1>Create a WFRP Character</h1>
 
-<label>Species</label>
-<select @bind="speciesType">
+<label for="species">Species</label>
+<select id="species" @bind="speciesType">
   @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
   {
     <option value="@speciesType">@speciesType.Description()</option>
@@ -16,17 +16,17 @@
 
 <br/>
 
-<Characteristics Ws="@species.WeaponSkill" Bs="@species.BallisticSkill" S="@species.Strength" T="@species.Toughness" I="@species.Initiative" 
-                 Ag="@species.Agility" Dex="@species.Dexterity" Int="@species.Intelligence" Wp="@species.Willpower" Fel="@species.Fellowship" 
-                 W="@species.Wounds"/>
+<Characteristics Ws="@character.Species.WeaponSkill" Bs="@character.Species.BallisticSkill" S="@character.Species.Strength" T="@character.Species.Toughness" I="@character.Species.Initiative" 
+                 Ag="@character.Species.Agility" Dex="@character.Species.Dexterity" Int="@character.Species.Intelligence" Wp="@character.Species.Willpower" Fel="@character.Species.Fellowship" 
+                 W="@character.Species.Wounds"/>
 
 @code 
 {
+    Character character = new Character(new Human());
     SpeciesType speciesType = SpeciesType.Human;
-    ISpecies species = new Human();
 
     void generate()
     {
-        species = Factory.MakeSpecies(speciesType);
+        character.Species = Factory.MakeSpecies(speciesType);
     }
 }
