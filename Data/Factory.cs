@@ -1,4 +1,6 @@
-﻿namespace WfrpChars.Data
+﻿using WfrpChars.Data.Species;
+
+namespace WfrpChars.Data
 {
     static class Factory
     {

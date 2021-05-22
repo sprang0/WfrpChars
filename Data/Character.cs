@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using WfrpChars.Data.Species;
 
 namespace WfrpChars.Data
 {

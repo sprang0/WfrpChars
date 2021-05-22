@@ -1,6 +1,6 @@
-﻿namespace WfrpChars.Data
+﻿namespace WfrpChars.Data.Species
 {
-    public class WoodElf : ISpecies
+    public class HighElf : ISpecies
     {
         public int WeaponSkill => Dice.D10(2, 30);
 

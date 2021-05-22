@@ -1,4 +1,4 @@
-﻿namespace WfrpChars.Data
+﻿namespace WfrpChars.Data.Species
 {
     class Halfling : ISpecies
     {

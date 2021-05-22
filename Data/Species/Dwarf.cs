@@ -1,4 +1,4 @@
-﻿namespace WfrpChars.Data
+﻿namespace WfrpChars.Data.Species
 {
     public class Dwarf : ISpecies
     {
