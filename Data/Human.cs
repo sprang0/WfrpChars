@@ -26,5 +26,7 @@
         public int Fellowship => Dice.D10(2, 20);
 
         public int Wounds => strength.Bonus() + 2 * toughness.Bonus() + willpower.Bonus();
+
+        public int Movement => 4;
     }
 }

@@ -3,16 +3,17 @@ namespace WfrpChars.Data
 {
     class Characteristics
     {
-        public Characteristic WeaponSkill { get; set; }
-        public Characteristic BallisticSkill { get; set; }
-        public Characteristic Strength { get; set; }
-        public Characteristic Toughness { get; set; }
-        public Characteristic Initiative { get; set; }
-        public Characteristic Agility { get; set; }
-        public Characteristic Dexterity { get; set; }
-        public Characteristic Intelligence { get; set; }
-        public Characteristic Willpower { get; set; }
-        public Characteristic Fellowship { get; set; }
-        public Characteristic Wounds { get; set; }
+        public int WeaponSkill { get; set; }
+        public int BallisticSkill { get; set; }
+        public int Strength { get; set; }
+        public int Toughness { get; set; }
+        public int Initiative { get; set; }
+        public int Agility { get; set; }
+        public int Dexterity { get; set; }
+        public int Intelligence { get; set; }
+        public int Willpower { get; set; }
+        public int Fellowship { get; set; }
+        public int Wounds { get; set; }
+        public int Movement { get; set; }
     }
 }

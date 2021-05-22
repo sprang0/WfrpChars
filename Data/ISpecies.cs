@@ -13,5 +13,6 @@
         int Willpower { get; }
         int Fellowship { get; }
         int Wounds { get; }
+        int Movement { get; }
     }
 }

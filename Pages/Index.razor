@@ -4,23 +4,26 @@
 
 <label for="species">Species</label>
 <select id="species" @bind="speciesType">
-  @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
-  {
-    <option value="@speciesType">@speciesType.Description()</option>
-  }
+    @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
+    {
+        <option value="@speciesType">@speciesType.Description()</option>
+    }
 </select>
 
-<br/>
+<br />
 
 <button @onclick="generate">Create a @speciesType.Description()</button>
 
-<br/>
+<br />
 
-<Characteristics Ws="@character.Species.WeaponSkill" Bs="@character.Species.BallisticSkill" S="@character.Species.Strength" T="@character.Species.Toughness" I="@character.Species.Initiative" 
-                 Ag="@character.Species.Agility" Dex="@character.Species.Dexterity" Int="@character.Species.Intelligence" Wp="@character.Species.Willpower" Fel="@character.Species.Fellowship" 
-                 W="@character.Species.Wounds"/>
+<Characteristics Ws="@character.Characteristics.WeaponSkill" Bs="@character.Characteristics.BallisticSkill"
+                 S="@character.Characteristics.Strength" T="@character.Characteristics.Toughness"
+                 I="@character.Characteristics.Initiative" Ag="@character.Characteristics.Agility"
+                 Dex="@character.Characteristics.Dexterity" Int="@character.Characteristics.Intelligence"
+                 Wp="@character.Characteristics.Willpower" Fel="@character.Characteristics.Fellowship"
+                 W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
 
-@code 
+@code
 {
     Character character = new Character(new Human());
     SpeciesType speciesType = SpeciesType.Human;
@@ -28,5 +31,6 @@
     void generate()
     {
         character.Species = Factory.MakeSpecies(speciesType);
+        character.Generate();
     }
 }
