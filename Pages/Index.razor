@@ -1,5 +1,31 @@
 @page "/"
 
-<h1>Hello, world!</h1>
+<h1>Create a WFRP Character</h1>
 
-<Characteristics />
+<label>Species</label>
+<select @bind="speciesType">
+  @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
+  {
+    <option value="@speciesType">@speciesType.Description()</option>
+  }
+</select>
+
+<br/>
+
+<button @onclick="generate">Create a @speciesType.Description()</button>
+
+<br/>
+
+<Characteristics Ws="@species.WeaponSkill" Bs="@species.BallisticSkill" S="@species.Strength" T="@species.Toughness" I="@species.Initiative" 
+                 Ag="@species.Agility" Dex="@species.Dexterity" Int="@species.Intelligence" Wp="@species.Willpower" Fel="@species.Fellowship" />
+
+@code 
+{
+    SpeciesType speciesType = SpeciesType.Human;
+    ISpecies species = new Human();
+
+    void generate()
+    {
+        species = Factory.MakeSpecies(speciesType);
+    }
+}

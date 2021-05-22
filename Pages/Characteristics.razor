@@ -1,18 +1,47 @@
 @page "/characteristics"
 
-<div class="row">
-    <Characteristic Name="WS" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="BS" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="S" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="T" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="I" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="Ag" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="Dex" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="Int" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="WP" Score="@Dice.D10(2,20)" />
-    <Characteristic Name="Fel" Score="@Dice.D10(2,20)" />
+<div class="row p-3">
+    <Characteristic Name="WS" Score="@Ws" />
+    <Characteristic Name="BS" Score="@Bs" />
+    <Characteristic Name="S" Score="@S" />
+    <Characteristic Name="T" Score="@T" />
+    <Characteristic Name="I" Score="@I" />
+    <Characteristic Name="Ag" Score="@Ag" />
+    <Characteristic Name="Dex" Score="@Dex" />
+    <Characteristic Name="Int" Score="@Int" />
+    <Characteristic Name="WP" Score="@Wp" />
+    <Characteristic Name="Fel" Score="@Fel" />
 </div>
 
-@code {
+@code 
+{
+    [Parameter]
+    public int Ws { get; set; }
 
+    [Parameter]
+    public int Bs { get; set; }
+
+    [Parameter]
+    public int S { get; set; }
+
+    [Parameter]
+    public int T { get; set; }
+
+    [Parameter]
+    public int I { get; set; }
+
+    [Parameter]
+    public int Ag { get; set; }
+
+    [Parameter]
+    public int Dex { get; set; }
+
+    [Parameter]
+    public int Int { get; set; }
+
+    [Parameter]
+    public int Wp { get; set; }
+
+    [Parameter]
+    public int Fel { get; set; }
 }
