@@ -27,5 +27,10 @@ namespace WfrpChars.Data
         {
             return random.Next(1, 101);
         }
+
+        public static int Between(int min, int max)
+        {
+            return random.Next(min, max + 1);
+        }
     }
 }

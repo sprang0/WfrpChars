@@ -18,9 +18,9 @@ namespace WfrpChars.Data
             };
         }
 
-        public static ICareer MakeCareer(CareerType careerType)
+        public static CareerBase MakeCareer(CareerType careerType, int level)
         {
-            return new Advisor();
+            return new Advisor(level);
         }
     }
 }

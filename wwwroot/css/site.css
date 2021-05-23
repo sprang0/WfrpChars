@@ -14,6 +14,19 @@ a, .btn-link {
     border-color: #1861ac;
 }
 
+.btn-outline-secondary {
+    border-color: #08734c;
+    color: #08734c;
+}
+
+    .btn-outline-secondary.active {
+        background-color: #1f9b7b !important;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: #08734c !important;
+    }
+
 .content {
     padding-top: 1.1rem;
 }

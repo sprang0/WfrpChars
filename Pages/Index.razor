@@ -41,11 +41,12 @@
 
 <div class="p-1">
     <button @onclick="generate" class="btn btn-primary">Create a @species.Description()!</button>
-
-    @foreach (var (career, level) in character.Careers)
+    @if (character.Careers.Count() > 0)
+    {<text> with </text>}
+    @foreach (var career in character.Careers)
     {
-        <button class="btn btn-outline-danger" @onclick="() => removeCareer(career, level)">
-            <span class="oi oi-x" aria-hidden="true"></span> Level @level @career.Name
+        <button class="btn btn-outline-secondary" @onclick="() => removeCareer(career)">
+            <span class="oi oi-x" aria-hidden="true"></span> @career.Path
         </button>
     }
 </div>
@@ -65,6 +66,14 @@
                      W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
 </div>
 
+<br />
+
+@* Skills *@
+
+<h5>Skills</h5>
+
+@character.SkillList
+
 @code
 {
     Character character = new Character(new Human());
@@ -72,19 +81,19 @@
     CareerType career = CareerType.Advisor;
     int level = 1;
 
-    void setLevel(int level)
+    void setLevel(int x)
     {
-        this.level = level;
+        level = x;
     }
 
     void addCareer()
     {
-        character.Careers.Add((Factory.MakeCareer(career), level));
+        character.Careers.Add(Factory.MakeCareer(career, level));
     }
 
-    void removeCareer(ICareer career, int level)
+    void removeCareer(CareerBase career)
     {
-        character.Careers.Remove((career, level));
+        character.Careers.Remove(career);
     }
 
     void generate()

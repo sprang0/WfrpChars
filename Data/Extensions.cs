@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace WfrpChars.Data
 {
@@ -22,6 +23,14 @@ namespace WfrpChars.Data
         public static int Bonus(this int i)
         {
             return i / 10;
+        }
+
+        public static List<SkillType> Pick2(this List<SkillType> skills)
+        {
+            var pick1 = skills[Dice.Between(0, skills.Count - 1)];
+            var pick2 = skills[Dice.Between(0, skills.Count - 1)];
+            while (pick2 == pick1) pick2 = skills[Dice.Between(1, skills.Count - 1)];
+            return new List<SkillType> { pick1, pick2 };
         }
     }
 }
