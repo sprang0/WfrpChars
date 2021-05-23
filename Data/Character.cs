@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using WfrpChars.Data.Species;
+using WfrpChars.Data.Careers;
 
 namespace WfrpChars.Data
 {

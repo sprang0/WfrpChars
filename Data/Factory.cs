@@ -1,4 +1,5 @@
-﻿using WfrpChars.Data.Species;
+﻿using WfrpChars.Data.Careers;
+using WfrpChars.Data.Species;
 
 namespace WfrpChars.Data
 {
@@ -15,6 +16,11 @@ namespace WfrpChars.Data
                 SpeciesType.WoodElf => new WoodElf(),
                 _ => null,
             };
+        }
+
+        public static ICareer MakeCareer(CareerType careerType)
+        {
+            return new Advisor();
         }
     }
 }

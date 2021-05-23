@@ -2,35 +2,94 @@
 
 <h1>Create a WFRP Character</h1>
 
-<label for="species">Species</label>
-<select id="species" @bind="speciesType">
-    @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
+@* Species *@
+<div class="p-1">
+    <select class="custom-select col-2" id="species" @bind="species">
+        @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
+        {
+            <option value="@speciesType">@speciesType.Description()</option>
+        }
+    </select>
+</div>
+
+@* Career and Level *@
+<div class="p-1">
+    <select class="custom-select col-3" id="career" @bind="career">
+        @foreach (var careerType in Enum.GetValues(typeof(CareerType)))
+        {
+            <option value="@careerType">@careerType.Description()</option>
+        }
+    </select>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active" @onclick="() => setLevel(1)">
+            <input type="radio" name="levelRadio" autocomplete="off" checked> 1
+        </label>
+        @for (var i = 2; i <= 4; i++)
+        {
+            var j = i;
+            <label class="btn btn-outline-secondary" @onclick="() => setLevel(j)">
+                <input type="radio" name="levelRadio" autocomplete="off"> @j
+            </label>
+        }
+    </div>
+
+    <button class="btn btn-outline-secondary" @onclick="addCareer">Add Career</button>
+</div>
+
+@* Create! *@
+
+<div class="p-1">
+    <button @onclick="generate" class="btn btn-primary">Create a @species.Description()!</button>
+
+    @foreach (var (career, level) in character.Careers)
     {
-        <option value="@speciesType">@speciesType.Description()</option>
+        <button class="btn btn-outline-danger" @onclick="() => removeCareer(career, level)">
+            <span class="oi oi-x" aria-hidden="true"></span> Level @level @career.Name
+        </button>
     }
-</select>
+</div>
 
-<br />
+@* Characteristics *@
 
-<button @onclick="generate">Create a @speciesType.Description()</button>
+<hr />
 
-<br />
+<h3>Riswynn Dokkintroll</h3>
 
-<Characteristics Ws="@character.Characteristics.WeaponSkill" Bs="@character.Characteristics.BallisticSkill"
-                 S="@character.Characteristics.Strength" T="@character.Characteristics.Toughness"
-                 I="@character.Characteristics.Initiative" Ag="@character.Characteristics.Agility"
-                 Dex="@character.Characteristics.Dexterity" Int="@character.Characteristics.Intelligence"
-                 Wp="@character.Characteristics.Willpower" Fel="@character.Characteristics.Fellowship"
-                 W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
+<div class="p-1">
+    <Characteristics Ws="@character.Characteristics.WeaponSkill" Bs="@character.Characteristics.BallisticSkill"
+                     S="@character.Characteristics.Strength" T="@character.Characteristics.Toughness"
+                     I="@character.Characteristics.Initiative" Ag="@character.Characteristics.Agility"
+                     Dex="@character.Characteristics.Dexterity" Int="@character.Characteristics.Intelligence"
+                     Wp="@character.Characteristics.Willpower" Fel="@character.Characteristics.Fellowship"
+                     W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
+</div>
 
 @code
 {
     Character character = new Character(new Human());
-    SpeciesType speciesType = SpeciesType.Human;
+    SpeciesType species = SpeciesType.Human;
+    CareerType career = CareerType.Advisor;
+    int level = 1;
+
+    void setLevel(int level)
+    {
+        this.level = level;
+    }
+
+    void addCareer()
+    {
+        character.Careers.Add((Factory.MakeCareer(career), level));
+    }
+
+    void removeCareer(ICareer career, int level)
+    {
+        character.Careers.Remove((career, level));
+    }
 
     void generate()
     {
-        character.Species = Factory.MakeSpecies(speciesType);
+        character.Species = Factory.MakeSpecies(species);
         character.Generate();
     }
 }
