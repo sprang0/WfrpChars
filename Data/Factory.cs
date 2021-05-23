@@ -1,4 +1,5 @@
-﻿using WfrpChars.Data.Careers;
+﻿using System;
+using WfrpChars.Data.Careers;
 using WfrpChars.Data.Species;
 
 namespace WfrpChars.Data
@@ -14,13 +15,20 @@ namespace WfrpChars.Data
                 SpeciesType.HighElf => new HighElf(),
                 SpeciesType.Human => new Human(),
                 SpeciesType.WoodElf => new WoodElf(),
-                _ => null,
+                _ => throw new Exception("No such Species")
             };
         }
 
         public static CareerBase MakeCareer(CareerType careerType, int level)
         {
-            return new Advisor(level);
+            return careerType switch
+            {
+                CareerType.Advisor => new Advisor(level),
+                CareerType.Agitator => new Agitator(level),
+                CareerType.Apothecary => new Apothecary(level),
+                CareerType.Artist => new Artist(level),
+                _ => throw new Exception("No such Career")
+            };
         }
     }
 }

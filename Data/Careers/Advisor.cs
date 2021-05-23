@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using WfrpChars.Data.Skills;
+﻿using System;
+using System.Collections.Generic;
 
 namespace WfrpChars.Data.Careers
 {
@@ -15,7 +15,7 @@ namespace WfrpChars.Data.Careers
             2 => "Advisor",
             3 => "Counsellor",
             4 => "Chancellor",
-            _ => "def"
+            _ => throw new Exception("No such Level")
         };
 
         public override int Toughness => Bonus * Level;
@@ -31,6 +31,14 @@ namespace WfrpChars.Data.Careers
             { 2, new List<SkillType> { SkillType.Charm, SkillType.Cool, SkillType.Evaluate, SkillType.Gamble, SkillType.Intuition, SkillType.LoreLocal } },
             { 3, new List<SkillType> { SkillType.EntertainStorytelling, SkillType.Leadership, SkillType.LanguageAny, SkillType.LoreAny } },
             { 4, new List<SkillType> { SkillType.LoreHeraldry, SkillType.RideHorse } }
+        };
+
+        public override Dictionary<int, List<TalentType>> Talents => new()
+        {
+            { 1, new List<TalentType> { TalentType.BeneathNotice, TalentType.EtiquetteAny, TalentType.Gregarious, TalentType.ReadWrite } },
+            { 2, new List<TalentType> { TalentType.Blather, TalentType.Criminal, TalentType.Schemer, TalentType.Supportive } },
+            { 3, new List<TalentType> { TalentType.Argumentative, TalentType.Briber, TalentType.Carouser, TalentType.CatTongued } },
+            { 4, new List<TalentType> { TalentType.CommandingPresence, TalentType.Embezzle, TalentType.Kingpin, TalentType.Suave } }
         };
     }
 }

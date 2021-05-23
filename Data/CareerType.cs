@@ -9,10 +9,10 @@ namespace WfrpChars.Data
     enum CareerType
     {
         Advisor,
-        Artist,
         Agitator,
         Apothecary,
         Artisan,
+        Artist,
         Baliff,
         Bawd,
         Beggar,

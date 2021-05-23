@@ -25,12 +25,12 @@ namespace WfrpChars.Data
             return i / 10;
         }
 
-        public static List<SkillType> Pick2(this List<SkillType> skills)
+        public static List<T> Pick2<T>(this List<T> list)
         {
-            var pick1 = skills[Dice.Between(0, skills.Count - 1)];
-            var pick2 = skills[Dice.Between(0, skills.Count - 1)];
-            while (pick2 == pick1) pick2 = skills[Dice.Between(1, skills.Count - 1)];
-            return new List<SkillType> { pick1, pick2 };
+            var pick1 = list[Dice.Between(0, list.Count - 1)];
+            var pick2 = list[Dice.Between(0, list.Count - 1)];
+            while (pick2.Description() == pick1.Description()) pick2 = list[Dice.Between(1, list.Count - 1)];
+            return new List<T> { pick1, pick2 };
         }
     }
 }

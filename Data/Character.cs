@@ -13,6 +13,7 @@ namespace WfrpChars.Data
             Species = species;
             Careers = new List<CareerBase>();
             Skills = new List<SkillType>();
+            Talents = new List<TalentType>();
             Characteristics = new Characteristics();
         }
 
@@ -20,9 +21,43 @@ namespace WfrpChars.Data
         {
             SetCharacteristics();
             SetSkills();
+            SetTalents();
         }
 
-        private void SetSkills()
+        void SetCharacteristics()
+        {
+            Characteristics = new Characteristics
+            {
+                WeaponSkill = Species.WeaponSkill,
+                BallisticSkill = Species.BallisticSkill,
+                Strength = Species.Strength,
+                Toughness = Species.Toughness,
+                Initiative = Species.Initiative,
+                Agility = Species.Agility,
+                Dexterity = Species.Dexterity,
+                Intelligence = Species.Intelligence,
+                Willpower = Species.Willpower,
+                Fellowship = Species.Fellowship,
+                Wounds = Species.Wounds,
+                Movement = Species.Movement
+            };
+
+            foreach (var career in Careers)
+            {
+                Characteristics.WeaponSkill += career.WeaponSkill;
+                Characteristics.BallisticSkill += career.BallisticSkill;
+                Characteristics.Strength += career.Strength;
+                Characteristics.Toughness += career.Toughness;
+                Characteristics.Initiative += career.Initiative;
+                Characteristics.Agility += career.Agility;
+                Characteristics.Dexterity += career.Dexterity;
+                Characteristics.Intelligence += career.Intelligence;
+                Characteristics.Willpower += career.Willpower;
+                Characteristics.Fellowship += career.Fellowship;
+            }
+        }
+
+        void SetSkills()
         {
             Skills.Clear();
             foreach (var career in Careers)
@@ -45,33 +80,19 @@ namespace WfrpChars.Data
             }
         }
 
-        private void SetCharacteristics()
+        void SetTalents()
         {
-            Characteristics.WeaponSkill = Species.WeaponSkill;
-            Characteristics.BallisticSkill = Species.BallisticSkill;
-            Characteristics.Strength = Species.Strength;
-            Characteristics.Toughness = Species.Toughness;
-            Characteristics.Initiative = Species.Initiative;
-            Characteristics.Agility = Species.Agility;
-            Characteristics.Dexterity = Species.Dexterity;
-            Characteristics.Intelligence = Species.Intelligence;
-            Characteristics.Willpower = Species.Willpower;
-            Characteristics.Fellowship = Species.Fellowship;
-            Characteristics.Wounds = Species.Wounds;
-            Characteristics.Movement = Species.Movement;
-
+            Talents.Clear();
             foreach (var career in Careers)
             {
-                Characteristics.WeaponSkill += career.WeaponSkill;
-                Characteristics.BallisticSkill += career.BallisticSkill;
-                Characteristics.Strength += career.Strength;
-                Characteristics.Toughness += career.Toughness;
-                Characteristics.Initiative += career.Initiative;
-                Characteristics.Agility += career.Agility;
-                Characteristics.Dexterity += career.Dexterity;
-                Characteristics.Intelligence += career.Intelligence;
-                Characteristics.Willpower += career.Willpower;
-                Characteristics.Fellowship += career.Fellowship;
+                for (var level = 1; level <= career.Level; level++)
+                {
+                    foreach (var talent in career.Talents[level].Pick2())
+                    {
+                        if (Talents.Contains(talent)) continue;
+                        Talents.Add(talent);
+                    }
+                }
             }
         }
 
@@ -82,6 +103,10 @@ namespace WfrpChars.Data
         public List<SkillType> Skills { get; set; }
 
         public string SkillList => string.Join(", ", Skills.Select(x => x.Description()).OrderBy(x => x));
+
+        public List<TalentType> Talents { get; set; }
+
+        public string TalentList => string.Join(", ", Talents.Select(x => x.Description()).OrderBy(x => x));
 
         public Characteristics Characteristics { get; set; }
     }

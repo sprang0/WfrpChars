@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using WfrpChars.Data.Skills;
 
 namespace WfrpChars.Data.Careers
 {
@@ -11,7 +10,6 @@ namespace WfrpChars.Data.Careers
         public CareerBase(int level)
         {
             Level = level;
-            Skills = new Dictionary<int, List<SkillType>>();
         }
 
         public int Level { get; }
@@ -33,6 +31,7 @@ namespace WfrpChars.Data.Careers
         public virtual int Willpower { get; }
         public virtual int Fellowship { get; }
 
-        public virtual Dictionary<int, List<SkillType>> Skills { get; }
+        public abstract Dictionary<int, List<SkillType>> Skills { get; }
+        public abstract Dictionary<int, List<TalentType>> Talents { get; }
     }
 }
