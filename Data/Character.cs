@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using WfrpChars.Data.Species;
 using WfrpChars.Data.Careers;
-using System;
 using System.Linq;
 
 namespace WfrpChars.Data

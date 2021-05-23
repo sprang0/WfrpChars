@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace WfrpChars.Data
 {
@@ -13,7 +9,7 @@ namespace WfrpChars.Data
         Apothecary,
         Artisan,
         Artist,
-        Baliff,
+        Bailiff,
         Bawd,
         Beggar,
         Boatman,
