@@ -50,6 +50,14 @@ namespace WfrpChars.Data
                 CareerType.Hunter => new Hunter(level),
                 CareerType.Investigator => new Investigator(level),
                 CareerType.Knight => new Knight(level),
+                CareerType.Lawyer => new Lawyer(level),
+                CareerType.Merchant => new Merchant(level),
+                CareerType.Messenger => new Messenger(level),
+                CareerType.Miner => new Miner(level),
+                CareerType.Mystic => new Mystic(level),
+                CareerType.Noble => new Noble(level),
+                CareerType.Nun => new Nun(level),
+                CareerType.Outlaw => new Outlaw(level),
                 _ => throw new Exception("No such Career")
             };
         }

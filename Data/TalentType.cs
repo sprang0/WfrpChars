@@ -21,6 +21,8 @@ namespace WfrpChars.Data
         Ambidextrous,
         [Description("Animal Affinity")]
         AnimalAffinity,
+        [Description("Arcane Magic (Celestial)")]
+        ArcaneMagicCelestial,
         Argumentative,
         Artistic,
         Attractive,
@@ -34,6 +36,8 @@ namespace WfrpChars.Data
         [Description("Berserk Charge")]
         BerserkCharge,
         Blather,
+        [Description("Bless (Any)")]
+        BlessAny,
         Bookish,
         [Description("Break and Enter")]
         BreakAndEnter,
@@ -64,6 +68,8 @@ namespace WfrpChars.Data
         CraftsmanApothecary,
         [Description("Craftsman (Engineer)")]
         CraftsmanEngineer,
+        [Description("Craftsman (Explosives)")]
+        CraftsmanExplosives,
         [Description("Craftsman (Herbalist)")]
         CraftsmanHerbalist,
         Criminal,
@@ -71,6 +77,8 @@ namespace WfrpChars.Data
         [Description("Deadeye Shot")]
         DeadeyeShot,
         Dealmaker,
+        [Description("Detect Artefact")]
+        DetectArtefact,
         Diceman,
         [Description("Dirty Fighting")]
         DirtyFighting,
@@ -84,6 +92,8 @@ namespace WfrpChars.Data
         EtiquetteAny,
         [Description("Etiquette (Criminals)")]
         EtiquetteCriminals,
+        [Description("Etiquette (Cultists)")]
+        EtiquetteCultists,
         [Description("Etiquette (Guider)")]
         EtiquetteGuilder,
         [Description("Etiquette (Nobles)")]
@@ -115,6 +125,8 @@ namespace WfrpChars.Data
         FearlessMonsters,
         [Description("Fearless (Outlaws)")]
         FearlessOutlaws,
+        [Description("Fearless (Road Wardens)")]
+        FearlessRoadWardens,
         [Description("Fearless (Undead)")]
         FearlessUndead,
         [Description("Fearless (Watchmen)")]
@@ -126,6 +138,8 @@ namespace WfrpChars.Data
         Flagellant,
         [Description("Flee!")]
         Flee,
+        [Description("Fleet Footed")]
+        FleetFooted,
         Frenzy,
         Frightening,
         [Description("Furious Assault")]
@@ -139,6 +153,10 @@ namespace WfrpChars.Data
         HatredAny,
         [Description("Hatred (Heretics)")]
         HatredHeretics,
+        [Description("Hatred (Outlaws)")]
+        HatredOutlaws,
+        [Description("Holy Visions")]
+        HolyVisions,
         [Description("Hunter's Eye")]
         HuntersEye,
 
@@ -146,6 +164,8 @@ namespace WfrpChars.Data
         ImpassionedZeal,
         Implacable,
         Inspiring,
+        [Description("Invoke (Any)")]
+        InvokeAny,
         [Description("Iron Will")]
         IronWill,
         
@@ -215,6 +235,8 @@ namespace WfrpChars.Data
         [Description("Read/Write")]        
         ReadWrite,
         Relentless,
+        [Description("Resistance (Any)")]
+        ResistanceAny,
         [Description("Resistance (Disease)")]
         ResistanceDisease,
         [Description("Resistance (Poison)")]
@@ -235,12 +257,18 @@ namespace WfrpChars.Data
         SavantEngineering,
         [Description("Savant (Herbs)")]
         SavantHerbs,
+        [Description("Savant (Law)")]
+        SavantLaw,
+        [Description("Savant (Theology)")]
+        SavantTheology,
         Savvy,
         Schemer,
         [Description("Sea Legs")]
         SeaLegs,
         [Description("Seasoned Traveler")]
         SeasonedTraveler,
+        [Description("Second Sight")]
+        SecondSight,
         [Description("Secret Identity")]
         SecretIdentity,
         Shadow,
@@ -260,6 +288,8 @@ namespace WfrpChars.Data
         StoutHearted,
         [Description("Strider (Any)")]
         StriderAny,
+        [Description("Strider (Rocky)")]
+        StriderRocky,
         [Description("Strider (Woodlands)")]
         StriderWoodlands,
         [Description("Strike Mighty Blow")]
@@ -303,5 +333,10 @@ namespace WfrpChars.Data
         [Description("Warrior Born")]
         WarriorBorn,
         Waterman,
+        Wealthy,
+        [Description("Well-prepared")]
+        WellPrepared,
+        [Description("Witch!")]
+        Witch,
     }
 }

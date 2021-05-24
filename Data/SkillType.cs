@@ -12,6 +12,8 @@ namespace WfrpChars.Data
         AnimalTrainingHorse,
         [Description("Art (Any)")]
         ArtAny,
+        [Description("Art (Calligraphy)")]
+        ArtCalligraphy,
         [Description("Art (Icons)")]
         ArtIcons,
         [Description("Art (Writing)")]
@@ -24,6 +26,8 @@ namespace WfrpChars.Data
         [Description("Charm Animal")]
         CharmAnimal,
         Channelling,
+        [Description("Channelling (Azyr)")]
+        ChannellingAzyr,
         Climb,
         [Description("Consume Alcohol")]
         ConsumeAlcohol,
@@ -37,6 +41,10 @@ namespace WfrpChars.Data
         EntertainActing,
         [Description("Entertain (Any)")]
         EntertainAny,
+        [Description("Entertain (Fortune Telling)")]
+        EntertainFortuneTelling,
+        [Description("Entertain (Prophecy)")]
+        EntertainProphecy,
         [Description("Entertain (Singing)")]
         EntertainSinging,
         [Description("Entertain (Speeches)")]
@@ -73,6 +81,8 @@ namespace WfrpChars.Data
         LoreAny,
         [Description("Lore (Art)")]
         LoreArt,
+        [Description("Lore (Astrology)")]
+        LoreAstrology,
         [Description("Lore (Beasts)")]
         LoreBeasts,
         [Description("Lore (Chemistry)")]
@@ -87,6 +97,8 @@ namespace WfrpChars.Data
         LoreFolklore,
         [Description("Lore (Genealogy)")]
         LoreGenealogy,
+        [Description("Lore (Geology)")]
+        LoreGeology,
         [Description("Lore (Heraldry)")]
         LoreHeraldry,
         [Description("Lore (Herbs)")]
@@ -105,6 +117,8 @@ namespace WfrpChars.Data
         LorePlants,
         [Description("Lore (Politics)")]
         LorePolitics,
+        [Description("Lore (Prophecy)")]
+        LoreProphecy,
         [Description("Lore (Riverways)")]
         LoreRiverways,
         [Description("Lore (Routes)")]
@@ -130,6 +144,8 @@ namespace WfrpChars.Data
         MeleeBrawling,
         [Description("Melee (Cavalry)")]
         MeleeCavalry,
+        [Description("Melee (Fencing)")]
+        MeleeFencing,
         [Description("Melee (Flail)")]
         MeleeFlail,
         [Description("Melee (Parry)")]
@@ -183,6 +199,8 @@ namespace WfrpChars.Data
         SecretSignsHunter,
         [Description("Secret Signs (Knightly Order)")]
         SecretSignsKnightlyOrder,
+        [Description("Secret Signs (Miner)")]
+        SecretSignsMiner,
         [Description("Secret Signs (Thief)")]
         SecretSignsThief,
         [Description("Set Trap")]
@@ -193,6 +211,8 @@ namespace WfrpChars.Data
         StealthAny,
         [Description("Stealth (Rural)")]
         StealthRural,
+        [Description("Stealth (Underground)")]
+        StealthUnderground,
         [Description("Stealth (Urban)")]
         StealthUrban,
         [Description("Street Signs (Vagabond)")]
@@ -208,12 +228,16 @@ namespace WfrpChars.Data
         TradeArtSupplies,
         [Description("Trade (Boatbuilding)")]
         TradeBoatbuilding,
+        [Description("Trade (Brewer)")]
+        TradeBrewer,
         [Description("Trade (Charms)")]
         TradeCharms,
         [Description("Trade (Engineer)")]
         TradeEngineer,
         [Description("Trade (Engraver)")]
         TradeEngraver,
+        [Description("Trade (Explosives)")]
+        TradeExplosives,
         [Description("Trade (Farrier)")]
         TradeFarrier,
         [Description("Trade (Gunsmith)")]
@@ -224,5 +248,7 @@ namespace WfrpChars.Data
         TradePoisons,
         [Description("Trade (Printing)")]
         TradePrinting,
+        [Description("Trade (Vintner)")]
+        TradeVintner,
     }
 }
