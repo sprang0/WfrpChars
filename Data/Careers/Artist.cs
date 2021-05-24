@@ -37,7 +37,7 @@ namespace WfrpChars.Data.Careers
         {
             { 1, new List<TalentType> { TalentType.Artistic, TalentType.Sharp, TalentType.StrongBack, TalentType.Tenacious } },
             { 2, new List<TalentType> { TalentType.Carouser, TalentType.Criminal, TalentType.Gregarious, TalentType.NimbleFingered } },
-            { 3, new List<TalentType> { TalentType.AccuteSenseAny, TalentType.Dealmaker, TalentType.EtiquetteAny, TalentType.NoseForTrouble } },
+            { 3, new List<TalentType> { TalentType.AcuteSenseAny, TalentType.Dealmaker, TalentType.EtiquetteAny, TalentType.NoseForTrouble } },
             { 4, new List<TalentType> { TalentType.Ambidextrous, TalentType.Kingpin, TalentType.MagnumOpus, TalentType.ReadWrite } }
         };
     }

@@ -31,6 +31,7 @@ namespace WfrpChars.Data
         HedgeWitch,
         Herbalist,
         Huffer,
+        Hunter,
         Investigator,
         Knight,
         Lawyer,

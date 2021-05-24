@@ -44,6 +44,12 @@ namespace WfrpChars.Data
                 CareerType.Flagellant => new Flagellant(level),
                 CareerType.GraveRobber => new GraveRobber(level),
                 CareerType.Guard => new Guard(level),
+                CareerType.HedgeWitch => new HedgeWitch(level),
+                CareerType.Herbalist => new Herbalist(level),
+                CareerType.Huffer => new Huffer(level),
+                CareerType.Hunter => new Hunter(level),
+                CareerType.Investigator => new Investigator(level),
+                CareerType.Knight => new Knight(level),
                 _ => throw new Exception("No such Career")
             };
         }

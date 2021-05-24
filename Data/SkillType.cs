@@ -17,16 +17,21 @@ namespace WfrpChars.Data
         [Description("Art (Writing)")]
         ArtWriting,
         Athletics,
+
         Bribery,
+        
         Charm,
         [Description("Charm Animal")]
         CharmAnimal,
+        Channelling,
         Climb,
         [Description("Consume Alcohol")]
         ConsumeAlcohol,
         Cool,
+        
         Drive,
         Dodge,
+        
         Endurance,
         [Description("Entertain (Acting)")]
         EntertainActing,
@@ -39,12 +44,16 @@ namespace WfrpChars.Data
         [Description("Entertain (Storytelling)")]
         EntertainStorytelling,
         Evaluate,
+        
         Gamble,
         Gossip,
+        
         Haggle,
         Heal,
+        
         Intimidate,
         Intuition,
+        
         [Description("Language (Any)")]
         LanguageAny,
         [Description("Language (Battle)")]
@@ -55,6 +64,8 @@ namespace WfrpChars.Data
         LanguageGuilder,
         [Description("Language (Khazalid)")]
         LanguageKhazalid,
+        [Description("Language (Magick)")]
+        LanguageMagick,
         [Description("Language (Thief)")]
         LanguageThief,
         Leadership,
@@ -62,6 +73,8 @@ namespace WfrpChars.Data
         LoreAny,
         [Description("Lore (Art)")]
         LoreArt,
+        [Description("Lore (Beasts)")]
+        LoreBeasts,
         [Description("Lore (Chemistry)")]
         LoreChemistry,
         [Description("Lore (Empire)")]
@@ -70,16 +83,22 @@ namespace WfrpChars.Data
         LoreEngineer,
         [Description("Lore (Etiquette)")]
         LoreEtiquette,
+        [Description("Lore (Folklore)")]
+        LoreFolklore,
         [Description("Lore (Genealogy)")]
         LoreGenealogy,
         [Description("Lore (Heraldry)")]
         LoreHeraldry,
+        [Description("Lore (Herbs)")]
+        LoreHerbs,
         [Description("Lore (History)")]
         LoreHistory,
         [Description("Lore (Law)")]
         LoreLaw,
         [Description("Lore (Local)")]
         LoreLocal,
+        [Description("Lore (Magic)")]
+        LoreMagic,
         [Description("Lore (Medicine)")]
         LoreMedicine,
         [Description("Lore (Plants)")]
@@ -94,10 +113,15 @@ namespace WfrpChars.Data
         LoreScience,
         [Description("Lore (Sigmar)")]
         LoreSigmar,
+        [Description("Lore (Spirits)")]
+        LoreSpirits,
         [Description("Lore (Theology)")]
         LoreTheology,
         [Description("Lore (Warfare)")]
         LoreWarfare,
+        [Description("Lore (Wrecks)")]
+        LoreWrecks,
+        
         [Description("Melee (Any)")]
         MeleeAny,
         [Description("Melee (Basic)")]
@@ -114,9 +138,12 @@ namespace WfrpChars.Data
         MeleePolearm,
         [Description("Melee (Two-handed)")]
         MeleeTwoHanded,
+        
         Navigation,
+        
         [Description("Outdoor Survival")]
         OutdoorSurvival,
+        
         [Description("Perform (Acrobatics)")]
         PerformAcrobatics,
         [Description("Perform (Any)")]
@@ -126,6 +153,8 @@ namespace WfrpChars.Data
         PickLock,
         [Description("Play (Any)")]
         PlayAny,
+        Pray,
+        
         [Description("Ranged (Blackpowder)")]
         RangedBlackpowder,
         [Description("Ranged (Bow)")]
@@ -146,9 +175,14 @@ namespace WfrpChars.Data
         [Description("Ride (Horse)")]
         RideHorse,
         Row,
+        
         Sail,
         [Description("Secret Signs (Guilder)")]
         SecretSignsGuilder,
+        [Description("Secret Signs (Hunter)")]
+        SecretSignsHunter,
+        [Description("Secret Signs (Knightly Order)")]
+        SecretSignsKnightlyOrder,
         [Description("Secret Signs (Thief)")]
         SecretSignsThief,
         [Description("Set Trap")]
@@ -157,11 +191,14 @@ namespace WfrpChars.Data
         SlightOfHand,
         [Description("Stealth (Any)")]
         StealthAny,
+        [Description("Stealth (Rural)")]
+        StealthRural,
         [Description("Stealth (Urban)")]
         StealthUrban,
         [Description("Street Signs (Vagabond)")]
         StreetSignsVagabond,
         Swim,
+        
         Track,
         [Description("Trade (Any)")]
         TradeAny,
@@ -171,14 +208,20 @@ namespace WfrpChars.Data
         TradeArtSupplies,
         [Description("Trade (Boatbuilding)")]
         TradeBoatbuilding,
+        [Description("Trade (Charms)")]
+        TradeCharms,
         [Description("Trade (Engineer)")]
         TradeEngineer,
         [Description("Trade (Engraver)")]
         TradeEngraver,
+        [Description("Trade (Farrier)")]
+        TradeFarrier,
         [Description("Trade (Gunsmith)")]
         TradeGunsmith,
-        [Description("Trade (Poisoner)")]
-        TradePoisoner,
+        [Description("Trade (Herbalist)")]
+        TradeHerbalist,
+        [Description("Trade (Poisons)")]
+        TradePoisons,
         [Description("Trade (Printing)")]
         TradePrinting,
     }

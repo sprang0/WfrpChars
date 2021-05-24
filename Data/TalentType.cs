@@ -6,12 +6,16 @@ namespace WfrpChars.Data
     {
         [Description("Accurate Shot")]
         AccurateShot,
-        [Description("Accute Sense (Any)")]
-        AccuteSenseAny,
-        [Description("Accute Sense (Taste)")]
-        AccuteSenseTaste,
-        [Description("Accute Sense (Taste or Touch)")]
-        AccuteSenseTasteOrTouch,
+        [Description("Acute Sense (Any)")]
+        AcuteSenseAny,
+        [Description("Acute Sense (Sight)")]
+        AcuteSenseSight,
+        [Description("Acute Sense (Taste)")]
+        AcuteSenseTaste,
+        [Description("Acute Sense (Taste or Touch)")]
+        AcuteSenseTasteOrTouch,
+        [Description("Aethyric Attunement")]
+        AethyricAttunement,
         [Description("Alley Cat")]
         AlleyCat,
         Ambidextrous,
@@ -60,6 +64,8 @@ namespace WfrpChars.Data
         CraftsmanApothecary,
         [Description("Craftsman (Engineer)")]
         CraftsmanEngineer,
+        [Description("Craftsman (Herbalist)")]
+        CraftsmanHerbalist,
         Criminal,
         
         [Description("Deadeye Shot")]
@@ -93,6 +99,10 @@ namespace WfrpChars.Data
         FastHands,
         [Description("Fast Shot")]
         FastShot,
+        [Description("Fearless (Animals)")]
+        FearlessAnimals,
+        [Description("Fearless (Any)")]
+        FearlessAny,
         [Description("Fearless (Beastmen)")]
         FearlessBeastmen,
         [Description("Fearless (Bounties)")]
@@ -101,6 +111,8 @@ namespace WfrpChars.Data
         FearlessHeretics,
         [Description("Fearless (Intruders)")]
         FearlessIntruders,
+        [Description("Fearless (Monsters)")]
+        FearlessMonsters,
         [Description("Fearless (Outlaws)")]
         FearlessOutlaws,
         [Description("Fearless (Undead)")]
@@ -127,6 +139,8 @@ namespace WfrpChars.Data
         HatredAny,
         [Description("Hatred (Heretics)")]
         HatredHeretics,
+        [Description("Hunter's Eye")]
+        HuntersEye,
 
         [Description("Impassioned Zeal")]
         ImpassionedZeal,
@@ -144,9 +158,15 @@ namespace WfrpChars.Data
         LightningReflexes,
         Luck,
         
+        [Description("Magical Sense")]
+        MagicalSense,
+        [Description("Magic (Hedgecraft)")]
+        MagicHedgecraft,
         [Description("Magnum Opus")]
         MagnumOpus,
         Marksman,
+        [Description("Master Craftsman (Herbalist)")]
+        MasterCraftsmanHerbalist,
         [Description("Master of Disguise")]
         MasterOfDisguise,
         [Description("Master Orator")]
@@ -157,6 +177,8 @@ namespace WfrpChars.Data
         MasterTradesmanApothecary,
         [Description("Master Tradesman (Engineering)")]
         MasterTradesmanEngineering,
+        [Description("Master Tradesman (Herbalist)")]
+        MasterTradesmanHerbalist,
         [Description("Master Tradesman (Poisoner)")]
         MasterTradesmanPoisoner,
         Menacing,
@@ -177,10 +199,14 @@ namespace WfrpChars.Data
         Panhandle,
         [Description("Perfect Pitch")]
         PerfectPitch,
+        [Description("Petty Magic")]
+        PettyMagic,
         Pharmacist,
         Pilot,
         [Description("Public Speaker")]
         PublicSpeaker,
+        [Description("Pure Soul")]
+        PureSoul,
 
         [Description("Rapid Reload")]
         RapidReload,
@@ -195,15 +221,24 @@ namespace WfrpChars.Data
         ResistancePoison,
         Reversal,
         Riposte,
+        [Description("River Guide")]
+        RiverGuide,
         Robust,
         Roughrider,
+        Rover,
 
+        [Description("Savant (Any)")]
+        SavantAny,
         [Description("Savant (Apothecary)")]
         SavantApothecary,
         [Description("Savant (Engineering)")]
         SavantEngineering,
+        [Description("Savant (Herbs)")]
+        SavantHerbs,
         Savvy,
         Schemer,
+        [Description("Sea Legs")]
+        SeaLegs,
         [Description("Seasoned Traveler")]
         SeasonedTraveler,
         [Description("Secret Identity")]
@@ -215,6 +250,7 @@ namespace WfrpChars.Data
         [Description("Sixth Sense")]
         SixthSense,
         Sniper,
+        Speedreader,
         Sprinter,
         [Description("Step Aside")]
         StepAside,
@@ -222,6 +258,10 @@ namespace WfrpChars.Data
         StoneSoup,
         [Description("Stout-hearted")]
         StoutHearted,
+        [Description("Strider (Any)")]
+        StriderAny,
+        [Description("Strider (Woodlands)")]
+        StriderWoodlands,
         [Description("Strike Mighty Blow")]
         StrikeMightyBlow,
         [Description("Strike to Injure")]
@@ -244,6 +284,8 @@ namespace WfrpChars.Data
         
         Tenacious,
         Tinker,
+        [Description("Tower of Memories")]
+        TowerOfMemories,
         Trapper,
         [Description("Trick Riding")]
         TrickRiding,
@@ -258,6 +300,8 @@ namespace WfrpChars.Data
         VeryStrong,
 
         Warleader,
+        [Description("Warrior Born")]
+        WarriorBorn,
         Waterman,
     }
 }
