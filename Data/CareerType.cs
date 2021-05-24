@@ -18,7 +18,7 @@ namespace WfrpChars.Data
         Cavalryman,
         Charlatan,
         Coachman,
-        Duelist,
+        Duellist,
         Engineer,
         Entertainer,
         Envoy,

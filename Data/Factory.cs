@@ -34,6 +34,16 @@ namespace WfrpChars.Data
                 CareerType.Boatman => new Boatman(level),
                 CareerType.BountyHunter => new BountyHunter(level),
                 CareerType.Cavalryman => new Cavalryman(level),
+                CareerType.Charlatan => new Charlatan(level),
+                CareerType.Coachman => new Coachman(level),
+                CareerType.Duellist => new Duellist(level),
+                CareerType.Engineer => new Engineer(level),
+                CareerType.Entertainer => new Entertainer(level),
+                CareerType.Envoy => new Envoy(level),
+                CareerType.Fence => new Fence(level),
+                CareerType.Flagellant => new Flagellant(level),
+                CareerType.GraveRobber => new GraveRobber(level),
+                CareerType.Guard => new Guard(level),
                 _ => throw new Exception("No such Career")
             };
         }
