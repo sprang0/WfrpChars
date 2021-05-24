@@ -58,6 +58,18 @@ namespace WfrpChars.Data
                 CareerType.Noble => new Noble(level),
                 CareerType.Nun => new Nun(level),
                 CareerType.Outlaw => new Outlaw(level),
+                CareerType.Pedlar => new Pedlar(level),
+                CareerType.Physician => new Physician(level),
+                CareerType.PitFighter => new PitFighter(level),
+                CareerType.Priest => new Priest(level),
+                CareerType.Protagonist => new Protagonist(level),
+                CareerType.RatCatcher => new RatCatcher(level),
+                CareerType.Racketeer => new Racketeer(level),
+                CareerType.Riverwarden => new Riverwarden(level),
+                CareerType.Riverwoman => new Riverwoman(level),
+                CareerType.RoadWarden => new RoadWarden(level),
+                CareerType.Scholar => new Scholar(level),
+                CareerType.Scout => new Scout(level),
                 _ => throw new Exception("No such Career")
             };
         }

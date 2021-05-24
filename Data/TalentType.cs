@@ -66,6 +66,8 @@ namespace WfrpChars.Data
         CraftsmanAny,
         [Description("Craftsman (Apothecary)")]
         CraftsmanApothecary,
+        [Description("Craftsman (Boatbuilder)")]
+        CraftsmanBoatbuilder,
         [Description("Craftsman (Engineer)")]
         CraftsmanEngineer,
         [Description("Craftsman (Explosives)")]
@@ -88,6 +90,8 @@ namespace WfrpChars.Data
         DualWielder,
         
         Embezzle,
+        [Description("Enclosed Fighter")]
+        EnclosedFighter,
         [Description("Etiquette (Any)")]
         EtiquetteAny,
         [Description("Etiquette (Criminals)")]
@@ -125,12 +129,18 @@ namespace WfrpChars.Data
         FearlessMonsters,
         [Description("Fearless (Outlaws)")]
         FearlessOutlaws,
+        [Description("Fearless (Rats)")]
+        FearlessRats,
         [Description("Fearless (Road Wardens)")]
         FearlessRoadWardens,
+        [Description("Fearless (Skaven)")]
+        FearlessSkaven,
         [Description("Fearless (Undead)")]
         FearlessUndead,
         [Description("Fearless (Watchmen)")]
         FearlessWatchmen,
+        [Description("Fearless (Wreckers)")]
+        FearlessWreckers,
         Feint,
         [Description("Field Dressing")]
         FieldDressing,
@@ -163,12 +173,16 @@ namespace WfrpChars.Data
         [Description("Impassioned Zeal")]
         ImpassionedZeal,
         Implacable,
+        [Description("In-fighter")]
+        InFighter,
         Inspiring,
         [Description("Invoke (Any)")]
         InvokeAny,
+        [Description("Iron Jaw")]
+        IronJaw,
         [Description("Iron Will")]
         IronWill,
-        
+
         [Description("Jump Up")]
         JumpUp,
 
@@ -176,6 +190,7 @@ namespace WfrpChars.Data
 
         [Description("Lightning Reflexes")]
         LightningReflexes,
+        Linguistics,
         Luck,
         
         [Description("Magical Sense")]
@@ -185,6 +200,8 @@ namespace WfrpChars.Data
         [Description("Magnum Opus")]
         MagnumOpus,
         Marksman,
+        [Description("Master Craftsman (Boatbuilder)")]
+        MasterCraftsmanBoatbuilder,
         [Description("Master Craftsman (Herbalist)")]
         MasterCraftsmanHerbalist,
         [Description("Master of Disguise")]
@@ -259,6 +276,12 @@ namespace WfrpChars.Data
         SavantHerbs,
         [Description("Savant (Law)")]
         SavantLaw,
+        [Description("Savant (Local)")]
+        SavantLocal,
+        [Description("Savant (Medicine)")]
+        SavantMedicine,
+        [Description("Savant (Riverways)")]
+        SavantRiverways,
         [Description("Savant (Theology)")]
         SavantTheology,
         Savvy,
@@ -288,6 +311,8 @@ namespace WfrpChars.Data
         StoutHearted,
         [Description("Strider (Any)")]
         StriderAny,
+        [Description("Strider (Marshes)")]
+        StriderMarshes,
         [Description("Strider (Rocky)")]
         StriderRocky,
         [Description("Strider (Woodlands)")]
@@ -300,6 +325,8 @@ namespace WfrpChars.Data
         StrikeToStun,
         [Description("Strong Back")]
         StrongBack,
+        [Description("Strong Legs")]
+        StrongLegs,
         [Description("Strong-minded")]
         StrongMinded,
         [Description("Strong Swimmer")]
@@ -311,6 +338,7 @@ namespace WfrpChars.Data
         Supportive,
         [Description("Sure Shot")]
         SureShot,
+        Surgery,
         
         Tenacious,
         Tinker,

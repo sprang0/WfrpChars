@@ -44,6 +44,8 @@ namespace WfrpChars.Data
         Outlaw,
         Pedlar,
         Physician,
+        [Description("Pit Fighter")]
+        PitFighter,
         Priest,
         Protagonist,
         [Description("Rat Catcher")]
