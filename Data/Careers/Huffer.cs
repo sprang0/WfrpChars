@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Gossip, SkillType.Intuition, SkillType.LoreLocal, SkillType.LoreRiverways, SkillType.Perception, SkillType.Row, SkillType.Swim } },
-            { 2, new List<SkillType> { SkillType.Charm, SkillType.Cool, SkillType.EntertainStorytelling, SkillType.LanguageAny, SkillType.MeleeBasic, SkillType.Navigation } },
-            { 3, new List<SkillType> { SkillType.Haggle, SkillType.Intimidate, SkillType.LoreLocal, SkillType.LoreWrecks } },
-            { 4, new List<SkillType> { SkillType.Leadership, SkillType.Sail } }
+            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.LoreLocal, SkillTypes.LoreRiverways, SkillTypes.Perception, SkillTypes.Row, SkillTypes.Swim } },
+            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.EntertainStorytelling, SkillTypes.LanguageAny, SkillTypes.MeleeBasic, SkillTypes.Navigation } },
+            { 3, new List<SkillTypes> { SkillTypes.Haggle, SkillTypes.Intimidate, SkillTypes.LoreLocal, SkillTypes.LoreWrecks } },
+            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.Sail } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Fisherman, TalentType.NightVision, TalentType.Orientation, TalentType.Waterman } },
-            { 2, new List<TalentType> { TalentType.Dealmaker, TalentType.EtiquetteGuilder, TalentType.NoseForTrouble, TalentType.RiverGuide } },
-            { 3, new List<TalentType> { TalentType.AcuteSenseSight, TalentType.Pilot, TalentType.SeaLegs, TalentType.VeryStrong } },
-            { 4, new List<TalentType> { TalentType.SixthSense, TalentType.Sharp, TalentType.StrongSwimmer, TalentType.Tenacious } }
+            { 1, new List<TalentTypes> { TalentTypes.Fisherman, TalentTypes.NightVision, TalentTypes.Orientation, TalentTypes.Waterman } },
+            { 2, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.EtiquetteGuilder, TalentTypes.NoseForTrouble, TalentTypes.RiverGuide } },
+            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseSight, TalentTypes.Pilot, TalentTypes.SeaLegs, TalentTypes.VeryStrong } },
+            { 4, new List<TalentTypes> { TalentTypes.SixthSense, TalentTypes.Sharp, TalentTypes.StrongSwimmer, TalentTypes.Tenacious } }
         };
     }
 }

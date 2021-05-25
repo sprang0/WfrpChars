@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Climb, SkillType.ConsumeAlcohol, SkillType.Gamble, SkillType.Gossip, SkillType.Row, SkillType.MeleeBrawling, SkillType.Sail, SkillType.Swim } },
-            { 2, new List<SkillType> { SkillType.Athletics, SkillType.Dodge, SkillType.Endurance, SkillType.EntertainSinging, SkillType.LanguageAny, SkillType.MeleeBasic } },
-            { 3, new List<SkillType> { SkillType.Cool, SkillType.Leadership, SkillType.Perception, SkillType.TradeCarpenter } },
-            { 4, new List<SkillType> { SkillType.Charm, SkillType.Navigation } }
+            { 1, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Row, SkillTypes.MeleeBrawling, SkillTypes.Sail, SkillTypes.Swim } },
+            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.EntertainSinging, SkillTypes.LanguageAny, SkillTypes.MeleeBasic } },
+            { 3, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Leadership, SkillTypes.Perception, SkillTypes.TradeCarpenter } },
+            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Fisherman, TalentType.StriderCoastal, TalentType.StrongBack, TalentType.StrongSwimmer } },
-            { 2, new List<TalentType> { TalentType.Catfall, TalentType.SeaLegs, TalentType.SeasonedTraveler, TalentType.StrongLegs } },
-            { 3, new List<TalentType> { TalentType.OldSalt, TalentType.StrikeMightyBlow, TalentType.Tenacious, TalentType.VeryStrong } },
-            { 4, new List<TalentType> { TalentType.Orientation, TalentType.Pilot, TalentType.PublicSpeaker, TalentType.Savvy } }
+            { 1, new List<TalentTypes> { TalentTypes.Fisherman, TalentTypes.StriderCoastal, TalentTypes.StrongBack, TalentTypes.StrongSwimmer } },
+            { 2, new List<TalentTypes> { TalentTypes.Catfall, TalentTypes.SeaLegs, TalentTypes.SeasonedTraveler, TalentTypes.StrongLegs } },
+            { 3, new List<TalentTypes> { TalentTypes.OldSalt, TalentTypes.StrikeMightyBlow, TalentTypes.Tenacious, TalentTypes.VeryStrong } },
+            { 4, new List<TalentTypes> { TalentTypes.Orientation, TalentTypes.Pilot, TalentTypes.PublicSpeaker, TalentTypes.Savvy } }
         };
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.CharmAnimal, SkillType.ConsumeAlcohol, SkillType.Cool, SkillType.Endurance, SkillType.Intuition, SkillType.LoreLocal, SkillType.Perception } },
-            { 2, new List<SkillType> { SkillType.AnimalCare, SkillType.MeleeBasic, SkillType.OutdoorSurvival, SkillType.RangedBow, SkillType.RideHorse, SkillType.Swim } },
-            { 3, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Gossip, SkillType.Leadership } },
-            { 4, new List<SkillType> { SkillType.Evaluate, SkillType.LanguageAny } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.CharmAnimal, SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.LoreLocal, SkillTypes.Perception } },
+            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival, SkillTypes.RangedBow, SkillTypes.RideHorse, SkillTypes.Swim } },
+            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Gossip, SkillTypes.Leadership } },
+            { 4, new List<SkillTypes> { SkillTypes.Evaluate, SkillTypes.LanguageAny } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Menacing, TalentType.NightVision, TalentType.Sharp, TalentType.StrikeToStun } },
-            { 2, new List<TalentType> { TalentType.AnimalAffinity, TalentType.EtiquetteServants, TalentType.StriderAny, TalentType.Rover } },
-            { 3, new List<TalentType> { TalentType.Embezzle, TalentType.Numismatics, TalentType.ReadWrite, TalentType.Supportive } },
-            { 4, new List<TalentType> { TalentType.CommandingPresence, TalentType.EtiquetteAny, TalentType.SavantLocal, TalentType.Suave } }
+            { 1, new List<TalentTypes> { TalentTypes.Menacing, TalentTypes.NightVision, TalentTypes.Sharp, TalentTypes.StrikeToStun } },
+            { 2, new List<TalentTypes> { TalentTypes.AnimalAffinity, TalentTypes.EtiquetteServants, TalentTypes.StriderAny, TalentTypes.Rover } },
+            { 3, new List<TalentTypes> { TalentTypes.Embezzle, TalentTypes.Numismatics, TalentTypes.ReadWrite, TalentTypes.Supportive } },
+            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.EtiquetteAny, TalentTypes.SavantLocal, TalentTypes.Suave } }
         };
     }
 }

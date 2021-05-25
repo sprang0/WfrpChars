@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Cool, SkillType.ConsumeAlcohol, SkillType.Dodge, SkillType.Endurance, SkillType.Evaluate, SkillType.StealthUrban, SkillType.TradeAny } },
-            { 2, new List<SkillType> { SkillType.Charm, SkillType.Haggle, SkillType.LoreLocal, SkillType.Gossip, SkillType.LanguageGuilder, SkillType.Perception } },
-            { 3, new List<SkillType> { SkillType.Intuition, SkillType.Leadership, SkillType.Research, SkillType.SecretSignsGuilder } },
-            { 4, new List<SkillType> { SkillType.Bribery, SkillType.Intimidate } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Cool, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Evaluate, SkillTypes.StealthUrban, SkillTypes.TradeAny } },
+            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Haggle, SkillTypes.LoreLocal, SkillTypes.Gossip, SkillTypes.LanguageGuilder, SkillTypes.Perception } },
+            { 3, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.Research, SkillTypes.SecretSignsGuilder } },
+            { 4, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Intimidate } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Artistic, TalentType.CraftsmanAny, TalentType.StrongBack, TalentType.VeryStrong } },
-            { 2, new List<TalentType> { TalentType.Dealmaker, TalentType.EtiquetteGuilder, TalentType.NimbleFingered, TalentType.Sturdy } },
-            { 3, new List<TalentType> { TalentType.AcuteSenseTasteOrTouch, TalentType.MasterTradesmanAny, TalentType.ReadWrite, TalentType.Tinker } },
-            { 4, new List<TalentType> { TalentType.Briber, TalentType.MagnumOpus, TalentType.PublicSpeaker, TalentType.Schemer } }
+            { 1, new List<TalentTypes> { TalentTypes.Artistic, TalentTypes.CraftsmanAny, TalentTypes.StrongBack, TalentTypes.VeryStrong } },
+            { 2, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.EtiquetteGuilder, TalentTypes.NimbleFingered, TalentTypes.Sturdy } },
+            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseTasteOrTouch, TalentTypes.MasterTradesmanAny, TalentTypes.ReadWrite, TalentTypes.Tinker } },
+            { 4, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.MagnumOpus, TalentTypes.PublicSpeaker, TalentTypes.Schemer } }
         };
     }
 }

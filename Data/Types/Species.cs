@@ -1,8 +1,8 @@
 using System.ComponentModel;
 
-namespace WfrpChars.Data
+namespace WfrpChars.Data.Types
 {
-    enum SpeciesType
+    enum SpeciesTypes
     {
         Human,
         Halfling,

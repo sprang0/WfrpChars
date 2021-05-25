@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Heal, SkillType.LanguageClassical, SkillType.LoreChemistry, SkillType.LoreMedicine, SkillType.LorePlants, SkillType.TradeApothecary, SkillType.TradePoisons } },
-            { 2, new List<SkillType> { SkillType.Charm, SkillType.Haggle, SkillType.LoreScience, SkillType.Gossip, SkillType.LanguageGuilder, SkillType.Perception } },
-            { 3, new List<SkillType> { SkillType.Intuition, SkillType.Leadership, SkillType.Research, SkillType.SecretSignsGuilder } },
-            { 4, new List<SkillType> { SkillType.Intimidate, SkillType.RideHorse } }
+            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Heal, SkillTypes.LanguageClassical, SkillTypes.LoreChemistry, SkillTypes.LoreMedicine, SkillTypes.LorePlants, SkillTypes.TradeApothecary, SkillTypes.TradePoisons } },
+            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Haggle, SkillTypes.LoreScience, SkillTypes.Gossip, SkillTypes.LanguageGuilder, SkillTypes.Perception } },
+            { 3, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.Research, SkillTypes.SecretSignsGuilder } },
+            { 4, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.RideHorse } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Concoct, TalentType.CraftsmanApothecary, TalentType.EtiquetteScholar, TalentType.ReadWrite } },
-            { 2, new List<TalentType> { TalentType.Criminal, TalentType.Dealmaker, TalentType.EtiquetteGuilder, TalentType.Pharmacist } },
-            { 3, new List<TalentType> { TalentType.Bookish, TalentType.MasterTradesmanApothecary, TalentType.ResistancePoison, TalentType.Savvy } },
-            { 4, new List<TalentType> { TalentType.AcuteSenseTaste, TalentType.Coolheaded, TalentType.MasterTradesmanPoisoner, TalentType.SavantApothecary } }
+            { 1, new List<TalentTypes> { TalentTypes.Concoct, TalentTypes.CraftsmanApothecary, TalentTypes.EtiquetteScholar, TalentTypes.ReadWrite } },
+            { 2, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.Dealmaker, TalentTypes.EtiquetteGuilder, TalentTypes.Pharmacist } },
+            { 3, new List<TalentTypes> { TalentTypes.Bookish, TalentTypes.MasterTradesmanApothecary, TalentTypes.ResistancePoison, TalentTypes.Savvy } },
+            { 4, new List<TalentTypes> { TalentTypes.AcuteSenseTaste, TalentTypes.Coolheaded, TalentTypes.MasterTradesmanPoisoner, TalentTypes.SavantApothecary } }
         };
     }
 }

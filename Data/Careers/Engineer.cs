@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Level;
         public override int Willpower => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Cool, SkillType.Endurance, SkillType.LanguageClassical, SkillType.LoreEngineer, SkillType.Perception, SkillType.RangedBlackpowder, SkillType.TradeEngineer } },
-            { 2, new List<SkillType> { SkillType.Drive, SkillType.Dodge, SkillType.Navigation, SkillType.RangedEngineering, SkillType.Research, SkillType.LanguageGuilder } },
-            { 3, new List<SkillType> { SkillType.LanguageKhazalid, SkillType.Leadership, SkillType.RideHorse, SkillType.SecretSignsGuilder } },
-            { 4, new List<SkillType> { SkillType.LanguageAny, SkillType.LoreAny } }
+            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.LanguageClassical, SkillTypes.LoreEngineer, SkillTypes.Perception, SkillTypes.RangedBlackpowder, SkillTypes.TradeEngineer } },
+            { 2, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.Dodge, SkillTypes.Navigation, SkillTypes.RangedEngineering, SkillTypes.Research, SkillTypes.LanguageGuilder } },
+            { 3, new List<SkillTypes> { SkillTypes.LanguageKhazalid, SkillTypes.Leadership, SkillTypes.RideHorse, SkillTypes.SecretSignsGuilder } },
+            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Artistic, TalentType.Gunner, TalentType.ReadWrite, TalentType.Tinker } },
-            { 2, new List<TalentType> { TalentType.CraftsmanEngineer, TalentType.EtiquetteGuilder, TalentType.Marksman, TalentType.Orientation } },
-            { 3, new List<TalentType> { TalentType.EtiquetteScholar, TalentType.MasterTradesmanEngineering, TalentType.Sniper, TalentType.SuperNumerate } },
-            { 4, new List<TalentType> { TalentType.MagnumOpus, TalentType.RapidReload, TalentType.SavantEngineering, TalentType.Unshakeable } }
+            { 1, new List<TalentTypes> { TalentTypes.Artistic, TalentTypes.Gunner, TalentTypes.ReadWrite, TalentTypes.Tinker } },
+            { 2, new List<TalentTypes> { TalentTypes.CraftsmanEngineer, TalentTypes.EtiquetteGuilder, TalentTypes.Marksman, TalentTypes.Orientation } },
+            { 3, new List<TalentTypes> { TalentTypes.EtiquetteScholar, TalentTypes.MasterTradesmanEngineering, TalentTypes.Sniper, TalentTypes.SuperNumerate } },
+            { 4, new List<TalentTypes> { TalentTypes.MagnumOpus, TalentTypes.RapidReload, TalentTypes.SavantEngineering, TalentTypes.Unshakeable } }
         };
     }
 }

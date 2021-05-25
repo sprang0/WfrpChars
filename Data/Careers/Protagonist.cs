@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Dodge, SkillType.Endurance, SkillType.EntertainTaunt, SkillType.Gossip, SkillType.Haggle, SkillType.Intimidate, SkillType.MeleeAny } },
-            { 2, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Intuition, SkillType.MeleeBasic, SkillType.Perception, SkillType.RideHorse } },
-            { 3, new List<SkillType> { SkillType.Climb, SkillType.Cool, SkillType.Navigation, SkillType.RangedThrowing } },
-            { 4, new List<SkillType> { SkillType.EntertainActing, SkillType.RangedCrossbow } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.EntertainTaunt, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intimidate, SkillTypes.MeleeAny } },
+            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.Perception, SkillTypes.RideHorse } },
+            { 3, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Navigation, SkillTypes.RangedThrowing } },
+            { 4, new List<SkillTypes> { SkillTypes.EntertainActing, SkillTypes.RangedCrossbow } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.InFighter, TalentType.DirtyFighting, TalentType.Menacing, TalentType.WarriorBorn } },
-            { 2, new List<TalentType> { TalentType.CombatReflexes, TalentType.Criminal, TalentType.Reversal, TalentType.StrikeToStun } },
-            { 3, new List<TalentType> { TalentType.CarefulStrike, TalentType.Disarm, TalentType.Marksman, TalentType.Relentless } },
-            { 4, new List<TalentType> { TalentType.AccurateShot, TalentType.Ambidextrous, TalentType.FuriousAssault, TalentType.StrikeToInjure } }
+            { 1, new List<TalentTypes> { TalentTypes.InFighter, TalentTypes.DirtyFighting, TalentTypes.Menacing, TalentTypes.WarriorBorn } },
+            { 2, new List<TalentTypes> { TalentTypes.CombatReflexes, TalentTypes.Criminal, TalentTypes.Reversal, TalentTypes.StrikeToStun } },
+            { 3, new List<TalentTypes> { TalentTypes.CarefulStrike, TalentTypes.Disarm, TalentTypes.Marksman, TalentTypes.Relentless } },
+            { 4, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.Ambidextrous, TalentTypes.FuriousAssault, TalentTypes.StrikeToInjure } }
         };
     }
 }

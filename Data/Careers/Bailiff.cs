@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Gossip, SkillType.Haggle, SkillType.Intimidate, SkillType.MeleeBasic, SkillType.Perception } },
-            { 2, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Evaluate, SkillType.Intuition, SkillType.Leadership, SkillType.LoreLocal } },
-            { 3, new List<SkillType> { SkillType.AnimalCare, SkillType.LoreHeraldry, SkillType.Navigation, SkillType.RideHorse } },
-            { 4, new List<SkillType> { SkillType.LanguageClassical, SkillType.LoreLaw } }
+            { 1, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intimidate, SkillTypes.MeleeBasic, SkillTypes.Perception } },
+            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Evaluate, SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.LoreLocal } },
+            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.LoreHeraldry, SkillTypes.Navigation, SkillTypes.RideHorse } },
+            { 4, new List<SkillTypes> { SkillTypes.LanguageClassical, SkillTypes.LoreLaw } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Embezzle, TalentType.Numismatics, TalentType.StrongBack, TalentType.Tenacious } },
-            { 2, new List<TalentType> { TalentType.BreakAndEnter, TalentType.Criminal, TalentType.PublicSpeaker, TalentType.StrikeToStun } },
-            { 3, new List<TalentType> { TalentType.Kingpin, TalentType.Menacing, TalentType.NoseForTrouble, TalentType.ReadWrite } },
-            { 4, new List<TalentType> { TalentType.CommandingPresence, TalentType.IronWill, TalentType.Savvy, TalentType.Schemer } }
+            { 1, new List<TalentTypes> { TalentTypes.Embezzle, TalentTypes.Numismatics, TalentTypes.StrongBack, TalentTypes.Tenacious } },
+            { 2, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.Criminal, TalentTypes.PublicSpeaker, TalentTypes.StrikeToStun } },
+            { 3, new List<TalentTypes> { TalentTypes.Kingpin, TalentTypes.Menacing, TalentTypes.NoseForTrouble, TalentTypes.ReadWrite } },
+            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.IronWill, TalentTypes.Savvy, TalentTypes.Schemer } }
         };
     }
 }

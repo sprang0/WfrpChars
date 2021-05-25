@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace WfrpChars.Data
+namespace WfrpChars.Data.Types
 {
-    enum SkillType
+    enum SkillTypes
     {
         [Description("Animal Care")]
         AnimalCare,
@@ -30,6 +30,8 @@ namespace WfrpChars.Data
         [Description("Charm Animal")]
         CharmAnimal,
         Channelling,
+        [Description("Channelling (Any Colour)")]
+        ChannellingAnyColour,
         [Description("Channelling (Azyr)")]
         ChannellingAzyr,
         Climb,
@@ -103,7 +105,11 @@ namespace WfrpChars.Data
         LoreChaos,
         [Description("Lore (Chemistry)")]
         LoreChemistry,
-        [Description("Lore (Draongs)")]
+        [Description("Lore (Dark Magic)")]
+        LoreDarkMagic,
+        [Description("Lore (Daemonology)")]
+        LoreDaemonology,
+        [Description("Lore (Dragons)")]
         LoreDragons,
         [Description("Lore (Empire)")]
         LoreEmpire,
@@ -159,10 +165,14 @@ namespace WfrpChars.Data
         LoreTaxes,
         [Description("Lore (Theology)")]
         LoreTheology,
+        [Description("Lore (Torture)")]
+        LoreTorture,
         [Description("Lore (Trolls)")]
         LoreTrolls,
         [Description("Lore (Warfare)")]
         LoreWarfare,
+        [Description("Lore (Witches)")]
+        LoreWitches,
         [Description("Lore (Wrecks)")]
         LoreWrecks,
         

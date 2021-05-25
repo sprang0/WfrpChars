@@ -5,7 +5,7 @@
 @* Species *@
 <div class="p-1">
     <select class="custom-select col-2" id="species" @bind="species">
-        @foreach (var speciesType in Enum.GetValues(typeof(SpeciesType)))
+        @foreach (var speciesType in Enum.GetValues(typeof(SpeciesTypes)))
         {
             <option value="@speciesType">@speciesType.Description()</option>
         }
@@ -15,7 +15,7 @@
 @* Career and Level *@
 <div class="p-1">
     <select class="custom-select col-3" id="career" @bind="career">
-        @foreach (var careerType in Enum.GetValues(typeof(CareerType)))
+        @foreach (var careerType in Enum.GetValues(typeof(CareerTypes)))
         {
             <option value="@careerType">@careerType.Description()</option>
         }
@@ -79,8 +79,8 @@
 @code
 {
     Character character = new Character(new Human());
-    SpeciesType species = SpeciesType.Human;
-    CareerType career = CareerType.Advisor;
+    SpeciesTypes species = SpeciesTypes.Human;
+    CareerTypes career = CareerTypes.Advisor;
     int level = 1;
 
     void setLevel(int x)

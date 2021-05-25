@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Climb, SkillType.Drive, SkillType.Dodge, SkillType.Endurance, SkillType.Intuition, SkillType.Perception, SkillType.StealthAny } },
-            { 2, new List<SkillType> { SkillType.AnimalCare, SkillType.ConsumeAlcohol, SkillType.Evaluate, SkillType.Gamble, SkillType.Gossip, SkillType.Haggle } },
-            { 3, new List<SkillType> { SkillType.Charm, SkillType.Cool, SkillType.Intimidate, SkillType.LoreLocal } },
-            { 4, new List<SkillType> { SkillType.Leadership, SkillType.MeleeBasic } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.Drive, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.StealthAny } },
+            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.ConsumeAlcohol, SkillTypes.Evaluate, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle } },
+            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Intimidate, SkillTypes.LoreLocal } },
+            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.MeleeBasic } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.BeneathNotice, TalentType.StrongBack, TalentType.StrongMinded, TalentType.Sturdy } },
-            { 2, new List<TalentType> { TalentType.EtiquetteServants, TalentType.Shadow, TalentType.Tenacious, TalentType.WellPrepared } },
-            { 3, new List<TalentType> { TalentType.Embezzle, TalentType.ResistancePoison, TalentType.Suave, TalentType.Supportive } },
-            { 4, new List<TalentType> { TalentType.EtiquetteAny, TalentType.Numismatics, TalentType.ReadWrite, TalentType.Savvy } }
+            { 1, new List<TalentTypes> { TalentTypes.BeneathNotice, TalentTypes.StrongBack, TalentTypes.StrongMinded, TalentTypes.Sturdy } },
+            { 2, new List<TalentTypes> { TalentTypes.EtiquetteServants, TalentTypes.Shadow, TalentTypes.Tenacious, TalentTypes.WellPrepared } },
+            { 3, new List<TalentTypes> { TalentTypes.Embezzle, TalentTypes.ResistancePoison, TalentTypes.Suave, TalentTypes.Supportive } },
+            { 4, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.Numismatics, TalentTypes.ReadWrite, TalentTypes.Savvy } }
         };
     }
 }

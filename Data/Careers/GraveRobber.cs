@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Willpower => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Climb, SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Gossip, SkillType.Intuition, SkillType.Perception, SkillType.StealthAny } },
-            { 2, new List<SkillType> { SkillType.Bribery, SkillType.Drive, SkillType.Evaluate, SkillType.Haggle, SkillType.LoreMedicine, SkillType.MeleeBasic } },
-            { 3, new List<SkillType> { SkillType.LoreHistory, SkillType.PickLock, SkillType.Research, SkillType.SetTrap } },
-            { 4, new List<SkillType> { SkillType.Navigation, SkillType.TradeEngineer } }
+            { 1, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.StealthAny } },
+            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Drive, SkillTypes.Evaluate, SkillTypes.Haggle, SkillTypes.LoreMedicine, SkillTypes.MeleeBasic } },
+            { 3, new List<SkillTypes> { SkillTypes.LoreHistory, SkillTypes.PickLock, SkillTypes.Research, SkillTypes.SetTrap } },
+            { 4, new List<SkillTypes> { SkillTypes.Navigation, SkillTypes.TradeEngineer } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.AlleyCat, TalentType.Criminal, TalentType.Flee, TalentType.StrongBack } },
-            { 2, new List<TalentType> { TalentType.BreakAndEnter, TalentType.NightVision, TalentType.ResistanceDisease, TalentType.VeryStrong } },
-            { 3, new List<TalentType> { TalentType.ReadWrite, TalentType.StrikeMightyBlow, TalentType.Tenacious, TalentType.TunnelRat } },
-            { 4, new List<TalentType> { TalentType.FearlessUndead, TalentType.SixthSense, TalentType.StrongMinded, TalentType.Trapper } }
+            { 1, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.Criminal, TalentTypes.Flee, TalentTypes.StrongBack } },
+            { 2, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.NightVision, TalentTypes.ResistanceDisease, TalentTypes.VeryStrong } },
+            { 3, new List<TalentTypes> { TalentTypes.ReadWrite, TalentTypes.StrikeMightyBlow, TalentTypes.Tenacious, TalentTypes.TunnelRat } },
+            { 4, new List<TalentTypes> { TalentTypes.FearlessUndead, TalentTypes.SixthSense, TalentTypes.StrongMinded, TalentTypes.Trapper } }
         };
     }
 }

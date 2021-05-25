@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
     class Knight : CareerBase
     {
-        public Knight(int level) : base(level)        {        }
+        public Knight(int level) : base(level) { }
 
         public override string Name => "Knight";
 
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.AnimalCare, SkillType.CharmAnimal, SkillType.Heal, SkillType.LoreHeraldry, SkillType.MeleeCavalry, SkillType.RideHorse, SkillType.TradeFarrier } },
-            { 2, new List<SkillType> { SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Intimidate, SkillType.LanguageBattle, SkillType.MeleeAny } },
-            { 3, new List<SkillType> { SkillType.Charm, SkillType.ConsumeAlcohol, SkillType.Leadership, SkillType.LoreWarfare } },
-            { 4, new List<SkillType> { SkillType.LoreAny, SkillType.SecretSignsKnightlyOrder } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.AnimalCare, SkillTypes.CharmAnimal, SkillTypes.Heal, SkillTypes.LoreHeraldry, SkillTypes.MeleeCavalry, SkillTypes.RideHorse, SkillTypes.TradeFarrier } },
+            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intimidate, SkillTypes.LanguageBattle, SkillTypes.MeleeAny } },
+            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Leadership, SkillTypes.LoreWarfare } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreAny, SkillTypes.SecretSignsKnightlyOrder } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.EtiquetteAny, TalentType.Roughrider, TalentType.Sturdy, TalentType.WarriorBorn } },
-            { 2, new List<TalentType> { TalentType.Menacing, TalentType.SeasonedTraveler, TalentType.Shieldsman, TalentType.StrikeMightyBlow } },
-            { 3, new List<TalentType> { TalentType.FearlessAny, TalentType.StoutHearted, TalentType.Unshakeable, TalentType.Warleader } },
-            { 4, new List<TalentType> { TalentType.Disarm, TalentType.Inspiring, TalentType.IronWill, TalentType.StrikeToInjure } }
+            { 1, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.Roughrider, TalentTypes.Sturdy, TalentTypes.WarriorBorn } },
+            { 2, new List<TalentTypes> { TalentTypes.Menacing, TalentTypes.SeasonedTraveler, TalentTypes.Shieldsman, TalentTypes.StrikeMightyBlow } },
+            { 3, new List<TalentTypes> { TalentTypes.FearlessAny, TalentTypes.StoutHearted, TalentTypes.Unshakeable, TalentTypes.Warleader } },
+            { 4, new List<TalentTypes> { TalentTypes.Disarm, TalentTypes.Inspiring, TalentTypes.IronWill, TalentTypes.StrikeToInjure } }
         };
     }
 }

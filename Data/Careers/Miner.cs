@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Cool, SkillType.Endurance, SkillType.Intuition, SkillType.LoreLocal, SkillType.MeleeTwoHanded, SkillType.OutdoorSurvival, SkillType.Perception, SkillType.Swim } },
-            { 2, new List<SkillType> { SkillType.Climb, SkillType.ConsumeAlcohol, SkillType.Evaluate, SkillType.MeleeBasic, SkillType.SecretSignsMiner, SkillType.TradeExplosives } },
-            { 3, new List<SkillType> { SkillType.Gossip, SkillType.LoreGeology, SkillType.StealthUnderground, SkillType.TradeEngineer } },
-            { 4, new List<SkillType> { SkillType.Charm, SkillType.Leadership } }
+            { 1, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.LoreLocal, SkillTypes.MeleeTwoHanded, SkillTypes.OutdoorSurvival, SkillTypes.Perception, SkillTypes.Swim } },
+            { 2, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Evaluate, SkillTypes.MeleeBasic, SkillTypes.SecretSignsMiner, SkillTypes.TradeExplosives } },
+            { 3, new List<SkillTypes> { SkillTypes.Gossip, SkillTypes.LoreGeology, SkillTypes.StealthUnderground, SkillTypes.TradeEngineer } },
+            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Rover, TalentType.StriderRocky, TalentType.Sturdy, TalentType.Tenacious } },
-            { 2, new List<TalentType> { TalentType.NightVision, TalentType.StrikeMightyBlow, TalentType.StrongBack, TalentType.VeryStrong } },
-            { 3, new List<TalentType> { TalentType.CarefulStrike, TalentType.CraftsmanExplosives, TalentType.Tinker, TalentType.TunnelRat } },
-            { 4, new List<TalentType> { TalentType.Argumentative, TalentType.StrongMinded, TalentType.Embezzle, TalentType.ReadWrite } }
+            { 1, new List<TalentTypes> { TalentTypes.Rover, TalentTypes.StriderRocky, TalentTypes.Sturdy, TalentTypes.Tenacious } },
+            { 2, new List<TalentTypes> { TalentTypes.NightVision, TalentTypes.StrikeMightyBlow, TalentTypes.StrongBack, TalentTypes.VeryStrong } },
+            { 3, new List<TalentTypes> { TalentTypes.CarefulStrike, TalentTypes.CraftsmanExplosives, TalentTypes.Tinker, TalentTypes.TunnelRat } },
+            { 4, new List<TalentTypes> { TalentTypes.Argumentative, TalentTypes.StrongMinded, TalentTypes.Embezzle, TalentTypes.ReadWrite } }
         };
     }
 }

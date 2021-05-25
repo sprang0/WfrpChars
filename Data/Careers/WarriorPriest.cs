@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Heal, SkillType.Leadership, SkillType.LoreTheology, SkillType.MeleeAny, SkillType.Pray } },
-            { 2, new List<SkillType> { SkillType.Charm, SkillType.EntertainSpeeches, SkillType.Intimidate, SkillType.LanguageBattle, SkillType.MeleeAny, SkillType.RangedAny } },
-            { 3, new List<SkillType> { SkillType.AnimalCare, SkillType.Intuition, SkillType.Perception, SkillType.RideHorse } },
-            { 4, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.LoreWarfare } }
+            { 1, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Heal, SkillTypes.Leadership, SkillTypes.LoreTheology, SkillTypes.MeleeAny, SkillTypes.Pray } },
+            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.EntertainSpeeches, SkillTypes.Intimidate, SkillTypes.LanguageBattle, SkillTypes.MeleeAny, SkillTypes.RangedAny } },
+            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.RideHorse } },
+            { 4, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.LoreWarfare } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.BlessAny, TalentType.EtiquetteCultists, TalentType.ReadWrite, TalentType.StrongMinded } },
-            { 2, new List<TalentType> { TalentType.DualWielder, TalentType.Inspiring, TalentType.InvokeAny, TalentType.SeasonedTraveler } },
-            { 3, new List<TalentType> { TalentType.CombatAware, TalentType.HolyVisions, TalentType.PureSoul, TalentType.StoutHearted } },
-            { 4, new List<TalentType> { TalentType.FearlessAny, TalentType.FuriousAssault, TalentType.HolyHatred, TalentType.Warleader } }
+            { 1, new List<TalentTypes> { TalentTypes.BlessAny, TalentTypes.EtiquetteCultists, TalentTypes.ReadWrite, TalentTypes.StrongMinded } },
+            { 2, new List<TalentTypes> { TalentTypes.DualWielder, TalentTypes.Inspiring, TalentTypes.InvokeAny, TalentTypes.SeasonedTraveler } },
+            { 3, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.HolyVisions, TalentTypes.PureSoul, TalentTypes.StoutHearted } },
+            { 4, new List<TalentTypes> { TalentTypes.FearlessAny, TalentTypes.FuriousAssault, TalentTypes.HolyHatred, TalentTypes.Warleader } }
         };
     }
 }

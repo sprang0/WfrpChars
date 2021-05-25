@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using WfrpChars.Data.Species;
-using WfrpChars.Data.Careers;
 using System.Linq;
+using WfrpChars.Data.Careers;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data
 {
@@ -11,8 +12,8 @@ namespace WfrpChars.Data
         {
             Species = species;
             Careers = new List<CareerBase>();
-            Skills = new List<SkillType>();
-            Talents = new List<TalentType>();
+            Skills = new List<SkillTypes>();
+            Talents = new List<TalentTypes>();
             Characteristics = new Characteristics();
         }
 
@@ -99,11 +100,11 @@ namespace WfrpChars.Data
 
         public List<CareerBase> Careers { get; set; }
 
-        public List<SkillType> Skills { get; set; }
+        public List<SkillTypes> Skills { get; set; }
 
         public string SkillList => string.Join(", ", Skills.Select(x => x.Description()).OrderBy(x => x));
 
-        public List<TalentType> Talents { get; set; }
+        public List<TalentTypes> Talents { get; set; }
 
         public string TalentList => string.Join(", ", Talents.Select(x => x.Description()).OrderBy(x => x));
 

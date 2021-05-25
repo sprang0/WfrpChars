@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Climb, SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Intuition, SkillType.Perception, SkillType.StealthUrban } },
-            { 2, new List<SkillType> { SkillType.Evaluate, SkillType.Gossip, SkillType.LoreLocal, SkillType.PickLock, SkillType.SecretSignsThief, SkillType.SleightOfHand } },
-            { 3, new List<SkillType> { SkillType.Bribery, SkillType.Gamble, SkillType.Intimidate, SkillType.RangedCrossbow } },
-            { 4, new List<SkillType> { SkillType.Charm, SkillType.SetTrap } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.StealthUrban } },
+            { 2, new List<SkillTypes> { SkillTypes.Evaluate, SkillTypes.Gossip, SkillTypes.LoreLocal, SkillTypes.PickLock, SkillTypes.SecretSignsThief, SkillTypes.SleightOfHand } },
+            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Gamble, SkillTypes.Intimidate, SkillTypes.RangedCrossbow } },
+            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.SetTrap } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.AlleyCat, TalentType.Criminal, TalentType.Flee, TalentType.StrikeToStun } },
-            { 2, new List<TalentType> { TalentType.BreakAndEnter, TalentType.EtiquetteCriminals, TalentType.FastHands, TalentType.Shadow } },
-            { 3, new List<TalentType> { TalentType.NightVision, TalentType.NimbleFingered, TalentType.StepAside, TalentType.Trapper } },
-            { 4, new List<TalentType> { TalentType.Catfall, TalentType.ScaleSheerSurface, TalentType.StrongLegs, TalentType.Wealthy } }
+            { 1, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.Criminal, TalentTypes.Flee, TalentTypes.StrikeToStun } },
+            { 2, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.EtiquetteCriminals, TalentTypes.FastHands, TalentTypes.Shadow } },
+            { 3, new List<TalentTypes> { TalentTypes.NightVision, TalentTypes.NimbleFingered, TalentTypes.StepAside, TalentTypes.Trapper } },
+            { 4, new List<TalentTypes> { TalentTypes.Catfall, TalentTypes.ScaleSheerSurface, TalentTypes.StrongLegs, TalentTypes.Wealthy } }
         };
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Cool, SkillType.Gamble, SkillType.Gossip, SkillType.Haggle, SkillType.Perception, SkillType.StealthAny } },
-            { 2, new List<SkillType> { SkillType.Climb, SkillType.EntertainActing, SkillType.Intuition, SkillType.MeleeBasic, SkillType.SecretSignsAny, SkillType.SleightOfHand } },
-            { 3, new List<SkillType> { SkillType.AnimalCare, SkillType.AnimalTrainingPigeon, SkillType.LanguageAny, SkillType.Leadership } },
-            { 4, new List<SkillType> { SkillType.LoreAny, SkillType.Research } }
+            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Perception, SkillTypes.StealthAny } },
+            { 2, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.EntertainActing, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.SecretSignsAny, SkillTypes.SleightOfHand } },
+            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.AnimalTrainingPigeon, SkillTypes.LanguageAny, SkillTypes.Leadership } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreAny, SkillTypes.Research } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Blather, TalentType.Carouser, TalentType.Gregarious, TalentType.Shadow } },
-            { 2, new List<TalentType> { TalentType.EtiquetteAny, TalentType.LipReading, TalentType.ReadWrite, TalentType.SecretIdentity } },
-            { 3, new List<TalentType> { TalentType.Attractive, TalentType.CatTongued, TalentType.MasterOfDisguise, TalentType.Mimic } },
-            { 4, new List<TalentType> { TalentType.Briber, TalentType.Schemer, TalentType.Suave, TalentType.TowerOfMemories } }
+            { 1, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Carouser, TalentTypes.Gregarious, TalentTypes.Shadow } },
+            { 2, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.LipReading, TalentTypes.ReadWrite, TalentTypes.SecretIdentity } },
+            { 3, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.CatTongued, TalentTypes.MasterOfDisguise, TalentTypes.Mimic } },
+            { 4, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.Schemer, TalentTypes.Suave, TalentTypes.TowerOfMemories } }
         };
     }
 }

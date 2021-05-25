@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Charm, SkillType.EntertainFortuneTelling, SkillType.Dodge, SkillType.Gossip, SkillType.Haggle, SkillType.Intuition, SkillType.Perception, SkillType.SleightOfHand } },
-            { 2, new List<SkillType> { SkillType.Bribery, SkillType.Cool, SkillType.EntertainProphecy, SkillType.Evaluate, SkillType.Intimidate, SkillType.LoreAstrology } },
-            { 3, new List<SkillType> { SkillType.ArtWriting, SkillType.CharmAnimal, SkillType.EntertainStorytelling, SkillType.LanguageAny } },
-            { 4, new List<SkillType> { SkillType.LoreProphecy, SkillType.ChannellingAzyr } }
+            { 1, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.EntertainFortuneTelling, SkillTypes.Dodge, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.SleightOfHand } },
+            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Cool, SkillTypes.EntertainProphecy, SkillTypes.Evaluate, SkillTypes.Intimidate, SkillTypes.LoreAstrology } },
+            { 3, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.CharmAnimal, SkillTypes.EntertainStorytelling, SkillTypes.LanguageAny } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreProphecy, SkillTypes.ChannellingAzyr } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Attractive, TalentType.Luck, TalentType.SecondSight, TalentType.Suave } },
-            { 2, new List<TalentType> { TalentType.DetectArtefact, TalentType.HolyVisions, TalentType.SixthSense, TalentType.WellPrepared } },
-            { 3, new List<TalentType> { TalentType.NoseForTrouble, TalentType.PettyMagic, TalentType.ReadWrite, TalentType.Witch } },
-            { 4, new List<TalentType> { TalentType.ArcaneMagicCelestial, TalentType.MagicalSense, TalentType.Menacing, TalentType.StrongMinded } }
+            { 1, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.Luck, TalentTypes.SecondSight, TalentTypes.Suave } },
+            { 2, new List<TalentTypes> { TalentTypes.DetectArtefact, TalentTypes.HolyVisions, TalentTypes.SixthSense, TalentTypes.WellPrepared } },
+            { 3, new List<TalentTypes> { TalentTypes.NoseForTrouble, TalentTypes.PettyMagic, TalentTypes.ReadWrite, TalentTypes.Witch } },
+            { 4, new List<TalentTypes> { TalentTypes.ArcaneMagicCelestial, TalentTypes.MagicalSense, TalentTypes.Menacing, TalentTypes.StrongMinded } }
         };
     }
 }

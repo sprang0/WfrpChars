@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Initiative => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.ConsumeAlcohol, SkillType.Cool, SkillType.Endurance, SkillType.Gamble, SkillType.Intimidate, SkillType.MeleeBasic, SkillType.OutdoorSurvival } },
-            { 2, new List<SkillType> { SkillType.Dodge, SkillType.Heal, SkillType.LoreLocal, SkillType.Perception, SkillType.RangedBow, SkillType.StealthRural } },
-            { 3, new List<SkillType> { SkillType.Gossip, SkillType.Intuition, SkillType.Leadership, SkillType.RideHorse } },
-            { 4, new List<SkillType> { SkillType.Charm, SkillType.LoreEmpire } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.Gamble, SkillTypes.Intimidate, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival } },
+            { 2, new List<SkillTypes> { SkillTypes.Dodge, SkillTypes.Heal, SkillTypes.LoreLocal, SkillTypes.Perception, SkillTypes.RangedBow, SkillTypes.StealthRural } },
+            { 3, new List<SkillTypes> { SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.RideHorse } },
+            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.LoreEmpire } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.CombatAware, TalentType.Criminal, TalentType.Rover, TalentType.Flee } },
-            { 2, new List<TalentType> { TalentType.DirtyFighting, TalentType.Marksman, TalentType.StrikeToStun, TalentType.Trapper } },
-            { 3, new List<TalentType> { TalentType.RapidReload, TalentType.Roughrider, TalentType.Menacing, TalentType.VeryResilient } },
-            { 4, new List<TalentType> { TalentType.DeadeyeShot, TalentType.FearlessRoadWardens, TalentType.IronWill, TalentType.Robust } }
+            { 1, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.Criminal, TalentTypes.Rover, TalentTypes.Flee } },
+            { 2, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.Marksman, TalentTypes.StrikeToStun, TalentTypes.Trapper } },
+            { 3, new List<TalentTypes> { TalentTypes.RapidReload, TalentTypes.Roughrider, TalentTypes.Menacing, TalentTypes.VeryResilient } },
+            { 4, new List<TalentTypes> { TalentTypes.DeadeyeShot, TalentTypes.FearlessRoadWardens, TalentTypes.IronWill, TalentTypes.Robust } }
         };
     }
 }

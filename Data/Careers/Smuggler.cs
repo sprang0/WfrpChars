@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Bribery, SkillType.Cool, SkillType.ConsumeAlcohol, SkillType.Row, SkillType.Sail, SkillType.StealthRuralOrUrban, SkillType.Swim } },
-            { 2, new List<SkillType> { SkillType.Haggle, SkillType.Gossip, SkillType.LoreLocal, SkillType.MeleeBasic, SkillType.Perception, SkillType.SecretSignsSmuggler } },
-            { 3, new List<SkillType> { SkillType.Evaluate, SkillType.Intimidate, SkillType.Intuition, SkillType.LoreRiverways } },
-            { 4, new List<SkillType> { SkillType.LanguageAny, SkillType.Leadership } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Bribery, SkillTypes.Cool, SkillTypes.ConsumeAlcohol, SkillTypes.Row, SkillTypes.Sail, SkillTypes.StealthRuralOrUrban, SkillTypes.Swim } },
+            { 2, new List<SkillTypes> { SkillTypes.Haggle, SkillTypes.Gossip, SkillTypes.LoreLocal, SkillTypes.MeleeBasic, SkillTypes.Perception, SkillTypes.SecretSignsSmuggler } },
+            { 3, new List<SkillTypes> { SkillTypes.Evaluate, SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.LoreRiverways } },
+            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Criminal, TalentType.Fisherman, TalentType.StriderMarshes, TalentType.StrongBack } },
-            { 2, new List<TalentType> { TalentType.Dealmaker, TalentType.EtiquetteCriminals, TalentType.Waterman, TalentType.VeryStrong } },
-            { 3, new List<TalentType> { TalentType.Briber, TalentType.FearlessRiverwardens, TalentType.Pilot, TalentType.StrongSwimmer } },
-            { 4, new List<TalentType> { TalentType.Kingpin, TalentType.Savvy, TalentType.StriderCoastal, TalentType.SeaLegs } }
+            { 1, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.Fisherman, TalentTypes.StriderMarshes, TalentTypes.StrongBack } },
+            { 2, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.EtiquetteCriminals, TalentTypes.Waterman, TalentTypes.VeryStrong } },
+            { 3, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.FearlessRiverwardens, TalentTypes.Pilot, TalentTypes.StrongSwimmer } },
+            { 4, new List<TalentTypes> { TalentTypes.Kingpin, TalentTypes.Savvy, TalentTypes.StriderCoastal, TalentTypes.SeaLegs } }
         };
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Climb, SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.LanguageBattle, SkillType.MeleeBasic, SkillType.PlayDrumOrFife } },
-            { 2, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Gamble, SkillType.Gossip, SkillType.MeleeAny, SkillType.RangedAny, SkillType.OutdoorSurvival } },
-            { 3, new List<SkillType> { SkillType.Heal, SkillType.Intuition, SkillType.Leadership, SkillType.Perception } },
-            { 4, new List<SkillType> { SkillType.LoreWarfare, SkillType.Navigation } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.LanguageBattle, SkillTypes.MeleeBasic, SkillTypes.PlayDrumOrFife } },
+            { 2, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.MeleeAny, SkillTypes.RangedAny, SkillTypes.OutdoorSurvival } },
+            { 3, new List<SkillTypes> { SkillTypes.Heal, SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.Perception } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreWarfare, SkillTypes.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Diceman, TalentType.Marksman, TalentType.StrongBack, TalentType.WarriorBorn } },
-            { 2, new List<TalentType> { TalentType.Drilled, TalentType.EtiquetteSoldiers, TalentType.RapidReload, TalentType.Shieldsman } },
-            { 3, new List<TalentType> { TalentType.CombatAware, TalentType.EnclosedFighter, TalentType.Unshakeable, TalentType.Warleader } },
-            { 4, new List<TalentType> { TalentType.Inspiring, TalentType.PublicSpeaker, TalentType.SeasonedTraveler, TalentType.StoutHearted } }
+            { 1, new List<TalentTypes> { TalentTypes.Diceman, TalentTypes.Marksman, TalentTypes.StrongBack, TalentTypes.WarriorBorn } },
+            { 2, new List<TalentTypes> { TalentTypes.Drilled, TalentTypes.EtiquetteSoldiers, TalentTypes.RapidReload, TalentTypes.Shieldsman } },
+            { 3, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.EnclosedFighter, TalentTypes.Unshakeable, TalentTypes.Warleader } },
+            { 4, new List<TalentTypes> { TalentTypes.Inspiring, TalentTypes.PublicSpeaker, TalentTypes.SeasonedTraveler, TalentTypes.StoutHearted } }
         };
     }
 }

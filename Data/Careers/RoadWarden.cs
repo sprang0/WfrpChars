@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Bribery, SkillType.ConsumeAlcohol, SkillType.Gamble, SkillType.Gossip, SkillType.Haggle, SkillType.MeleeBasic, SkillType.Perception, SkillType.RangedCrossbow } },
-            { 2, new List<SkillType> { SkillType.AnimalCare, SkillType.Endurance, SkillType.Intimidate, SkillType.Intuition, SkillType.OutdoorSurvival, SkillType.RideHorse } },
-            { 3, new List<SkillType> { SkillType.Athletics, SkillType.Charm, SkillType.Leadership, SkillType.RangedBlackpowder } },
-            { 4, new List<SkillType> { SkillType.LoreEmpire, SkillType.Navigation } }
+            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.ConsumeAlcohol, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.MeleeBasic, SkillTypes.Perception, SkillTypes.RangedCrossbow } },
+            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Endurance, SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.OutdoorSurvival, SkillTypes.RideHorse } },
+            { 3, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Charm, SkillTypes.Leadership, SkillTypes.RangedBlackpowder } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreEmpire, SkillTypes.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Coolheaded, TalentType.Embezzle, TalentType.Marksman, TalentType.Numismatics } },
-            { 2, new List<TalentType> { TalentType.CrackTheWhip, TalentType.Criminal, TalentType.Roughrider, TalentType.SeasonedTraveler } },
-            { 3, new List<TalentType> { TalentType.EtiquetteSoldiers, TalentType.FearlessOutlaws, TalentType.HatredAny, TalentType.NoseForTrouble } },
-            { 4, new List<TalentType> { TalentType.CombatAware, TalentType.CommandingPresence, TalentType.Kingpin, TalentType.PublicSpeaker } }
+            { 1, new List<TalentTypes> { TalentTypes.Coolheaded, TalentTypes.Embezzle, TalentTypes.Marksman, TalentTypes.Numismatics } },
+            { 2, new List<TalentTypes> { TalentTypes.CrackTheWhip, TalentTypes.Criminal, TalentTypes.Roughrider, TalentTypes.SeasonedTraveler } },
+            { 3, new List<TalentTypes> { TalentTypes.EtiquetteSoldiers, TalentTypes.FearlessOutlaws, TalentTypes.HatredAny, TalentTypes.NoseForTrouble } },
+            { 4, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.CommandingPresence, TalentTypes.Kingpin, TalentTypes.PublicSpeaker } }
         };
     }
 }

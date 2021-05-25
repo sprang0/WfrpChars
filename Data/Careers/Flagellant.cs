@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Dodge, SkillType.Endurance, SkillType.Heal, SkillType.Intimidate, SkillType.Intuition, SkillType.LoreSigmar, SkillType.MeleeFlail, SkillType.OutdoorSurvival } },
-            { 2, new List<SkillType> { SkillType.ArtIcons, SkillType.Athletics, SkillType.Cool, SkillType.LanguageClassical, SkillType.LoreEmpire, SkillType.RangedSling } },
-            { 3, new List<SkillType> { SkillType.Charm, SkillType.LanguageAny, SkillType.LoreTheology, SkillType.Perception } },
-            { 4, new List<SkillType> { SkillType.EntertainSpeeches, SkillType.Leadership } }
+            { 1, new List<SkillTypes> { SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Heal, SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.LoreSigmar, SkillTypes.MeleeFlail, SkillTypes.OutdoorSurvival } },
+            { 2, new List<SkillTypes> { SkillTypes.ArtIcons, SkillTypes.Athletics, SkillTypes.Cool, SkillTypes.LanguageClassical, SkillTypes.LoreEmpire, SkillTypes.RangedSling } },
+            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.LanguageAny, SkillTypes.LoreTheology, SkillTypes.Perception } },
+            { 4, new List<SkillTypes> { SkillTypes.EntertainSpeeches, SkillTypes.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.BerserkCharge, TalentType.Frenzy, TalentType.ReadWrite, TalentType.StoneSoup } },
-            { 2, new List<TalentType> { TalentType.Hardy, TalentType.HatredHeretics, TalentType.Flagellant, TalentType.Implacable } },
-            { 3, new List<TalentType> { TalentType.FieldDressing, TalentType.FuriousAssault, TalentType.Menacing, TalentType.SeasonedTraveler } },
-            { 4, new List<TalentType> { TalentType.BattleRage, TalentType.FearlessHeretics, TalentType.Frightening, TalentType.ImpassionedZeal } }
+            { 1, new List<TalentTypes> { TalentTypes.BerserkCharge, TalentTypes.Frenzy, TalentTypes.ReadWrite, TalentTypes.StoneSoup } },
+            { 2, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.HatredHeretics, TalentTypes.Flagellant, TalentTypes.Implacable } },
+            { 3, new List<TalentTypes> { TalentTypes.FieldDressing, TalentTypes.FuriousAssault, TalentTypes.Menacing, TalentTypes.SeasonedTraveler } },
+            { 4, new List<TalentTypes> { TalentTypes.BattleRage, TalentTypes.FearlessHeretics, TalentTypes.Frightening, TalentTypes.ImpassionedZeal } }
         };
     }
 }

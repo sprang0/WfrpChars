@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace WfrpChars.Data
+namespace WfrpChars.Data.Types
 {
-    enum TalentType
+    enum TalentTypes
     {
         [Description("Accurate Shot")]
         AccurateShot,
@@ -21,8 +21,12 @@ namespace WfrpChars.Data
         Ambidextrous,
         [Description("Animal Affinity")]
         AnimalAffinity,
+        [Description("Arcane Magic (Any Arcane Lore)")]
+        ArcaneMagicAnyArcaneLore,
         [Description("Arcane Magic (Celestial)")]
         ArcaneMagicCelestial,
+        [Description("Arcane Magic (Witchery)")]
+        ArcaneMagicWitchery,
         Argumentative,
         Artistic,
         Attractive,
@@ -147,6 +151,8 @@ namespace WfrpChars.Data
         FearlessUndead,
         [Description("Fearless (Watchmen)")]
         FearlessWatchmen,
+        [Description("Fearless (Witches)")]
+        FearlessWitches,
         [Description("Fearless (Wreckers)")]
         FearlessWreckers,
         Feint,
@@ -186,6 +192,8 @@ namespace WfrpChars.Data
         [Description("In-fighter")]
         InFighter,
         Inspiring,
+        [Description("Instinctive Diction")]
+        InstinctiveDiction,
         [Description("Invoke (Any)")]
         InvokeAny,
         [Description("Iron Jaw")]
@@ -272,6 +280,7 @@ namespace WfrpChars.Data
         ResistanceDisease,
         [Description("Resistance (Poison)")]
         ResistancePoison,
+        Resolute,
         Reversal,
         Riposte,
         [Description("River Guide")]
@@ -377,6 +386,8 @@ namespace WfrpChars.Data
         VeryStrong,
 
         Warleader,
+        [Description("War Wizard")]
+        WarWizard,
         [Description("Warrior Born")]
         WarriorBorn,
         Waterman,

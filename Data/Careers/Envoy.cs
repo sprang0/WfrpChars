@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Charm, SkillType.Drive, SkillType.Dodge, SkillType.Endurance, SkillType.Intuition, SkillType.RideHorse, SkillType.Row } },
-            { 2, new List<SkillType> { SkillType.ArtWriting, SkillType.Bribery, SkillType.Cool, SkillType.Gossip, SkillType.Haggle, SkillType.LorePolitics } },
-            { 3, new List<SkillType> { SkillType.Intimidate, SkillType.LanguageAny, SkillType.Leadership, SkillType.Navigation } },
-            { 4, new List<SkillType> { SkillType.LanguageAny, SkillType.LoreAny } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Charm, SkillTypes.Drive, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.RideHorse, SkillTypes.Row } },
+            { 2, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.Bribery, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.LorePolitics } },
+            { 3, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.LanguageAny, SkillTypes.Leadership, SkillTypes.Navigation } },
+            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Blather, TalentType.EtiquetteNobles, TalentType.ReadWrite, TalentType.Suave } },
-            { 2, new List<TalentType> { TalentType.Attractive, TalentType.CatTongued, TalentType.EtiquetteAny, TalentType.SeasonedTraveler } },
-            { 3, new List<TalentType> { TalentType.Carouser, TalentType.Dealmaker, TalentType.Gregarious, TalentType.Schemer } },
-            { 4, new List<TalentType> { TalentType.Briber, TalentType.CommandingPresence, TalentType.NobleBlood, TalentType.Savvy } }
+            { 1, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.EtiquetteNobles, TalentTypes.ReadWrite, TalentTypes.Suave } },
+            { 2, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.CatTongued, TalentTypes.EtiquetteAny, TalentTypes.SeasonedTraveler } },
+            { 3, new List<TalentTypes> { TalentTypes.Carouser, TalentTypes.Dealmaker, TalentTypes.Gregarious, TalentTypes.Schemer } },
+            { 4, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.CommandingPresence, TalentTypes.NobleBlood, TalentTypes.Savvy } }
         };
     }
 }

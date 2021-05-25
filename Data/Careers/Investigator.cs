@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Charm, SkillType.Climb, SkillType.Cool, SkillType.Gossip, SkillType.Intuition, SkillType.Perception, SkillType.StealthUrban, SkillType.Track } },
-            { 2, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Dodge, SkillType.LoreLaw, SkillType.MeleeBrawling, SkillType.PickLock, SkillType.SleightOfHand } },
-            { 3, new List<SkillType> { SkillType.Bribery, SkillType.Evaluate, SkillType.Leadership, SkillType.LoreAny } },
-            { 4, new List<SkillType> { SkillType.Intimidate, SkillType.LoreAny } }
+            { 1, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.StealthUrban, SkillTypes.Track } },
+            { 2, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.LoreLaw, SkillTypes.MeleeBrawling, SkillTypes.PickLock, SkillTypes.SleightOfHand } },
+            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Evaluate, SkillTypes.Leadership, SkillTypes.LoreAny } },
+            { 4, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.AlleyCat, TalentType.BeneathNotice, TalentType.ReadWrite, TalentType.Sharp } },
-            { 2, new List<TalentType> { TalentType.EtiquetteAny, TalentType.Savvy, TalentType.Shadow, TalentType.Tenacious } },
-            { 3, new List<TalentType> { TalentType.Bookish, TalentType.BreakAndEnter, TalentType.SixthSense, TalentType.Suave } },
-            { 4, new List<TalentType> { TalentType.AcuteSenseAny, TalentType.SavantAny, TalentType.Speedreader, TalentType.TowerOfMemories } }
+            { 1, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.BeneathNotice, TalentTypes.ReadWrite, TalentTypes.Sharp } },
+            { 2, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.Savvy, TalentTypes.Shadow, TalentTypes.Tenacious } },
+            { 3, new List<TalentTypes> { TalentTypes.Bookish, TalentTypes.BreakAndEnter, TalentTypes.SixthSense, TalentTypes.Suave } },
+            { 4, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.SavantAny, TalentTypes.Speedreader, TalentTypes.TowerOfMemories } }
         };
     }
 }

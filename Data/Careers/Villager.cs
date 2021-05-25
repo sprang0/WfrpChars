@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.AnimalCare, SkillType.Athletics, SkillType.ConsumeAlcohol, SkillType.Endurance, SkillType.Gossip, SkillType.MeleeBrawling, SkillType.LoreLocal, SkillType.OutdoorSurvival } },
-            { 2, new List<SkillType> { SkillType.Dodge, SkillType.Drive, SkillType.EntertainStorytelling, SkillType.Haggle, SkillType.MeleeBasic, SkillType.TradeAny } },
-            { 3, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Intimidate, SkillType.Leadership } },
-            { 4, new List<SkillType> { SkillType.Intuition, SkillType.LoreHistory } }
+            { 1, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Athletics, SkillTypes.ConsumeAlcohol, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.MeleeBrawling, SkillTypes.LoreLocal, SkillTypes.OutdoorSurvival } },
+            { 2, new List<SkillTypes> { SkillTypes.Dodge, SkillTypes.Drive, SkillTypes.EntertainStorytelling, SkillTypes.Haggle, SkillTypes.MeleeBasic, SkillTypes.TradeAny } },
+            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Intimidate, SkillTypes.Leadership } },
+            { 4, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.LoreHistory } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Rover, TalentType.StrongBack, TalentType.StrongMinded, TalentType.StoneSoup } },
-            { 2, new List<TalentType> { TalentType.AnimalAffinity, TalentType.Hardy, TalentType.Tenacious, TalentType.VeryStrong } },
-            { 3, new List<TalentType> { TalentType.CraftsmanAny, TalentType.Dealmaker, TalentType.StoutHearted, TalentType.VeryResilient } },
-            { 4, new List<TalentType> { TalentType.MasterTradesmanAny, TalentType.NimbleFingered, TalentType.PublicSpeaker, TalentType.SavantLocal } }
+            { 1, new List<TalentTypes> { TalentTypes.Rover, TalentTypes.StrongBack, TalentTypes.StrongMinded, TalentTypes.StoneSoup } },
+            { 2, new List<TalentTypes> { TalentTypes.AnimalAffinity, TalentTypes.Hardy, TalentTypes.Tenacious, TalentTypes.VeryStrong } },
+            { 3, new List<TalentTypes> { TalentTypes.CraftsmanAny, TalentTypes.Dealmaker, TalentTypes.StoutHearted, TalentTypes.VeryResilient } },
+            { 4, new List<TalentTypes> { TalentTypes.MasterTradesmanAny, TalentTypes.NimbleFingered, TalentTypes.PublicSpeaker, TalentTypes.SavantLocal } }
         };
     }
 }

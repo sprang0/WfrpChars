@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Bribery, SkillType.ConsumeAlcohol, SkillType.Charm, SkillType.EntertainStorytelling, SkillType.Gamble, SkillType.Gossip, SkillType.Haggle, SkillType.SleightOfHand } },
-            { 2, new List<SkillType> { SkillType.Cool, SkillType.Dodge, SkillType.EntertainActing, SkillType.Evaluate, SkillType.Intuition, SkillType.Perception } },
-            { 3, new List<SkillType> { SkillType.LanguageThief, SkillType.LoreHeraldry, SkillType.PickLock, SkillType.SecretSignsThief } },
-            { 4, new List<SkillType> { SkillType.LoreGenealogy, SkillType.Research } }
+            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.ConsumeAlcohol, SkillTypes.Charm, SkillTypes.EntertainStorytelling, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.SleightOfHand } },
+            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.EntertainActing, SkillTypes.Evaluate, SkillTypes.Intuition, SkillTypes.Perception } },
+            { 3, new List<SkillTypes> { SkillTypes.LanguageThief, SkillTypes.LoreHeraldry, SkillTypes.PickLock, SkillTypes.SecretSignsThief } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreGenealogy, SkillTypes.Research } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Cardsharp, TalentType.Diceman, TalentType.EtiquetteAny, TalentType.Luck } },
-            { 2, new List<TalentType> { TalentType.Blather, TalentType.Criminal, TalentType.FastHands, TalentType.SecretIdentity } },
-            { 3, new List<TalentType> { TalentType.Attractive, TalentType.CatTongued, TalentType.Dealmaker, TalentType.ReadWrite } },
-            { 4, new List<TalentType> { TalentType.Gregarious, TalentType.MasterOfDisguise, TalentType.NoseForTrouble, TalentType.Suave } }
+            { 1, new List<TalentTypes> { TalentTypes.Cardsharp, TalentTypes.Diceman, TalentTypes.EtiquetteAny, TalentTypes.Luck } },
+            { 2, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Criminal, TalentTypes.FastHands, TalentTypes.SecretIdentity } },
+            { 3, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.CatTongued, TalentTypes.Dealmaker, TalentTypes.ReadWrite } },
+            { 4, new List<TalentTypes> { TalentTypes.Gregarious, TalentTypes.MasterOfDisguise, TalentTypes.NoseForTrouble, TalentTypes.Suave } }
         };
     }
 }

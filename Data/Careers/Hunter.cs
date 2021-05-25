@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
     class Hunter : CareerBase
     {
-        public Hunter(int level) : base(level)        {        }
+        public Hunter(int level) : base(level) { }
 
         public override string Name => "Hunter";
 
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Level;
         public override int Intelligence => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.CharmAnimal, SkillType.Climb, SkillType.Endurance, SkillType.LoreBeasts, SkillType.OutdoorSurvival, SkillType.Perception, SkillType.RangedSling, SkillType.SetTrap } },
-            { 2, new List<SkillType> { SkillType.Cool, SkillType.Intuition, SkillType.MeleeBasic, SkillType.RangedBow, SkillType.SecretSignsHunter, SkillType.StealthRural } },
-            { 3, new List<SkillType> { SkillType.Navigation, SkillType.RideHorse, SkillType.Swim, SkillType.Track } },
-            { 4, new List<SkillType> { SkillType.AnimalCare, SkillType.AnimalTrainingAny } }
+            { 1, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Climb, SkillTypes.Endurance, SkillTypes.LoreBeasts, SkillTypes.OutdoorSurvival, SkillTypes.Perception, SkillTypes.RangedSling, SkillTypes.SetTrap } },
+            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.RangedBow, SkillTypes.SecretSignsHunter, SkillTypes.StealthRural } },
+            { 3, new List<SkillTypes> { SkillTypes.Navigation, SkillTypes.RideHorse, SkillTypes.Swim, SkillTypes.Track } },
+            { 4, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.AnimalTrainingAny } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Hardy, TalentType.Rover, TalentType.StriderAny, TalentType.Trapper } },
-            { 2, new List<TalentType> { TalentType.AccurateShot, TalentType.FastShot, TalentType.HuntersEye, TalentType.Marksman } },
-            { 3, new List<TalentType> { TalentType.AcuteSenseAny, TalentType.DeadeyeShot, TalentType.FearlessAnimals, TalentType.Sharpshooter } },
-            { 4, new List<TalentType> { TalentType.FearlessMonsters, TalentType.Robust, TalentType.Sniper, TalentType.SureShot } }
+            { 1, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.Rover, TalentTypes.StriderAny, TalentTypes.Trapper } },
+            { 2, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.FastShot, TalentTypes.HuntersEye, TalentTypes.Marksman } },
+            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.DeadeyeShot, TalentTypes.FearlessAnimals, TalentTypes.Sharpshooter } },
+            { 4, new List<TalentTypes> { TalentTypes.FearlessMonsters, TalentTypes.Robust, TalentTypes.Sniper, TalentTypes.SureShot } }
         };
     }
 }

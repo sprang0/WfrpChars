@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Climb, SkillType.Dodge, SkillType.Endurance, SkillType.Gossip, SkillType.Navigation, SkillType.Perception, SkillType.MeleeBrawling } },
-            { 2, new List<SkillType> { SkillType.AnimalCare, SkillType.Charm, SkillType.Cool, SkillType.LoreLocal, SkillType.MeleeBasic, SkillType.RideHorse } },
-            { 3, new List<SkillType> { SkillType.CharmAnimal, SkillType.Bribery, SkillType.ConsumeAlcohol, SkillType.OutdoorSurvival } },
-            { 4, new List<SkillType> { SkillType.Intimidate, SkillType.Leadership } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Navigation, SkillTypes.Perception, SkillTypes.MeleeBrawling } },
+            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Charm, SkillTypes.Cool, SkillTypes.LoreLocal, SkillTypes.MeleeBasic, SkillTypes.RideHorse } },
+            { 3, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Bribery, SkillTypes.ConsumeAlcohol, SkillTypes.OutdoorSurvival } },
+            { 4, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Flee, TalentType.FleetFooted, TalentType.Sprinter, TalentType.StepAside } },
-            { 2, new List<TalentType> { TalentType.CrackTheWhip, TalentType.Criminal, TalentType.Orientation, TalentType.SeasonedTraveler } },
-            { 3, new List<TalentType> { TalentType.NoseForTrouble, TalentType.Relentless, TalentType.Tenacious, TalentType.TrickRiding } },
-            { 4, new List<TalentType> { TalentType.Dealmaker, TalentType.HatredOutlaws, TalentType.Kingpin, TalentType.VeryResilient } }
+            { 1, new List<TalentTypes> { TalentTypes.Flee, TalentTypes.FleetFooted, TalentTypes.Sprinter, TalentTypes.StepAside } },
+            { 2, new List<TalentTypes> { TalentTypes.CrackTheWhip, TalentTypes.Criminal, TalentTypes.Orientation, TalentTypes.SeasonedTraveler } },
+            { 3, new List<TalentTypes> { TalentTypes.NoseForTrouble, TalentTypes.Relentless, TalentTypes.Tenacious, TalentTypes.TrickRiding } },
+            { 4, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.HatredOutlaws, TalentTypes.Kingpin, TalentTypes.VeryResilient } }
         };
     }
 }

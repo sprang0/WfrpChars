@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Cool, SkillType.Dodge, SkillType.Endurance, SkillType.Intimidate, SkillType.LoreLocal, SkillType.MeleeBrawling, SkillType.StealthUrban } },
-            { 2, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.Evaluate, SkillType.Gossip, SkillType.LanguageEstalianOrTilean, SkillType.MeleeBasic } },
-            { 3, new List<SkillType> { SkillType.Intuition, SkillType.Leadership, SkillType.Perception, SkillType.RangedCrossbow } },
-            { 4, new List<SkillType> { SkillType.LoreLaw, SkillType.LorePolitics } }
+            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intimidate, SkillTypes.LoreLocal, SkillTypes.MeleeBrawling, SkillTypes.StealthUrban } },
+            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Evaluate, SkillTypes.Gossip, SkillTypes.LanguageEstalianOrTilean, SkillTypes.MeleeBasic } },
+            { 3, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.Perception, SkillTypes.RangedCrossbow } },
+            { 4, new List<SkillTypes> { SkillTypes.LoreLaw, SkillTypes.LorePolitics } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Criminal, TalentType.EtiquetteCriminals, TalentType.Menacing, TalentType.StrikeMightyBlow } },
-            { 2, new List<TalentType> { TalentType.DirtyFighting, TalentType.Embezzle, TalentType.StrikeToStun, TalentType.WarriorBorn } },
-            { 3, new List<TalentType> { TalentType.FearlessWatchmen, TalentType.IronWill, TalentType.ResistancePoison, TalentType.Robust } },
-            { 4, new List<TalentType> { TalentType.CommandingPresence, TalentType.Kingpin, TalentType.Frightening, TalentType.Wealthy } }
+            { 1, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.EtiquetteCriminals, TalentTypes.Menacing, TalentTypes.StrikeMightyBlow } },
+            { 2, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.Embezzle, TalentTypes.StrikeToStun, TalentTypes.WarriorBorn } },
+            { 3, new List<TalentTypes> { TalentTypes.FearlessWatchmen, TalentTypes.IronWill, TalentTypes.ResistancePoison, TalentTypes.Robust } },
+            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.Kingpin, TalentTypes.Frightening, TalentTypes.Wealthy } }
         };
     }
 }

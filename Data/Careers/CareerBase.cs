@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -31,7 +32,7 @@ namespace WfrpChars.Data.Careers
         public virtual int Willpower { get; }
         public virtual int Fellowship { get; }
 
-        public abstract Dictionary<int, List<SkillType>> Skills { get; }
-        public abstract Dictionary<int, List<TalentType>> Talents { get; }
+        public abstract Dictionary<int, List<SkillTypes>> Skills { get; }
+        public abstract Dictionary<int, List<TalentTypes>> Talents { get; }
     }
 }

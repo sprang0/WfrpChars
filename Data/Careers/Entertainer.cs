@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Level;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Charm, SkillType.EntertainAny, SkillType.Gossip, SkillType.Haggle, SkillType.PerformAny, SkillType.PlayAny, SkillType.SleightOfHand } },
-            { 2, new List<SkillType> { SkillType.EntertainAny, SkillType.RideAny, SkillType.MeleeBasic, SkillType.PerformAny, SkillType.PlayAny, SkillType.RangedThrowing } },
-            { 3, new List<SkillType> { SkillType.AnimalCare, SkillType.AnimalTrainingAny, SkillType.ArtWriting, SkillType.LanguageAny } },
-            { 4, new List<SkillType> { SkillType.Drive, SkillType.Leadership } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Charm, SkillTypes.EntertainAny, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.PerformAny, SkillTypes.PlayAny, SkillTypes.SleightOfHand } },
+            { 2, new List<SkillTypes> { SkillTypes.EntertainAny, SkillTypes.RideAny, SkillTypes.MeleeBasic, SkillTypes.PerformAny, SkillTypes.PlayAny, SkillTypes.RangedThrowing } },
+            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.AnimalTrainingAny, SkillTypes.ArtWriting, SkillTypes.LanguageAny } },
+            { 4, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Attractive, TalentType.Mimic, TalentType.PublicSpeaker, TalentType.Suave } },
-            { 2, new List<TalentType> { TalentType.Contortionist, TalentType.JumpUp, TalentType.Sharpshooter, TalentType.TrickRiding } },
-            { 3, new List<TalentType> { TalentType.Blather, TalentType.MasterOfDisguise, TalentType.PerfectPitch, TalentType.ReadWrite } },
-            { 4, new List<TalentType> { TalentType.Dealmaker, TalentType.EtiquetteAny, TalentType.SeasonedTraveler, TalentType.Sharp } }
+            { 1, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.Mimic, TalentTypes.PublicSpeaker, TalentTypes.Suave } },
+            { 2, new List<TalentTypes> { TalentTypes.Contortionist, TalentTypes.JumpUp, TalentTypes.Sharpshooter, TalentTypes.TrickRiding } },
+            { 3, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.MasterOfDisguise, TalentTypes.PerfectPitch, TalentTypes.ReadWrite } },
+            { 4, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.EtiquetteAny, TalentTypes.SeasonedTraveler, TalentTypes.Sharp } }
         };
     }
 }

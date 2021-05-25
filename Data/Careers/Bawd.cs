@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Bribery, SkillType.Charm, SkillType.ConsumeAlcohol, SkillType.EntertainAny, SkillType.Gamble, SkillType.Gossip, SkillType.Haggle, SkillType.Intimidate } },
-            { 2, new List<SkillType> { SkillType.Dodge, SkillType.Endurance, SkillType.Intuition, SkillType.LoreLocal, SkillType.MeleeBasic, SkillType.Perception } },
-            { 3, new List<SkillType> { SkillType.Cool, SkillType.Evaluate, SkillType.LanguageAny, SkillType.LoreLaw } },
-            { 4, new List<SkillType> { SkillType.Leadership, SkillType.LoreHeraldry } }
+            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.EntertainAny, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intimidate } },
+            { 2, new List<SkillTypes> { SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.LoreLocal, SkillTypes.MeleeBasic, SkillTypes.Perception } },
+            { 3, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Evaluate, SkillTypes.LanguageAny, SkillTypes.LoreLaw } },
+            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.LoreHeraldry } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.Attractive, TalentType.AlleyCat, TalentType.Blather, TalentType.Gregarious } },
-            { 2, new List<TalentType> { TalentType.Ambidextrous, TalentType.Carouser, TalentType.Criminal, TalentType.ResistanceDisease } },
-            { 3, new List<TalentType> { TalentType.Dealmaker, TalentType.Embezzle, TalentType.EtiquetteAny, TalentType.Suave } },
-            { 4, new List<TalentType> { TalentType.Briber, TalentType.Kingpin, TalentType.Numismatics, TalentType.Savvy } }
+            { 1, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.AlleyCat, TalentTypes.Blather, TalentTypes.Gregarious } },
+            { 2, new List<TalentTypes> { TalentTypes.Ambidextrous, TalentTypes.Carouser, TalentTypes.Criminal, TalentTypes.ResistanceDisease } },
+            { 3, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.Embezzle, TalentTypes.EtiquetteAny, TalentTypes.Suave } },
+            { 4, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.Kingpin, TalentTypes.Numismatics, TalentTypes.Savvy } }
         };
     }
 }

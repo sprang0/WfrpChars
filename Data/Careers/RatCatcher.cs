@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Initiative => Bonus * Silver;
         public override int Willpower => Bonus * Level;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.AnimalTrainingDog, SkillType.CharmAnimal, SkillType.ConsumeAlcohol, SkillType.Endurance, SkillType.MeleeBasic, SkillType.RangedSling } },
-            { 2, new List<SkillType> { SkillType.AnimalCare, SkillType.Gossip, SkillType.Haggle, SkillType.LorePoison, SkillType.Perception, SkillType.SetTrap } },
-            { 3, new List<SkillType> { SkillType.Climb, SkillType.Cool, SkillType.Dodge, SkillType.RangedCrossbowPistol } },
-            { 4, new List<SkillType> { SkillType.Leadership, SkillType.Track } }
+            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.AnimalTrainingDog, SkillTypes.CharmAnimal, SkillTypes.ConsumeAlcohol, SkillTypes.Endurance, SkillTypes.MeleeBasic, SkillTypes.RangedSling } },
+            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.LorePoison, SkillTypes.Perception, SkillTypes.SetTrap } },
+            { 3, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.RangedCrossbowPistol } },
+            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.Track } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.NightVision, TalentType.ResistanceDisease, TalentType.StrikeMightyBlow, TalentType.StrikeToStun } },
-            { 2, new List<TalentType> { TalentType.EnclosedFighter, TalentType.EtiquetteGuilder, TalentType.FearlessRats, TalentType.VeryResilient } },
-            { 3, new List<TalentType> { TalentType.Hardy, TalentType.StoutHearted, TalentType.StrongLegs, TalentType.TunnelRat } },
-            { 4, new List<TalentType> { TalentType.FearlessSkaven, TalentType.Menacing, TalentType.Robust, TalentType.StrongMinded } }
+            { 1, new List<TalentTypes> { TalentTypes.NightVision, TalentTypes.ResistanceDisease, TalentTypes.StrikeMightyBlow, TalentTypes.StrikeToStun } },
+            { 2, new List<TalentTypes> { TalentTypes.EnclosedFighter, TalentTypes.EtiquetteGuilder, TalentTypes.FearlessRats, TalentTypes.VeryResilient } },
+            { 3, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.StoutHearted, TalentTypes.StrongLegs, TalentTypes.TunnelRat } },
+            { 4, new List<TalentTypes> { TalentTypes.FearlessSkaven, TalentTypes.Menacing, TalentTypes.Robust, TalentTypes.StrongMinded } }
         };
     }
 }

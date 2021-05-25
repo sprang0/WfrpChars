@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Channelling, SkillType.Endurance, SkillType.Intuition, SkillType.LanguageMagick, SkillType.LoreFolklore, SkillType.LoreHerbs, SkillType.OutdoorSurvival, SkillType.Perception } },
-            { 2, new List<SkillType> { SkillType.Cool, SkillType.Gossip, SkillType.Heal, SkillType.LoreLocal, SkillType.TradeCharms, SkillType.TradeHerbalist } },
-            { 3, new List<SkillType> { SkillType.Haggle, SkillType.LoreGenealogy, SkillType.LoreMagic, SkillType.LoreSpirits } },
-            { 4, new List<SkillType> { SkillType.Intimidate, SkillType.Pray } }
+            { 1, new List<SkillTypes> { SkillTypes.Channelling, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.LanguageMagick, SkillTypes.LoreFolklore, SkillTypes.LoreHerbs, SkillTypes.OutdoorSurvival, SkillTypes.Perception } },
+            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Heal, SkillTypes.LoreLocal, SkillTypes.TradeCharms, SkillTypes.TradeHerbalist } },
+            { 3, new List<SkillTypes> { SkillTypes.Haggle, SkillTypes.LoreGenealogy, SkillTypes.LoreMagic, SkillTypes.LoreSpirits } },
+            { 4, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.Pray } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.FastHands, TalentType.PettyMagic, TalentType.Rover, TalentType.StriderWoodlands } },
-            { 2, new List<TalentType> { TalentType.AethyricAttunement, TalentType.AnimalAffinity, TalentType.MagicHedgecraft, TalentType.SixthSense } },
-            { 3, new List<TalentType> { TalentType.CraftsmanHerbalist, TalentType.MagicalSense, TalentType.PureSoul, TalentType.ResistanceDisease } },
-            { 4, new List<TalentType> { TalentType.AcuteSenseAny, TalentType.MasterCraftsmanHerbalist, TalentType.NightVision, TalentType.StrongMinded } }
+            { 1, new List<TalentTypes> { TalentTypes.FastHands, TalentTypes.PettyMagic, TalentTypes.Rover, TalentTypes.StriderWoodlands } },
+            { 2, new List<TalentTypes> { TalentTypes.AethyricAttunement, TalentTypes.AnimalAffinity, TalentTypes.MagicHedgecraft, TalentTypes.SixthSense } },
+            { 3, new List<TalentTypes> { TalentTypes.CraftsmanHerbalist, TalentTypes.MagicalSense, TalentTypes.PureSoul, TalentTypes.ResistanceDisease } },
+            { 4, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.MasterCraftsmanHerbalist, TalentTypes.NightVision, TalentTypes.StrongMinded } }
         };
     }
 }

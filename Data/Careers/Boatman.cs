@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WfrpChars.Data.Types;
 
 namespace WfrpChars.Data.Careers
 {
@@ -25,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Silver;
         public override int Intelligence => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillType>> Skills => new()
+        public override Dictionary<int, List<SkillTypes>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Dodge, SkillType.Endurance, SkillType.Gossip, SkillType.MeleeBrawling, SkillType.Row, SkillType.Sail, SkillType.Swim } },
-            { 2, new List<SkillType> { SkillType.Athletics, SkillType.EntertainStorytelling, SkillType.Haggle, SkillType.Intuition, SkillType.LoreRiverways, SkillType.Perception } },
-            { 3, new List<SkillType> { SkillType.Climb, SkillType.EntertainSinging, SkillType.Heal, SkillType.TradeBoatbuilding } },
-            { 4, new List<SkillType> { SkillType.Leadership, SkillType.Navigation } }
+            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.MeleeBrawling, SkillTypes.Row, SkillTypes.Sail, SkillTypes.Swim } },
+            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.EntertainStorytelling, SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.LoreRiverways, SkillTypes.Perception } },
+            { 3, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.EntertainSinging, SkillTypes.Heal, SkillTypes.TradeBoatbuilding } },
+            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentType>> Talents => new()
+        public override Dictionary<int, List<TalentTypes>> Talents => new()
         {
-            { 1, new List<TalentType> { TalentType.DirtyFighting, TalentType.Fisherman, TalentType.StrongBack, TalentType.StrongSwimmer } },
-            { 2, new List<TalentType> { TalentType.EtiquetteGuilder, TalentType.SeasonedTraveler, TalentType.VeryStrong, TalentType.Waterman } },
-            { 3, new List<TalentType> { TalentType.Dealmaker, TalentType.Embezzle, TalentType.NoseForTrouble, TalentType.StrikeMightyBlow } },
-            { 4, new List<TalentType> { TalentType.Menacing, TalentType.Orientation, TalentType.Pilot, TalentType.PublicSpeaker } }
+            { 1, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.Fisherman, TalentTypes.StrongBack, TalentTypes.StrongSwimmer } },
+            { 2, new List<TalentTypes> { TalentTypes.EtiquetteGuilder, TalentTypes.SeasonedTraveler, TalentTypes.VeryStrong, TalentTypes.Waterman } },
+            { 3, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.Embezzle, TalentTypes.NoseForTrouble, TalentTypes.StrikeMightyBlow } },
+            { 4, new List<TalentTypes> { TalentTypes.Menacing, TalentTypes.Orientation, TalentTypes.Pilot, TalentTypes.PublicSpeaker } }
         };
     }
 }
