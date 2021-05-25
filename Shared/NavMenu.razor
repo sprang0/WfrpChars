@@ -1,4 +1,4 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿<div class="pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">WFRP 4</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
@@ -10,6 +10,11 @@
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="oi oi-pulse" aria-hidden="true"></span> Create Characters
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="nomatch" Match="NavLinkMatch.All">
+                <span class="oi oi-question-mark" aria-hidden="true"></span> Future Page
             </NavLink>
         </li>
     </ul>
