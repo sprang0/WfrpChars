@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Silver;
         public override int Willpower => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gamble, SkillTypes.Heal, SkillTypes.LoreTrolls, SkillTypes.MeleeBasic } },
-            { 2, new List<SkillTypes> { SkillTypes.Evaluate, SkillTypes.Intimidate, SkillTypes.LanguageBattle, SkillTypes.LoreGiants, SkillTypes.MeleeTwoHanded, SkillTypes.OutdoorSurvival } },
-            { 3, new List<SkillTypes> { SkillTypes.EntertainStorytelling, SkillTypes.LoreDragons, SkillTypes.Perception, SkillTypes.RangedThrowing } },
-            { 4, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.LoreChaos } }
+            { 1, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gamble, Types.Skills.Heal, Types.Skills.LoreTrolls, Types.Skills.MeleeBasic } },
+            { 2, new List<Skills> { Types.Skills.Evaluate, Types.Skills.Intimidate, Types.Skills.LanguageBattle, Types.Skills.LoreGiants, Types.Skills.MeleeTwoHanded, Types.Skills.OutdoorSurvival } },
+            { 3, new List<Skills> { Types.Skills.EntertainStorytelling, Types.Skills.LoreDragons, Types.Skills.Perception, Types.Skills.RangedThrowing } },
+            { 4, new List<Skills> { Types.Skills.Intuition, Types.Skills.LoreChaos } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.DualWielder, TalentTypes.FearlessEverything, TalentTypes.Frenzy, TalentTypes.Slayer } },
-            { 2, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.Implacable, TalentTypes.Menacing, TalentTypes.Reversal } },
-            { 3, new List<TalentTypes> { TalentTypes.Ambidextrous, TalentTypes.FuriousAssault, TalentTypes.Relentless, TalentTypes.Robust } },
-            { 4, new List<TalentTypes> { TalentTypes.CombatMaster, TalentTypes.Frightening, TalentTypes.StrikeMightyBlow, TalentTypes.VeryStrong } }
+            { 1, new List<Talents> { Types.Talents.DualWielder, Types.Talents.FearlessEverything, Types.Talents.Frenzy, Types.Talents.Slayer } },
+            { 2, new List<Talents> { Types.Talents.Hardy, Types.Talents.Implacable, Types.Talents.Menacing, Types.Talents.Reversal } },
+            { 3, new List<Talents> { Types.Talents.Ambidextrous, Types.Talents.FuriousAssault, Types.Talents.Relentless, Types.Talents.Robust } },
+            { 4, new List<Talents> { Types.Talents.CombatMaster, Types.Talents.Frightening, Types.Talents.StrikeMightyBlow, Types.Talents.VeryStrong } }
         };
     }
 }

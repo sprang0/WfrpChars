@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Evaluate, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.MeleeBasic } },
-            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.Perception, SkillTypes.SecretSignsThief, SkillTypes.TradeEngraver } },
-            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.EntertainStorytelling, SkillTypes.LoreArt, SkillTypes.LoreLocal } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreHeraldry, SkillTypes.Research } }
+            { 1, new List<Skills> { Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Dodge, Types.Skills.Evaluate, Types.Skills.Gamble, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.MeleeBasic } },
+            { 2, new List<Skills> { Types.Skills.Cool, Types.Skills.Intimidate, Types.Skills.Intuition, Types.Skills.Perception, Types.Skills.SecretSignsThief, Types.Skills.TradeEngraver } },
+            { 3, new List<Skills> { Types.Skills.Bribery, Types.Skills.EntertainStorytelling, Types.Skills.LoreArt, Types.Skills.LoreLocal } },
+            { 4, new List<Skills> { Types.Skills.LoreHeraldry, Types.Skills.Research } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.Cardsharp, TalentTypes.Dealmaker, TalentTypes.Gregarious } },
-            { 2, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.EtiquetteCriminals, TalentTypes.Numismatics, TalentTypes.Savvy } },
-            { 3, new List<TalentTypes> { TalentTypes.Kingpin, TalentTypes.StrikeToStun, TalentTypes.Suave, TalentTypes.SuperNumerate } },
-            { 4, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.IronWill, TalentTypes.Menacing, TalentTypes.Briber } }
+            { 1, new List<Talents> { Types.Talents.AlleyCat, Types.Talents.Cardsharp, Types.Talents.Dealmaker, Types.Talents.Gregarious } },
+            { 2, new List<Talents> { Types.Talents.Criminal, Types.Talents.EtiquetteCriminals, Types.Talents.Numismatics, Types.Talents.Savvy } },
+            { 3, new List<Talents> { Types.Talents.Kingpin, Types.Talents.StrikeToStun, Types.Talents.Suave, Types.Talents.SuperNumerate } },
+            { 4, new List<Talents> { Types.Talents.DirtyFighting, Types.Talents.IronWill, Types.Talents.Menacing, Types.Talents.Briber } }
         };
     }
 }

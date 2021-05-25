@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Endurance, SkillTypes.EntertainStorytelling, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.OutdoorSurvival, SkillTypes.StealthRuralOrUrban } },
-            { 2, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.CharmAnimal, SkillTypes.ConsumeAlcohol, SkillTypes.Evaluate, SkillTypes.RideHorse, SkillTypes.TradeTinker } },
-            { 3, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.Intimidate, SkillTypes.LanguageAny, SkillTypes.Perception } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreLocal, SkillTypes.LoreGeography } }
+            { 1, new List<Skills> { Types.Skills.Charm, Types.Skills.Endurance, Types.Skills.EntertainStorytelling, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.Intuition, Types.Skills.OutdoorSurvival, Types.Skills.StealthRuralOrUrban } },
+            { 2, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.CharmAnimal, Types.Skills.ConsumeAlcohol, Types.Skills.Evaluate, Types.Skills.RideHorse, Types.Skills.TradeTinker } },
+            { 3, new List<Skills> { Types.Skills.Drive, Types.Skills.Intimidate, Types.Skills.LanguageAny, Types.Skills.Perception } },
+            { 4, new List<Skills> { Types.Skills.LoreLocal, Types.Skills.LoreGeography } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Fisherman, TalentTypes.Flee, TalentTypes.Rover, TalentTypes.Tinker } },
-            { 2, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.Orientation, TalentTypes.SeasonedTraveler, TalentTypes.StrongBack } },
-            { 3, new List<TalentTypes> { TalentTypes.Numismatics, TalentTypes.Sturdy, TalentTypes.WellPrepared, TalentTypes.VeryResilient } },
-            { 4, new List<TalentTypes> { TalentTypes.CatTongued, TalentTypes.StrongMinded, TalentTypes.Suave, TalentTypes.Tenacious } }
+            { 1, new List<Talents> { Types.Talents.Fisherman, Types.Talents.Flee, Types.Talents.Rover, Types.Talents.Tinker } },
+            { 2, new List<Talents> { Types.Talents.Dealmaker, Types.Talents.Orientation, Types.Talents.SeasonedTraveler, Types.Talents.StrongBack } },
+            { 3, new List<Talents> { Types.Talents.Numismatics, Types.Talents.Sturdy, Types.Talents.WellPrepared, Types.Talents.VeryResilient } },
+            { 4, new List<Talents> { Types.Talents.CatTongued, Types.Talents.StrongMinded, Types.Talents.Suave, Types.Talents.Tenacious } }
         };
     }
 }

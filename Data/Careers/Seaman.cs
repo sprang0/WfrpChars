@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Row, SkillTypes.MeleeBrawling, SkillTypes.Sail, SkillTypes.Swim } },
-            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.EntertainSinging, SkillTypes.LanguageAny, SkillTypes.MeleeBasic } },
-            { 3, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Leadership, SkillTypes.Perception, SkillTypes.TradeCarpenter } },
-            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Navigation } }
+            { 1, new List<Skills> { Types.Skills.Climb, Types.Skills.ConsumeAlcohol, Types.Skills.Gamble, Types.Skills.Gossip, Types.Skills.Row, Types.Skills.MeleeBrawling, Types.Skills.Sail, Types.Skills.Swim } },
+            { 2, new List<Skills> { Types.Skills.Athletics, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.EntertainSinging, Types.Skills.LanguageAny, Types.Skills.MeleeBasic } },
+            { 3, new List<Skills> { Types.Skills.Cool, Types.Skills.Leadership, Types.Skills.Perception, Types.Skills.TradeCarpenter } },
+            { 4, new List<Skills> { Types.Skills.Charm, Types.Skills.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Fisherman, TalentTypes.StriderCoastal, TalentTypes.StrongBack, TalentTypes.StrongSwimmer } },
-            { 2, new List<TalentTypes> { TalentTypes.Catfall, TalentTypes.SeaLegs, TalentTypes.SeasonedTraveler, TalentTypes.StrongLegs } },
-            { 3, new List<TalentTypes> { TalentTypes.OldSalt, TalentTypes.StrikeMightyBlow, TalentTypes.Tenacious, TalentTypes.VeryStrong } },
-            { 4, new List<TalentTypes> { TalentTypes.Orientation, TalentTypes.Pilot, TalentTypes.PublicSpeaker, TalentTypes.Savvy } }
+            { 1, new List<Talents> { Types.Talents.Fisherman, Types.Talents.StriderCoastal, Types.Talents.StrongBack, Types.Talents.StrongSwimmer } },
+            { 2, new List<Talents> { Types.Talents.Catfall, Types.Talents.SeaLegs, Types.Talents.SeasonedTraveler, Types.Talents.StrongLegs } },
+            { 3, new List<Talents> { Types.Talents.OldSalt, Types.Talents.StrikeMightyBlow, Types.Talents.Tenacious, Types.Talents.VeryStrong } },
+            { 4, new List<Talents> { Types.Talents.Orientation, Types.Talents.Pilot, Types.Talents.PublicSpeaker, Types.Talents.Savvy } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gamble, SkillTypes.MeleeAny, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.LoreLocal } },
-            { 3, new List<SkillTypes> { SkillTypes.EntertainStorytelling, SkillTypes.Haggle, SkillTypes.Leadership, SkillTypes.LoreLaw } },
-            { 4, new List<SkillTypes> { SkillTypes.LorePolitics, SkillTypes.RideHorse } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Climb, Types.Skills.ConsumeAlcohol, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gamble, Types.Skills.MeleeAny, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Cool, Types.Skills.Gossip, Types.Skills.Intimidate, Types.Skills.Intuition, Types.Skills.LoreLocal } },
+            { 3, new List<Skills> { Types.Skills.EntertainStorytelling, Types.Skills.Haggle, Types.Skills.Leadership, Types.Skills.LoreLaw } },
+            { 4, new List<Skills> { Types.Skills.LorePolitics, Types.Skills.RideHorse } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Drilled, TalentTypes.Hardy, TalentTypes.StrikeToStun, TalentTypes.Tenacious } },
-            { 2, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.Criminal, TalentTypes.NightVision, TalentTypes.Sprinter } },
-            { 3, new List<TalentTypes> { TalentTypes.Disarm, TalentTypes.EtiquetteSoldiers, TalentTypes.FearlessCriminals, TalentTypes.NoseForTrouble } },
-            { 4, new List<TalentTypes> { TalentTypes.PublicSpeaker, TalentTypes.Robust, TalentTypes.Kingpin, TalentTypes.Schemer } }
+            { 1, new List<Talents> { Types.Talents.Drilled, Types.Talents.Hardy, Types.Talents.StrikeToStun, Types.Talents.Tenacious } },
+            { 2, new List<Talents> { Types.Talents.BreakAndEnter, Types.Talents.Criminal, Types.Talents.NightVision, Types.Talents.Sprinter } },
+            { 3, new List<Talents> { Types.Talents.Disarm, Types.Talents.EtiquetteSoldiers, Types.Talents.FearlessCriminals, Types.Talents.NoseForTrouble } },
+            { 4, new List<Talents> { Types.Talents.PublicSpeaker, Types.Talents.Robust, Types.Talents.Kingpin, Types.Talents.Schemer } }
         };
     }
 }

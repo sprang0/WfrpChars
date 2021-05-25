@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Level;
         public override int Intelligence => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Endurance, SkillTypes.Intimidate, SkillTypes.RangedCrossbow, SkillTypes.RangedEntangling, SkillTypes.Track } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Climb, SkillTypes.RideHorse, SkillTypes.Swim } },
-            { 4, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.LoreLaw } }
+            { 1, new List<Skills> { Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.Intuition, Types.Skills.MeleeBasic, Types.Skills.OutdoorSurvival, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Athletics, Types.Skills.Endurance, Types.Skills.Intimidate, Types.Skills.RangedCrossbow, Types.Skills.RangedEntangling, Types.Skills.Track } },
+            { 3, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.Climb, Types.Skills.RideHorse, Types.Skills.Swim } },
+            { 4, new List<Skills> { Types.Skills.Drive, Types.Skills.LoreLaw } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.Shadow, TalentTypes.StrikeToStun, TalentTypes.Suave } },
-            { 2, new List<TalentTypes> { TalentTypes.Marksman, TalentTypes.Relentless, TalentTypes.SeasonedTraveler, TalentTypes.StrongBack } },
-            { 3, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.CarefulStrike, TalentTypes.DualWielder, TalentTypes.Sprinter } },
-            { 4, new List<TalentTypes> { TalentTypes.DeadeyeShot, TalentTypes.FearlessBounties, TalentTypes.Hardy, TalentTypes.SureShot } }
+            { 1, new List<Talents> { Types.Talents.BreakAndEnter, Types.Talents.Shadow, Types.Talents.StrikeToStun, Types.Talents.Suave } },
+            { 2, new List<Talents> { Types.Talents.Marksman, Types.Talents.Relentless, Types.Talents.SeasonedTraveler, Types.Talents.StrongBack } },
+            { 3, new List<Talents> { Types.Talents.AccurateShot, Types.Talents.CarefulStrike, Types.Talents.DualWielder, Types.Talents.Sprinter } },
+            { 4, new List<Talents> { Types.Talents.DeadeyeShot, Types.Talents.FearlessBounties, Types.Talents.Hardy, Types.Talents.SureShot } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Willpower => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.MeleeBasic, SkillTypes.Swim } },
-            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.EntertainStorytelling, SkillTypes.Gamble, SkillTypes.Intimidate, SkillTypes.Perception, SkillTypes.StealthUrban } },
-            { 3, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Evaluate, SkillTypes.Intuition, SkillTypes.Leadership } },
-            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.LoreTaxes } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Climb, Types.Skills.ConsumeAlcohol, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.MeleeBasic, Types.Skills.Swim } },
+            { 2, new List<Skills> { Types.Skills.Bribery, Types.Skills.EntertainStorytelling, Types.Skills.Gamble, Types.Skills.Intimidate, Types.Skills.Perception, Types.Skills.StealthUrban } },
+            { 3, new List<Skills> { Types.Skills.Cool, Types.Skills.Evaluate, Types.Skills.Intuition, Types.Skills.Leadership } },
+            { 4, new List<Skills> { Types.Skills.Charm, Types.Skills.LoreTaxes } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.StrongBack, TalentTypes.Sturdy, TalentTypes.VeryStrong } },
-            { 2, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.EtiquetteGuilder, TalentTypes.StrongLegs, TalentTypes.Tenacious } },
-            { 3, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.Embezzle, TalentTypes.EtiquetteCriminals, TalentTypes.PublicSpeaker } },
-            { 4, new List<TalentTypes> { TalentTypes.Kingpin, TalentTypes.Menacing, TalentTypes.Numismatics, TalentTypes.ReadWrite } }
+            { 1, new List<Talents> { Types.Talents.DirtyFighting, Types.Talents.StrongBack, Types.Talents.Sturdy, Types.Talents.VeryStrong } },
+            { 2, new List<Talents> { Types.Talents.Criminal, Types.Talents.EtiquetteGuilder, Types.Talents.StrongLegs, Types.Talents.Tenacious } },
+            { 3, new List<Talents> { Types.Talents.Dealmaker, Types.Talents.Embezzle, Types.Talents.EtiquetteCriminals, Types.Talents.PublicSpeaker } },
+            { 4, new List<Talents> { Types.Talents.Kingpin, Types.Talents.Menacing, Types.Talents.Numismatics, Types.Talents.ReadWrite } }
         };
     }
 }

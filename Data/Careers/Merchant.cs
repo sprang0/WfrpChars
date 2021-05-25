@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Drive, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle } },
-            { 2, new List<SkillTypes> { SkillTypes.Evaluate, SkillTypes.Intuition, SkillTypes.LanguageAny, SkillTypes.LanguageGuilder, SkillTypes.LoreLocal, SkillTypes.Perception } },
-            { 3, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.LanguageClassical, SkillTypes.Navigation, SkillTypes.SecretSignsGuilder } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreAny, SkillTypes.Intimidate } }
+            { 1, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Drive, Types.Skills.Gamble, Types.Skills.Gossip, Types.Skills.Haggle } },
+            { 2, new List<Skills> { Types.Skills.Evaluate, Types.Skills.Intuition, Types.Skills.LanguageAny, Types.Skills.LanguageGuilder, Types.Skills.LoreLocal, Types.Skills.Perception } },
+            { 3, new List<Skills> { Types.Skills.Cool, Types.Skills.LanguageClassical, Types.Skills.Navigation, Types.Skills.SecretSignsGuilder } },
+            { 4, new List<Skills> { Types.Skills.LoreAny, Types.Skills.Intimidate } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Dealmaker, TalentTypes.ReadWrite, TalentTypes.Suave } },
-            { 2, new List<TalentTypes> { TalentTypes.Briber, TalentTypes.Embezzle, TalentTypes.EtiquetteGuilder, TalentTypes.Savvy } },
-            { 3, new List<TalentTypes> { TalentTypes.CatTongued, TalentTypes.EtiquetteAny, TalentTypes.Numismatics, TalentTypes.Sharp } },
-            { 4, new List<TalentTypes> { TalentTypes.IronWill, TalentTypes.Luck, TalentTypes.Schemer, TalentTypes.Wealthy } }
+            { 1, new List<Talents> { Types.Talents.Blather, Types.Talents.Dealmaker, Types.Talents.ReadWrite, Types.Talents.Suave } },
+            { 2, new List<Talents> { Types.Talents.Briber, Types.Talents.Embezzle, Types.Talents.EtiquetteGuilder, Types.Talents.Savvy } },
+            { 3, new List<Talents> { Types.Talents.CatTongued, Types.Talents.EtiquetteAny, Types.Talents.Numismatics, Types.Talents.Sharp } },
+            { 4, new List<Talents> { Types.Talents.IronWill, Types.Talents.Luck, Types.Talents.Schemer, Types.Talents.Wealthy } }
         };
     }
 }

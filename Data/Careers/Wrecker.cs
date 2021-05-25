@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Row, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival, SkillTypes.Swim } },
-            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Cool, SkillTypes.Intuition, SkillTypes.Navigation, SkillTypes.Perception, SkillTypes.SetTrap } },
-            { 3, new List<SkillTypes> { SkillTypes.Gossip, SkillTypes.Intimidate, SkillTypes.RangedCrossbow, SkillTypes.StealthRural } },
-            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.LoreRiverways } }
+            { 1, new List<Skills> { Types.Skills.Climb, Types.Skills.ConsumeAlcohol, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Row, Types.Skills.MeleeBasic, Types.Skills.OutdoorSurvival, Types.Skills.Swim } },
+            { 2, new List<Skills> { Types.Skills.Bribery, Types.Skills.Cool, Types.Skills.Intuition, Types.Skills.Navigation, Types.Skills.Perception, Types.Skills.SetTrap } },
+            { 3, new List<Skills> { Types.Skills.Gossip, Types.Skills.Intimidate, Types.Skills.RangedCrossbow, Types.Skills.StealthRural } },
+            { 4, new List<Skills> { Types.Skills.Leadership, Types.Skills.LoreRiverways } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.Criminal, TalentTypes.Fisherman, TalentTypes.StrongBack } },
-            { 2, new List<TalentTypes> { TalentTypes.Flee, TalentTypes.Rover, TalentTypes.StrongSwimmer, TalentTypes.Trapper } },
-            { 3, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.EtiquetteCriminals, TalentTypes.Menacing, TalentTypes.Waterman } },
-            { 4, new List<TalentTypes> { TalentTypes.FuriousAssault, TalentTypes.InFighter, TalentTypes.Pilot, TalentTypes.WarriorBorn } }
+            { 1, new List<Talents> { Types.Talents.BreakAndEnter, Types.Talents.Criminal, Types.Talents.Fisherman, Types.Talents.StrongBack } },
+            { 2, new List<Talents> { Types.Talents.Flee, Types.Talents.Rover, Types.Talents.StrongSwimmer, Types.Talents.Trapper } },
+            { 3, new List<Talents> { Types.Talents.DirtyFighting, Types.Talents.EtiquetteCriminals, Types.Talents.Menacing, Types.Talents.Waterman } },
+            { 4, new List<Talents> { Types.Talents.FuriousAssault, Types.Talents.InFighter, Types.Talents.Pilot, Types.Talents.WarriorBorn } }
         };
     }
 }

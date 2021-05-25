@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gamble, SkillTypes.Intimidate, SkillTypes.MeleeAny, SkillTypes.MeleeBrawling } },
-            { 2, new List<SkillTypes> { SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.MeleeFlailOrTwoHanded, SkillTypes.Perception, SkillTypes.RangedEntangling } },
-            { 3, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Gossip, SkillTypes.LoreAnatomy, SkillTypes.PerformFight } },
-            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.RangedAny } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gamble, Types.Skills.Intimidate, Types.Skills.MeleeAny, Types.Skills.MeleeBrawling } },
+            { 2, new List<Skills> { Types.Skills.Haggle, Types.Skills.Intuition, Types.Skills.MeleeBasic, Types.Skills.MeleeFlailOrTwoHanded, Types.Skills.Perception, Types.Skills.RangedEntangling } },
+            { 3, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Gossip, Types.Skills.LoreAnatomy, Types.Skills.PerformFight } },
+            { 4, new List<Skills> { Types.Skills.Charm, Types.Skills.RangedAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.DirtyFighting, TalentTypes.InFighter, TalentTypes.IronJaw, TalentTypes.Reversal } },
-            { 2, new List<TalentTypes> { TalentTypes.Ambidextrous, TalentTypes.CombatReflexes, TalentTypes.DualWielder, TalentTypes.Shieldsman } },
-            { 3, new List<TalentTypes> { TalentTypes.CombatMaster, TalentTypes.Disarm, TalentTypes.Menacing, TalentTypes.Robust } },
-            { 4, new List<TalentTypes> { TalentTypes.Frightening, TalentTypes.FuriousAssault, TalentTypes.Implacable, TalentTypes.ReactionStrike } }
+            { 1, new List<Talents> { Types.Talents.DirtyFighting, Types.Talents.InFighter, Types.Talents.IronJaw, Types.Talents.Reversal } },
+            { 2, new List<Talents> { Types.Talents.Ambidextrous, Types.Talents.CombatReflexes, Types.Talents.DualWielder, Types.Talents.Shieldsman } },
+            { 3, new List<Talents> { Types.Talents.CombatMaster, Types.Talents.Disarm, Types.Talents.Menacing, Types.Talents.Robust } },
+            { 4, new List<Talents> { Types.Talents.Frightening, Types.Talents.FuriousAssault, Types.Talents.Implacable, Types.Talents.ReactionStrike } }
         };
     }
 }

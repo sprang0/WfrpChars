@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.LoreTheology, SkillTypes.Perception, SkillTypes.Pray, SkillTypes.Research } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.EntertainStorytelling, SkillTypes.Gossip, SkillTypes.Heal, SkillTypes.Intimidate, SkillTypes.MeleeBasic } },
-            { 3, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.EntertainSpeeches, SkillTypes.Leadership, SkillTypes.LoreHeraldry } },
-            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.LorePolitics } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Cool, Types.Skills.Endurance, Types.Skills.Intuition, Types.Skills.LoreTheology, Types.Skills.Perception, Types.Skills.Pray, Types.Skills.Research } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.EntertainStorytelling, Types.Skills.Gossip, Types.Skills.Heal, Types.Skills.Intimidate, Types.Skills.MeleeBasic } },
+            { 3, new List<Skills> { Types.Skills.ArtWriting, Types.Skills.EntertainSpeeches, Types.Skills.Leadership, Types.Skills.LoreHeraldry } },
+            { 4, new List<Skills> { Types.Skills.LanguageAny, Types.Skills.LorePolitics } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.BlessAny, TalentTypes.HolyVisions, TalentTypes.ReadWrite, TalentTypes.Suave } },
-            { 2, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Bookish, TalentTypes.EtiquetteCultists, TalentTypes.InvokeAny } },
-            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.HatredAny, TalentTypes.ImpassionedZeal, TalentTypes.StrongMinded } },
-            { 4, new List<TalentTypes> { TalentTypes.MasterOrator, TalentTypes.PureSoul, TalentTypes.ResistanceAny, TalentTypes.SavantTheology } }
+            { 1, new List<Talents> { Types.Talents.BlessAny, Types.Talents.HolyVisions, Types.Talents.ReadWrite, Types.Talents.Suave } },
+            { 2, new List<Talents> { Types.Talents.Blather, Types.Talents.Bookish, Types.Talents.EtiquetteCultists, Types.Talents.InvokeAny } },
+            { 3, new List<Talents> { Types.Talents.AcuteSenseAny, Types.Talents.HatredAny, Types.Talents.ImpassionedZeal, Types.Talents.StrongMinded } },
+            { 4, new List<Talents> { Types.Talents.MasterOrator, Types.Talents.PureSoul, Types.Talents.ResistanceAny, Types.Talents.SavantTheology } }
         };
     }
 }

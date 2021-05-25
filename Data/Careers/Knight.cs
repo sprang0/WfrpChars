@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.AnimalCare, SkillTypes.CharmAnimal, SkillTypes.Heal, SkillTypes.LoreHeraldry, SkillTypes.MeleeCavalry, SkillTypes.RideHorse, SkillTypes.TradeFarrier } },
-            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intimidate, SkillTypes.LanguageBattle, SkillTypes.MeleeAny } },
-            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Leadership, SkillTypes.LoreWarfare } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreAny, SkillTypes.SecretSignsKnightlyOrder } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.AnimalCare, Types.Skills.CharmAnimal, Types.Skills.Heal, Types.Skills.LoreHeraldry, Types.Skills.MeleeCavalry, Types.Skills.RideHorse, Types.Skills.TradeFarrier } },
+            { 2, new List<Skills> { Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Intimidate, Types.Skills.LanguageBattle, Types.Skills.MeleeAny } },
+            { 3, new List<Skills> { Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Leadership, Types.Skills.LoreWarfare } },
+            { 4, new List<Skills> { Types.Skills.LoreAny, Types.Skills.SecretSignsKnightlyOrder } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.Roughrider, TalentTypes.Sturdy, TalentTypes.WarriorBorn } },
-            { 2, new List<TalentTypes> { TalentTypes.Menacing, TalentTypes.SeasonedTraveler, TalentTypes.Shieldsman, TalentTypes.StrikeMightyBlow } },
-            { 3, new List<TalentTypes> { TalentTypes.FearlessAny, TalentTypes.StoutHearted, TalentTypes.Unshakeable, TalentTypes.Warleader } },
-            { 4, new List<TalentTypes> { TalentTypes.Disarm, TalentTypes.Inspiring, TalentTypes.IronWill, TalentTypes.StrikeToInjure } }
+            { 1, new List<Talents> { Types.Talents.EtiquetteAny, Types.Talents.Roughrider, Types.Talents.Sturdy, Types.Talents.WarriorBorn } },
+            { 2, new List<Talents> { Types.Talents.Menacing, Types.Talents.SeasonedTraveler, Types.Talents.Shieldsman, Types.Talents.StrikeMightyBlow } },
+            { 3, new List<Talents> { Types.Talents.FearlessAny, Types.Talents.StoutHearted, Types.Talents.Unshakeable, Types.Talents.Warleader } },
+            { 4, new List<Talents> { Types.Talents.Disarm, Types.Talents.Inspiring, Types.Talents.IronWill, Types.Talents.StrikeToInjure } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Gold;
         public override int Intelligence => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Climb, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.LoreLocal, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Navigation, SkillTypes.RangedBow, SkillTypes.RideHorse, SkillTypes.StealthRural, SkillTypes.Track } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Haggle, SkillTypes.SecretSignsHunter, SkillTypes.Swim } },
-            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.TradeCartographer } }
+            { 1, new List<Skills> { Types.Skills.CharmAnimal, Types.Skills.Climb, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.LoreLocal, Types.Skills.MeleeBasic, Types.Skills.OutdoorSurvival, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Athletics, Types.Skills.Navigation, Types.Skills.RangedBow, Types.Skills.RideHorse, Types.Skills.StealthRural, Types.Skills.Track } },
+            { 3, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.Haggle, Types.Skills.SecretSignsHunter, Types.Skills.Swim } },
+            { 4, new List<Skills> { Types.Skills.LanguageAny, Types.Skills.TradeCartographer } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Orientation, TalentTypes.Rover, TalentTypes.Sharp, TalentTypes.StriderAny } },
-            { 2, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.NightVision, TalentTypes.NoseForTrouble, TalentTypes.SeasonedTraveler } },
-            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseSight, TalentTypes.SixthSense, TalentTypes.StrongLegs, TalentTypes.VeryResilient } },
-            { 4, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.Linguistics, TalentTypes.SavantLocal, TalentTypes.Tenacious } }
+            { 1, new List<Talents> { Types.Talents.Orientation, Types.Talents.Rover, Types.Talents.Sharp, Types.Talents.StriderAny } },
+            { 2, new List<Talents> { Types.Talents.CombatAware, Types.Talents.NightVision, Types.Talents.NoseForTrouble, Types.Talents.SeasonedTraveler } },
+            { 3, new List<Talents> { Types.Talents.AcuteSenseSight, Types.Talents.SixthSense, Types.Talents.StrongLegs, Types.Talents.VeryResilient } },
+            { 4, new List<Talents> { Types.Talents.Hardy, Types.Talents.Linguistics, Types.Talents.SavantLocal, Types.Talents.Tenacious } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.ConsumeAlcohol, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.OutdoorSurvival, SkillTypes.Row, SkillTypes.Swim } },
-            { 2, new List<SkillTypes> { SkillTypes.Gamble, SkillTypes.LoreLocal, SkillTypes.LoreRiverways, SkillTypes.RangedEntangling, SkillTypes.RangedThrowing, SkillTypes.SetTrap } },
-            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Intuition, SkillTypes.MeleePolearm, SkillTypes.Perception } },
-            { 4, new List<SkillTypes> { SkillTypes.EntertainStorytelling, SkillTypes.LoreFolklore } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.ConsumeAlcohol, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.OutdoorSurvival, Types.Skills.Row, Types.Skills.Swim } },
+            { 2, new List<Skills> { Types.Skills.Gamble, Types.Skills.LoreLocal, Types.Skills.LoreRiverways, Types.Skills.RangedEntangling, Types.Skills.RangedThrowing, Types.Skills.SetTrap } },
+            { 3, new List<Skills> { Types.Skills.Charm, Types.Skills.Intuition, Types.Skills.MeleePolearm, Types.Skills.Perception } },
+            { 4, new List<Skills> { Types.Skills.EntertainStorytelling, Types.Skills.LoreFolklore } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Fisherman, TalentTypes.Gregarious, TalentTypes.StriderMarshes, TalentTypes.StrongSwimmer } },
-            { 2, new List<TalentTypes> { TalentTypes.CraftsmanBoatbuilder, TalentTypes.Rover, TalentTypes.StrongBack, TalentTypes.Waterman } },
-            { 3, new List<TalentTypes> { TalentTypes.SavantRiverways, TalentTypes.StoutHearted, TalentTypes.Tenacious, TalentTypes.VeryStrong } },
-            { 4, new List<TalentTypes> { TalentTypes.MasterCraftsmanBoatbuilder, TalentTypes.PublicSpeaker, TalentTypes.Sharp, TalentTypes.StrongMinded } }
+            { 1, new List<Talents> { Types.Talents.Fisherman, Types.Talents.Gregarious, Types.Talents.StriderMarshes, Types.Talents.StrongSwimmer } },
+            { 2, new List<Talents> { Types.Talents.CraftsmanBoatbuilder, Types.Talents.Rover, Types.Talents.StrongBack, Types.Talents.Waterman } },
+            { 3, new List<Talents> { Types.Talents.SavantRiverways, Types.Talents.StoutHearted, Types.Talents.Tenacious, Types.Talents.VeryStrong } },
+            { 4, new List<Talents> { Types.Talents.MasterCraftsmanBoatbuilder, Types.Talents.PublicSpeaker, Types.Talents.Sharp, Types.Talents.StrongMinded } }
         };
     }
 }

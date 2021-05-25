@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Level;
         public override int Intelligence => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Climb, SkillTypes.Endurance, SkillTypes.LoreBeasts, SkillTypes.OutdoorSurvival, SkillTypes.Perception, SkillTypes.RangedSling, SkillTypes.SetTrap } },
-            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.RangedBow, SkillTypes.SecretSignsHunter, SkillTypes.StealthRural } },
-            { 3, new List<SkillTypes> { SkillTypes.Navigation, SkillTypes.RideHorse, SkillTypes.Swim, SkillTypes.Track } },
-            { 4, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.AnimalTrainingAny } }
+            { 1, new List<Skills> { Types.Skills.CharmAnimal, Types.Skills.Climb, Types.Skills.Endurance, Types.Skills.LoreBeasts, Types.Skills.OutdoorSurvival, Types.Skills.Perception, Types.Skills.RangedSling, Types.Skills.SetTrap } },
+            { 2, new List<Skills> { Types.Skills.Cool, Types.Skills.Intuition, Types.Skills.MeleeBasic, Types.Skills.RangedBow, Types.Skills.SecretSignsHunter, Types.Skills.StealthRural } },
+            { 3, new List<Skills> { Types.Skills.Navigation, Types.Skills.RideHorse, Types.Skills.Swim, Types.Skills.Track } },
+            { 4, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.AnimalTrainingAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Hardy, TalentTypes.Rover, TalentTypes.StriderAny, TalentTypes.Trapper } },
-            { 2, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.FastShot, TalentTypes.HuntersEye, TalentTypes.Marksman } },
-            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.DeadeyeShot, TalentTypes.FearlessAnimals, TalentTypes.Sharpshooter } },
-            { 4, new List<TalentTypes> { TalentTypes.FearlessMonsters, TalentTypes.Robust, TalentTypes.Sniper, TalentTypes.SureShot } }
+            { 1, new List<Talents> { Types.Talents.Hardy, Types.Talents.Rover, Types.Talents.StriderAny, Types.Talents.Trapper } },
+            { 2, new List<Talents> { Types.Talents.AccurateShot, Types.Talents.FastShot, Types.Talents.HuntersEye, Types.Talents.Marksman } },
+            { 3, new List<Talents> { Types.Talents.AcuteSenseAny, Types.Talents.DeadeyeShot, Types.Talents.FearlessAnimals, Types.Talents.Sharpshooter } },
+            { 4, new List<Talents> { Types.Talents.FearlessMonsters, Types.Talents.Robust, Types.Talents.Sniper, Types.Talents.SureShot } }
         };
     }
 }

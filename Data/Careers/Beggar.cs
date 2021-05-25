@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Brass;
         public override int Fellowship => Brass * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Intuition, SkillTypes.StealthUrban } },
-            { 2, new List<SkillTypes> { SkillTypes.EntertainActing, SkillTypes.EntertainAny, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Perception, SkillTypes.SleightOfHand } },
-            { 3, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Leadership, SkillTypes.LoreLocal, SkillTypes.StreetSignsVagabond } },
-            { 4, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Intimidate } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Intuition, Types.Skills.StealthUrban } },
+            { 2, new List<Skills> { Types.Skills.EntertainActing, Types.Skills.EntertainAny, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.Perception, Types.Skills.SleightOfHand } },
+            { 3, new List<Skills> { Types.Skills.CharmAnimal, Types.Skills.Leadership, Types.Skills.LoreLocal, Types.Skills.StreetSignsVagabond } },
+            { 4, new List<Skills> { Types.Skills.Bribery, Types.Skills.Intimidate } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Panhandle, TalentTypes.ResistanceDisease, TalentTypes.StoneSoup, TalentTypes.VeryResilient } },
-            { 2, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.BeneathNotice, TalentTypes.Criminal, TalentTypes.EtiquetteCriminals } },
-            { 3, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.DirtyFighting, TalentTypes.Hardy, TalentTypes.StepAside } },
-            { 4, new List<TalentTypes> { TalentTypes.CatTongued, TalentTypes.FearlessWatchmen, TalentTypes.Kingpin, TalentTypes.Suave } }
+            { 1, new List<Talents> { Types.Talents.Panhandle, Types.Talents.ResistanceDisease, Types.Talents.StoneSoup, Types.Talents.VeryResilient } },
+            { 2, new List<Talents> { Types.Talents.AlleyCat, Types.Talents.BeneathNotice, Types.Talents.Criminal, Types.Talents.EtiquetteCriminals } },
+            { 3, new List<Talents> { Types.Talents.Blather, Types.Talents.DirtyFighting, Types.Talents.Hardy, Types.Talents.StepAside } },
+            { 4, new List<Talents> { Types.Talents.CatTongued, Types.Talents.FearlessWatchmen, Types.Talents.Kingpin, Types.Talents.Suave } }
         };
     }
 }

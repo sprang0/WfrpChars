@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Level;
         public override int Willpower => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Heal, SkillTypes.Intuition, SkillTypes.LanguageClassical, SkillTypes.MeleeAny, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Gamble, SkillTypes.MeleeParry, SkillTypes.RangedBlackpowder, SkillTypes.TradeGunsmith } },
-            { 3, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.Leadership, SkillTypes.MeleeBasic, SkillTypes.PerformAcrobatics } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreLaw, SkillTypes.MeleeAny } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Heal, Types.Skills.Intuition, Types.Skills.LanguageClassical, Types.Skills.MeleeAny, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Cool, Types.Skills.Gamble, Types.Skills.MeleeParry, Types.Skills.RangedBlackpowder, Types.Skills.TradeGunsmith } },
+            { 3, new List<Skills> { Types.Skills.Intimidate, Types.Skills.Leadership, Types.Skills.MeleeBasic, Types.Skills.PerformAcrobatics } },
+            { 4, new List<Skills> { Types.Skills.LoreLaw, Types.Skills.MeleeAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.BeatBlade, TalentTypes.Distract, TalentTypes.Feint, TalentTypes.StepAside } },
-            { 2, new List<TalentTypes> { TalentTypes.CombatReflexes, TalentTypes.EtiquetteAny, TalentTypes.FastShot, TalentTypes.Reversal } },
-            { 3, new List<TalentTypes> { TalentTypes.Ambidextrous, TalentTypes.Disarm, TalentTypes.DualWielder, TalentTypes.Riposte } },
-            { 4, new List<TalentTypes> { TalentTypes.CombatMaster, TalentTypes.Menacing, TalentTypes.ReactionStrike, TalentTypes.StrikeToInjure } }
+            { 1, new List<Talents> { Types.Talents.BeatBlade, Types.Talents.Distract, Types.Talents.Feint, Types.Talents.StepAside } },
+            { 2, new List<Talents> { Types.Talents.CombatReflexes, Types.Talents.EtiquetteAny, Types.Talents.FastShot, Types.Talents.Reversal } },
+            { 3, new List<Talents> { Types.Talents.Ambidextrous, Types.Talents.Disarm, Types.Talents.DualWielder, Types.Talents.Riposte } },
+            { 4, new List<Talents> { Types.Talents.CombatMaster, Types.Talents.Menacing, Types.Talents.ReactionStrike, Types.Talents.StrikeToInjure } }
         };
     }
 }

@@ -12,8 +12,8 @@ namespace WfrpChars.Data
         {
             Species = species;
             Careers = new List<CareerBase>();
-            Skills = new List<SkillTypes>();
-            Talents = new List<TalentTypes>();
+            Skills = new List<Skills>();
+            Talents = new List<Talents>();
             Characteristics = new Characteristics();
         }
 
@@ -96,18 +96,18 @@ namespace WfrpChars.Data
             }
         }
 
+        public Characteristics Characteristics { get; set; }
+
         public ISpecies Species { get; set; }
 
         public List<CareerBase> Careers { get; set; }
 
-        public List<SkillTypes> Skills { get; set; }
+        List<Skills> Skills { get; set; }
 
+        List<Talents> Talents { get; set; }
+
+        // for ui
         public string SkillList => string.Join(", ", Skills.Select(x => x.Description()).OrderBy(x => x));
-
-        public List<TalentTypes> Talents { get; set; }
-
         public string TalentList => string.Join(", ", Talents.Select(x => x.Description()).OrderBy(x => x));
-
-        public Characteristics Characteristics { get; set; }
     }
 }

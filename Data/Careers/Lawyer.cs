@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Endurance, SkillTypes.Haggle, SkillTypes.LanguageClassical, SkillTypes.LoreLaw, SkillTypes.LoreTheology, SkillTypes.Perception, SkillTypes.Research } },
-            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.LanguageGuilder, SkillTypes.SecretSignsGuilder } },
-            { 3, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.EntertainSpeeches, SkillTypes.Intimidate, SkillTypes.LoreAny } },
-            { 4, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.LoreAny } }
+            { 1, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Endurance, Types.Skills.Haggle, Types.Skills.LanguageClassical, Types.Skills.LoreLaw, Types.Skills.LoreTheology, Types.Skills.Perception, Types.Skills.Research } },
+            { 2, new List<Skills> { Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.Gossip, Types.Skills.Intuition, Types.Skills.LanguageGuilder, Types.Skills.SecretSignsGuilder } },
+            { 3, new List<Skills> { Types.Skills.ArtWriting, Types.Skills.EntertainSpeeches, Types.Skills.Intimidate, Types.Skills.LoreAny } },
+            { 4, new List<Skills> { Types.Skills.Cool, Types.Skills.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.EtiquetteScholar, TalentTypes.ReadWrite, TalentTypes.Speedreader } },
-            { 2, new List<TalentTypes> { TalentTypes.Argumentative, TalentTypes.Criminal, TalentTypes.EtiquetteGuilder, TalentTypes.Suave } },
-            { 3, new List<TalentTypes> { TalentTypes.Bookish, TalentTypes.CatTongued, TalentTypes.ImpassionedZeal, TalentTypes.Savvy } },
-            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.Kingpin, TalentTypes.SavantLaw, TalentTypes.Wealthy } }
+            { 1, new List<Talents> { Types.Talents.Blather, Types.Talents.EtiquetteScholar, Types.Talents.ReadWrite, Types.Talents.Speedreader } },
+            { 2, new List<Talents> { Types.Talents.Argumentative, Types.Talents.Criminal, Types.Talents.EtiquetteGuilder, Types.Talents.Suave } },
+            { 3, new List<Talents> { Types.Talents.Bookish, Types.Talents.CatTongued, Types.Talents.ImpassionedZeal, Types.Talents.Savvy } },
+            { 4, new List<Talents> { Types.Talents.CommandingPresence, Types.Talents.Kingpin, Types.Talents.SavantLaw, Types.Talents.Wealthy } }
         };
     }
 }

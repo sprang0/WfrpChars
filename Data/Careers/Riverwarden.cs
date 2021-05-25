@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.MeleeBasic, SkillTypes.Perception, SkillTypes.Row, SkillTypes.Sail, SkillTypes.Swim } },
-            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Intimidate, SkillTypes.Gossip, SkillTypes.LoreRiverways, SkillTypes.RangedBlackpowder } },
-            { 3, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.Cool, SkillTypes.Intuition, SkillTypes.Leadership } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreLaw, SkillTypes.Navigation } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.MeleeBasic, Types.Skills.Perception, Types.Skills.Row, Types.Skills.Sail, Types.Skills.Swim } },
+            { 2, new List<Skills> { Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.Intimidate, Types.Skills.Gossip, Types.Skills.LoreRiverways, Types.Skills.RangedBlackpowder } },
+            { 3, new List<Skills> { Types.Skills.Climb, Types.Skills.Cool, Types.Skills.Intuition, Types.Skills.Leadership } },
+            { 4, new List<Skills> { Types.Skills.LoreLaw, Types.Skills.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.StrongSwimmer, TalentTypes.StrongBack, TalentTypes.VeryStrong, TalentTypes.Waterman } },
-            { 2, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.Gunner, TalentTypes.Fisherman, TalentTypes.SeasonedTraveler } },
-            { 3, new List<TalentTypes> { TalentTypes.FearlessWreckers, TalentTypes.HatredAny, TalentTypes.Pilot, TalentTypes.SeaLegs } },
-            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.Kingpin, TalentTypes.Menacing, TalentTypes.Orientation } }
+            { 1, new List<Talents> { Types.Talents.StrongSwimmer, Types.Talents.StrongBack, Types.Talents.VeryStrong, Types.Talents.Waterman } },
+            { 2, new List<Talents> { Types.Talents.Criminal, Types.Talents.Gunner, Types.Talents.Fisherman, Types.Talents.SeasonedTraveler } },
+            { 3, new List<Talents> { Types.Talents.FearlessWreckers, Types.Talents.HatredAny, Types.Talents.Pilot, Types.Talents.SeaLegs } },
+            { 4, new List<Talents> { Types.Talents.CommandingPresence, Types.Talents.Kingpin, Types.Talents.Menacing, Types.Talents.Orientation } }
         };
     }
 }

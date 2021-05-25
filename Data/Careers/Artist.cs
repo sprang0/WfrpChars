@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Silver;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ArtAny, SkillTypes.Cool, SkillTypes.ConsumeAlcohol, SkillTypes.Evaluate, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Perception, SkillTypes.StealthUrban } },
-            { 2, new List<SkillTypes> { SkillTypes.Climb, SkillTypes.Gamble, SkillTypes.Haggle, SkillTypes.Intuition, SkillTypes.LanguageClassical, SkillTypes.TradeArtSupplies } },
-            { 3, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Leadership, SkillTypes.LoreArt, SkillTypes.LoreHeraldry } },
-            { 4, new List<SkillTypes> { SkillTypes.Research, SkillTypes.RideHorse } }
+            { 1, new List<Skills> { Types.Skills.ArtAny, Types.Skills.Cool, Types.Skills.ConsumeAlcohol, Types.Skills.Evaluate, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.Perception, Types.Skills.StealthUrban } },
+            { 2, new List<Skills> { Types.Skills.Climb, Types.Skills.Gamble, Types.Skills.Haggle, Types.Skills.Intuition, Types.Skills.LanguageClassical, Types.Skills.TradeArtSupplies } },
+            { 3, new List<Skills> { Types.Skills.Charm, Types.Skills.Leadership, Types.Skills.LoreArt, Types.Skills.LoreHeraldry } },
+            { 4, new List<Skills> { Types.Skills.Research, Types.Skills.RideHorse } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Artistic, TalentTypes.Sharp, TalentTypes.StrongBack, TalentTypes.Tenacious } },
-            { 2, new List<TalentTypes> { TalentTypes.Carouser, TalentTypes.Criminal, TalentTypes.Gregarious, TalentTypes.NimbleFingered } },
-            { 3, new List<TalentTypes> { TalentTypes.AcuteSenseAny, TalentTypes.Dealmaker, TalentTypes.EtiquetteAny, TalentTypes.NoseForTrouble } },
-            { 4, new List<TalentTypes> { TalentTypes.Ambidextrous, TalentTypes.Kingpin, TalentTypes.MagnumOpus, TalentTypes.ReadWrite } }
+            { 1, new List<Talents> { Types.Talents.Artistic, Types.Talents.Sharp, Types.Talents.StrongBack, Types.Talents.Tenacious } },
+            { 2, new List<Talents> { Types.Talents.Carouser, Types.Talents.Criminal, Types.Talents.Gregarious, Types.Talents.NimbleFingered } },
+            { 3, new List<Talents> { Types.Talents.AcuteSenseAny, Types.Talents.Dealmaker, Types.Talents.EtiquetteAny, Types.Talents.NoseForTrouble } },
+            { 4, new List<Talents> { Types.Talents.Ambidextrous, Types.Talents.Kingpin, Types.Talents.MagnumOpus, Types.Talents.ReadWrite } }
         };
     }
 }

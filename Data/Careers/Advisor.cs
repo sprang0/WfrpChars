@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.ConsumeAlcohol, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.LanguageClassical, SkillTypes.LorePolitics, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Evaluate, SkillTypes.Gamble, SkillTypes.Intuition, SkillTypes.LoreLocal } },
-            { 3, new List<SkillTypes> { SkillTypes.EntertainStorytelling, SkillTypes.Leadership, SkillTypes.LanguageAny, SkillTypes.LoreAny } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreHeraldry, SkillTypes.RideHorse } }
+            { 1, new List<Skills> { Types.Skills.Bribery, Types.Skills.ConsumeAlcohol, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.LanguageClassical, Types.Skills.LorePolitics, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Cool, Types.Skills.Evaluate, Types.Skills.Gamble, Types.Skills.Intuition, Types.Skills.LoreLocal } },
+            { 3, new List<Skills> { Types.Skills.EntertainStorytelling, Types.Skills.Leadership, Types.Skills.LanguageAny, Types.Skills.LoreAny } },
+            { 4, new List<Skills> { Types.Skills.LoreHeraldry, Types.Skills.RideHorse } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.BeneathNotice, TalentTypes.EtiquetteAny, TalentTypes.Gregarious, TalentTypes.ReadWrite } },
-            { 2, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Criminal, TalentTypes.Schemer, TalentTypes.Supportive } },
-            { 3, new List<TalentTypes> { TalentTypes.Argumentative, TalentTypes.Briber, TalentTypes.Carouser, TalentTypes.CatTongued } },
-            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.Embezzle, TalentTypes.Kingpin, TalentTypes.Suave } }
+            { 1, new List<Talents> { Types.Talents.BeneathNotice, Types.Talents.EtiquetteAny, Types.Talents.Gregarious, Types.Talents.ReadWrite } },
+            { 2, new List<Talents> { Types.Talents.Blather, Types.Talents.Criminal, Types.Talents.Schemer, Types.Talents.Supportive } },
+            { 3, new List<Talents> { Types.Talents.Argumentative, Types.Talents.Briber, Types.Talents.Carouser, Types.Talents.CatTongued } },
+            { 4, new List<Talents> { Types.Talents.CommandingPresence, Types.Talents.Embezzle, Types.Talents.Kingpin, Types.Talents.Suave } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Dexterity => Bonus * Level;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Charm, SkillTypes.EntertainAny, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.PerformAny, SkillTypes.PlayAny, SkillTypes.SleightOfHand } },
-            { 2, new List<SkillTypes> { SkillTypes.EntertainAny, SkillTypes.RideAny, SkillTypes.MeleeBasic, SkillTypes.PerformAny, SkillTypes.PlayAny, SkillTypes.RangedThrowing } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.AnimalTrainingAny, SkillTypes.ArtWriting, SkillTypes.LanguageAny } },
-            { 4, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.Leadership } }
+            { 1, new List<Skills> { Types.Skills.Athletics, Types.Skills.Charm, Types.Skills.EntertainAny, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.PerformAny, Types.Skills.PlayAny, Types.Skills.SleightOfHand } },
+            { 2, new List<Skills> { Types.Skills.EntertainAny, Types.Skills.RideAny, Types.Skills.MeleeBasic, Types.Skills.PerformAny, Types.Skills.PlayAny, Types.Skills.RangedThrowing } },
+            { 3, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.AnimalTrainingAny, Types.Skills.ArtWriting, Types.Skills.LanguageAny } },
+            { 4, new List<Skills> { Types.Skills.Drive, Types.Skills.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.Mimic, TalentTypes.PublicSpeaker, TalentTypes.Suave } },
-            { 2, new List<TalentTypes> { TalentTypes.Contortionist, TalentTypes.JumpUp, TalentTypes.Sharpshooter, TalentTypes.TrickRiding } },
-            { 3, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.MasterOfDisguise, TalentTypes.PerfectPitch, TalentTypes.ReadWrite } },
-            { 4, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.EtiquetteAny, TalentTypes.SeasonedTraveler, TalentTypes.Sharp } }
+            { 1, new List<Talents> { Types.Talents.Attractive, Types.Talents.Mimic, Types.Talents.PublicSpeaker, Types.Talents.Suave } },
+            { 2, new List<Talents> { Types.Talents.Contortionist, Types.Talents.JumpUp, Types.Talents.Sharpshooter, Types.Talents.TrickRiding } },
+            { 3, new List<Talents> { Types.Talents.Blather, Types.Talents.MasterOfDisguise, Types.Talents.PerfectPitch, Types.Talents.ReadWrite } },
+            { 4, new List<Talents> { Types.Talents.Dealmaker, Types.Talents.EtiquetteAny, Types.Talents.SeasonedTraveler, Types.Talents.Sharp } }
         };
     }
 }

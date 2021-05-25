@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Cool, SkillTypes.Drive, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Heal, SkillTypes.Perception, SkillTypes.SleightOfHand } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Haggle, SkillTypes.LanguageGuilder, SkillTypes.LoreAnatomy, SkillTypes.LoreMedicine, SkillTypes.TradeBarber } },
-            { 3, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Intimidate, SkillTypes.Leadership, SkillTypes.Research } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreNoble, SkillTypes.PerformDancing } }
+            { 1, new List<Skills> { Types.Skills.Bribery, Types.Skills.Cool, Types.Skills.Drive, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.Heal, Types.Skills.Perception, Types.Skills.SleightOfHand } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Haggle, Types.Skills.LanguageGuilder, Types.Skills.LoreAnatomy, Types.Skills.LoreMedicine, Types.Skills.TradeBarber } },
+            { 3, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Intimidate, Types.Skills.Leadership, Types.Skills.Research } },
+            { 4, new List<Skills> { Types.Skills.LoreNoble, Types.Skills.PerformDancing } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Bookish, TalentTypes.FieldDressing, TalentTypes.ReadWrite, TalentTypes.StrikeToStun } },
-            { 2, new List<TalentTypes> { TalentTypes.Coolheaded, TalentTypes.Criminal, TalentTypes.EtiquetteGuilder, TalentTypes.Surgery } },
-            { 3, new List<TalentTypes> { TalentTypes.EtiquetteScholar, TalentTypes.ResistanceDisease, TalentTypes.Savvy, TalentTypes.StrikeToInjure } },
-            { 4, new List<TalentTypes> { TalentTypes.EtiquetteNobles, TalentTypes.NimbleFingered, TalentTypes.SavantMedicine, TalentTypes.StrongMinded } }
+            { 1, new List<Talents> { Types.Talents.Bookish, Types.Talents.FieldDressing, Types.Talents.ReadWrite, Types.Talents.StrikeToStun } },
+            { 2, new List<Talents> { Types.Talents.Coolheaded, Types.Talents.Criminal, Types.Talents.EtiquetteGuilder, Types.Talents.Surgery } },
+            { 3, new List<Talents> { Types.Talents.EtiquetteScholar, Types.Talents.ResistanceDisease, Types.Talents.Savvy, Types.Talents.StrikeToInjure } },
+            { 4, new List<Talents> { Types.Talents.EtiquetteNobles, Types.Talents.NimbleFingered, Types.Talents.SavantMedicine, Types.Talents.StrongMinded } }
         };
     }
 }

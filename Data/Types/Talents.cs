@@ -2,7 +2,7 @@
 
 namespace WfrpChars.Data.Types
 {
-    enum TalentTypes
+    enum Talents
     {
         [Description("Accurate Shot")]
         AccurateShot,

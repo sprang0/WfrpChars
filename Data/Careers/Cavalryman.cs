@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.CharmAnimal, SkillTypes.Endurance, SkillTypes.LanguageBattle, SkillTypes.MeleeBasic, SkillTypes.OutdoorSurvival, SkillTypes.Perception, SkillTypes.RideHorse } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.MeleeCavalry, SkillTypes.RangedBlackpowder } },
-            { 3, new List<SkillTypes> { SkillTypes.Intimidate, SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.LoreWarfare } },
-            { 4, new List<SkillTypes> { SkillTypes.Gamble, SkillTypes.LoreHeraldry } }
+            { 1, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.CharmAnimal, Types.Skills.Endurance, Types.Skills.LanguageBattle, Types.Skills.MeleeBasic, Types.Skills.OutdoorSurvival, Types.Skills.Perception, Types.Skills.RideHorse } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Cool, Types.Skills.Gossip, Types.Skills.MeleeCavalry, Types.Skills.RangedBlackpowder } },
+            { 3, new List<Skills> { Types.Skills.Intimidate, Types.Skills.Intuition, Types.Skills.Leadership, Types.Skills.LoreWarfare } },
+            { 4, new List<Skills> { Types.Skills.Gamble, Types.Skills.LoreHeraldry } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.CrackTheWhip, TalentTypes.LightningReflexes, TalentTypes.Roughrider } },
-            { 2, new List<TalentTypes> { TalentTypes.EtiquetteSoldiers, TalentTypes.Gunner, TalentTypes.SeasonedTraveler, TalentTypes.TrickRiding } },
-            { 3, new List<TalentTypes> { TalentTypes.CombatReflexes, TalentTypes.FastShot, TalentTypes.HatredAny, TalentTypes.Warleader } },
-            { 4, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.Inspiring, TalentTypes.ReactionStrike, TalentTypes.Robust } }
+            { 1, new List<Talents> { Types.Talents.CombatAware, Types.Talents.CrackTheWhip, Types.Talents.LightningReflexes, Types.Talents.Roughrider } },
+            { 2, new List<Talents> { Types.Talents.EtiquetteSoldiers, Types.Talents.Gunner, Types.Talents.SeasonedTraveler, Types.Talents.TrickRiding } },
+            { 3, new List<Talents> { Types.Talents.CombatReflexes, Types.Talents.FastShot, Types.Talents.HatredAny, Types.Talents.Warleader } },
+            { 4, new List<Talents> { Types.Talents.AccurateShot, Types.Talents.Inspiring, Types.Talents.ReactionStrike, Types.Talents.Robust } }
         };
     }
 }

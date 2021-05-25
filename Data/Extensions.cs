@@ -15,11 +15,6 @@ namespace WfrpChars.Data
             else return source.ToString();
         }
 
-        public static int Default(int? i)
-        {
-            return i.GetValueOrDefault(0);
-        }
-
         public static int Bonus(this int i)
         {
             return i / 10;

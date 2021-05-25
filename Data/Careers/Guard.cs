@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Level;
         public override int Intelligence => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Endurance, SkillTypes.EntertainStorytelling, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.MeleeBasic, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Intimidate, SkillTypes.MeleePolearm, SkillTypes.RangedBow } },
-            { 3, new List<SkillTypes> { SkillTypes.Heal, SkillTypes.LanguageBattle, SkillTypes.LoreEtiquette, SkillTypes.MeleeTwoHanded } },
-            { 4, new List<SkillTypes> { SkillTypes.Leadership, SkillTypes.LoreWarfare } }
+            { 1, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Endurance, Types.Skills.EntertainStorytelling, Types.Skills.Gamble, Types.Skills.Gossip, Types.Skills.Intuition, Types.Skills.MeleeBasic, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Athletics, Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Intimidate, Types.Skills.MeleePolearm, Types.Skills.RangedBow } },
+            { 3, new List<Skills> { Types.Skills.Heal, Types.Skills.LanguageBattle, Types.Skills.LoreEtiquette, Types.Skills.MeleeTwoHanded } },
+            { 4, new List<Skills> { Types.Skills.Leadership, Types.Skills.LoreWarfare } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Diceman, TalentTypes.EtiquetteServants, TalentTypes.StrikeToStun, TalentTypes.Tenacious } },
-            { 2, new List<TalentTypes> { TalentTypes.Relentless, TalentTypes.Reversal, TalentTypes.Shieldsman, TalentTypes.StrikeMightyBlow } },
-            { 3, new List<TalentTypes> { TalentTypes.FearlessIntruders, TalentTypes.JumpUp, TalentTypes.StoutHearted, TalentTypes.Unshakeable } },
-            { 4, new List<TalentTypes> { TalentTypes.CombatMaster, TalentTypes.FuriousAssault, TalentTypes.IronWill, TalentTypes.Robust } }
+            { 1, new List<Talents> { Types.Talents.Diceman, Types.Talents.EtiquetteServants, Types.Talents.StrikeToStun, Types.Talents.Tenacious } },
+            { 2, new List<Talents> { Types.Talents.Relentless, Types.Talents.Reversal, Types.Talents.Shieldsman, Types.Talents.StrikeMightyBlow } },
+            { 3, new List<Talents> { Types.Talents.FearlessIntruders, Types.Talents.JumpUp, Types.Talents.StoutHearted, Types.Talents.Unshakeable } },
+            { 4, new List<Talents> { Types.Talents.CombatMaster, Types.Talents.FuriousAssault, Types.Talents.IronWill, Types.Talents.Robust } }
         };
     }
 }

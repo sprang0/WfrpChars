@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Level;
         public override int Fellowship => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.ConsumeAlcohol, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.LorePolitics, SkillTypes.TradePrinting } },
-            { 2, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.EntertainStorytelling, SkillTypes.Gamble, SkillTypes.Intuition, SkillTypes.Leadership } },
-            { 3, new List<SkillTypes> { SkillTypes.Athletics, SkillTypes.Intimidate, SkillTypes.MeleeBrawling, SkillTypes.Perception } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreHeraldry, SkillTypes.RideHorse } }
+            { 1, new List<Skills> { Types.Skills.ArtWriting, Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.ConsumeAlcohol, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.LorePolitics, Types.Skills.TradePrinting } },
+            { 2, new List<Skills> { Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.EntertainStorytelling, Types.Skills.Gamble, Types.Skills.Intuition, Types.Skills.Leadership } },
+            { 3, new List<Skills> { Types.Skills.Athletics, Types.Skills.Intimidate, Types.Skills.MeleeBrawling, Types.Skills.Perception } },
+            { 4, new List<Skills> { Types.Skills.LoreHeraldry, Types.Skills.RideHorse } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Blather, TalentTypes.Gregarious, TalentTypes.Panhandle, TalentTypes.ReadWrite } },
-            { 2, new List<TalentTypes> { TalentTypes.AlleyCat, TalentTypes.Argumentative, TalentTypes.ImpassionedZeal, TalentTypes.PublicSpeaker } },
-            { 3, new List<TalentTypes> { TalentTypes.CatTongued, TalentTypes.DirtyFighting, TalentTypes.Flee, TalentTypes.StepAside } },
-            { 4, new List<TalentTypes> { TalentTypes.EtiquetteAny, TalentTypes.MasterOrator, TalentTypes.Schemer, TalentTypes.Suave } }
+            { 1, new List<Talents> { Types.Talents.Blather, Types.Talents.Gregarious, Types.Talents.Panhandle, Types.Talents.ReadWrite } },
+            { 2, new List<Talents> { Types.Talents.AlleyCat, Types.Talents.Argumentative, Types.Talents.ImpassionedZeal, Types.Talents.PublicSpeaker } },
+            { 3, new List<Talents> { Types.Talents.CatTongued, Types.Talents.DirtyFighting, Types.Talents.Flee, Types.Talents.StepAside } },
+            { 4, new List<Talents> { Types.Talents.EtiquetteAny, Types.Talents.MasterOrator, Types.Talents.Schemer, Types.Talents.Suave } }
         };
     }
 }

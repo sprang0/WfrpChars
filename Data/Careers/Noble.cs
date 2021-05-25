@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Gold;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.ConsumeAlcohol, SkillTypes.Gamble, SkillTypes.Intimidate, SkillTypes.Leadership, SkillTypes.LoreHeraldry, SkillTypes.MeleeFencing, SkillTypes.PlayAny } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Gossip, SkillTypes.LanguageClassical, SkillTypes.LoreLocal, SkillTypes.RideHorse, SkillTypes.MeleeParry } },
-            { 3, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.Intuition, SkillTypes.LorePolitics, SkillTypes.Perception } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreAny, SkillTypes.Track } }
+            { 1, new List<Skills> { Types.Skills.Bribery, Types.Skills.ConsumeAlcohol, Types.Skills.Gamble, Types.Skills.Intimidate, Types.Skills.Leadership, Types.Skills.LoreHeraldry, Types.Skills.MeleeFencing, Types.Skills.PlayAny } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Gossip, Types.Skills.LanguageClassical, Types.Skills.LoreLocal, Types.Skills.RideHorse, Types.Skills.MeleeParry } },
+            { 3, new List<Skills> { Types.Skills.LanguageAny, Types.Skills.Intuition, Types.Skills.LorePolitics, Types.Skills.Perception } },
+            { 4, new List<Skills> { Types.Skills.LoreAny, Types.Skills.Track } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.EtiquetteNobles, TalentTypes.Luck, TalentTypes.NobleBlood, TalentTypes.ReadWrite } },
-            { 2, new List<TalentTypes> { TalentTypes.Attractive, TalentTypes.Briber, TalentTypes.Carouser, TalentTypes.Suave } },
-            { 3, new List<TalentTypes> { TalentTypes.Coolheaded, TalentTypes.Dealmaker, TalentTypes.PublicSpeaker, TalentTypes.Schemer } },
-            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.IronWill, TalentTypes.Warleader, TalentTypes.Wealthy } }
+            { 1, new List<Talents> { Types.Talents.EtiquetteNobles, Types.Talents.Luck, Types.Talents.NobleBlood, Types.Talents.ReadWrite } },
+            { 2, new List<Talents> { Types.Talents.Attractive, Types.Talents.Briber, Types.Talents.Carouser, Types.Talents.Suave } },
+            { 3, new List<Talents> { Types.Talents.Coolheaded, Types.Talents.Dealmaker, Types.Talents.PublicSpeaker, Types.Talents.Schemer } },
+            { 4, new List<Talents> { Types.Talents.CommandingPresence, Types.Talents.IronWill, Types.Talents.Warleader, Types.Talents.Wealthy } }
         };
     }
 }

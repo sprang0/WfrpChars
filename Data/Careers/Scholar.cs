@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.EntertainStorytelling, SkillTypes.Gamble, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.LanguageClassical, SkillTypes.LoreAny, SkillTypes.Research } },
-            { 2, new List<SkillTypes> { SkillTypes.ArtWriting, SkillTypes.Intuition, SkillTypes.LanguageAny, SkillTypes.LoreAny, SkillTypes.Perception, SkillTypes.TradeAny } },
-            { 3, new List<SkillTypes> { SkillTypes.EntertainLecture, SkillTypes.Intimidate, SkillTypes.LanguageAny, SkillTypes.LoreAny } },
-            { 4, new List<SkillTypes> { SkillTypes.EntertainRhetoric, SkillTypes.LoreAny } }
+            { 1, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.EntertainStorytelling, Types.Skills.Gamble, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.LanguageClassical, Types.Skills.LoreAny, Types.Skills.Research } },
+            { 2, new List<Skills> { Types.Skills.ArtWriting, Types.Skills.Intuition, Types.Skills.LanguageAny, Types.Skills.LoreAny, Types.Skills.Perception, Types.Skills.TradeAny } },
+            { 3, new List<Skills> { Types.Skills.EntertainLecture, Types.Skills.Intimidate, Types.Skills.LanguageAny, Types.Skills.LoreAny } },
+            { 4, new List<Skills> { Types.Skills.EntertainRhetoric, Types.Skills.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Carouser, TalentTypes.ReadWrite, TalentTypes.Savvy, TalentTypes.SuperNumerate } },
-            { 2, new List<TalentTypes> { TalentTypes.Bookish, TalentTypes.EtiquetteScholar, TalentTypes.Speedreader, TalentTypes.Suave } },
-            { 3, new List<TalentTypes> { TalentTypes.Linguistics, TalentTypes.PublicSpeaker, TalentTypes.SavantAny, TalentTypes.TowerOfMemories } },
-            { 4, new List<TalentTypes> { TalentTypes.MagnumOpus, TalentTypes.MasterOrator, TalentTypes.SavantAny, TalentTypes.Sharp } }
+            { 1, new List<Talents> { Types.Talents.Carouser, Types.Talents.ReadWrite, Types.Talents.Savvy, Types.Talents.SuperNumerate } },
+            { 2, new List<Talents> { Types.Talents.Bookish, Types.Talents.EtiquetteScholar, Types.Talents.Speedreader, Types.Talents.Suave } },
+            { 3, new List<Talents> { Types.Talents.Linguistics, Types.Talents.PublicSpeaker, Types.Talents.SavantAny, Types.Talents.TowerOfMemories } },
+            { 4, new List<Talents> { Types.Talents.MagnumOpus, Types.Talents.MasterOrator, Types.Talents.SavantAny, Types.Talents.Sharp } }
         };
     }
 }

@@ -2,7 +2,7 @@
 
 namespace WfrpChars.Data.Types
 {
-    enum SkillTypes
+    enum Skills
     {
         [Description("Animal Care")]
         AnimalCare,

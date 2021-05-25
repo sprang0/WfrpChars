@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Channelling, SkillTypes.Cool, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Intimidate, SkillTypes.LanguageMagick, SkillTypes.SleightOfHand, SkillTypes.StealthRural } },
-            { 2, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Dodge, SkillTypes.Intuition, SkillTypes.MeleePolearm, SkillTypes.Perception, SkillTypes.TradeHerbalist } },
-            { 3, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Haggle, SkillTypes.LoreDarkMagic } },
-            { 4, new List<SkillTypes> { SkillTypes.LoreDaemonology, SkillTypes.LoreMagic } }
+            { 1, new List<Skills> { Types.Skills.Channelling, Types.Skills.Cool, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.Intimidate, Types.Skills.LanguageMagick, Types.Skills.SleightOfHand, Types.Skills.StealthRural } },
+            { 2, new List<Skills> { Types.Skills.CharmAnimal, Types.Skills.Dodge, Types.Skills.Intuition, Types.Skills.MeleePolearm, Types.Skills.Perception, Types.Skills.TradeHerbalist } },
+            { 3, new List<Skills> { Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.Haggle, Types.Skills.LoreDarkMagic } },
+            { 4, new List<Skills> { Types.Skills.LoreDaemonology, Types.Skills.LoreMagic } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Criminal, TalentTypes.InstinctiveDiction, TalentTypes.Menacing, TalentTypes.PettyMagic } },
-            { 2, new List<TalentTypes> { TalentTypes.ArcaneMagicWitchery, TalentTypes.Attractive, TalentTypes.SecondSight, TalentTypes.Witch } },
-            { 3, new List<TalentTypes> { TalentTypes.AnimalAffinity, TalentTypes.FastHands, TalentTypes.Frightening, TalentTypes.MagicalSense } },
-            { 4, new List<TalentTypes> { TalentTypes.AethyricAttunement, TalentTypes.Luck, TalentTypes.StrongMinded, TalentTypes.VeryResilient } }
+            { 1, new List<Talents> { Types.Talents.Criminal, Types.Talents.InstinctiveDiction, Types.Talents.Menacing, Types.Talents.PettyMagic } },
+            { 2, new List<Talents> { Types.Talents.ArcaneMagicWitchery, Types.Talents.Attractive, Types.Talents.SecondSight, Types.Talents.Witch } },
+            { 3, new List<Talents> { Types.Talents.AnimalAffinity, Types.Talents.FastHands, Types.Talents.Frightening, Types.Talents.MagicalSense } },
+            { 4, new List<Talents> { Types.Talents.AethyricAttunement, Types.Talents.Luck, Types.Talents.StrongMinded, Types.Talents.VeryResilient } }
         };
     }
 }

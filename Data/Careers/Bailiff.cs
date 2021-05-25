@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Brass;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.Cool, SkillTypes.Dodge, SkillTypes.Endurance, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Intimidate, SkillTypes.MeleeBasic, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Bribery, SkillTypes.Charm, SkillTypes.Evaluate, SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.LoreLocal } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.LoreHeraldry, SkillTypes.Navigation, SkillTypes.RideHorse } },
-            { 4, new List<SkillTypes> { SkillTypes.LanguageClassical, SkillTypes.LoreLaw } }
+            { 1, new List<Skills> { Types.Skills.Cool, Types.Skills.Dodge, Types.Skills.Endurance, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.Intimidate, Types.Skills.MeleeBasic, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Bribery, Types.Skills.Charm, Types.Skills.Evaluate, Types.Skills.Intuition, Types.Skills.Leadership, Types.Skills.LoreLocal } },
+            { 3, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.LoreHeraldry, Types.Skills.Navigation, Types.Skills.RideHorse } },
+            { 4, new List<Skills> { Types.Skills.LanguageClassical, Types.Skills.LoreLaw } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.Embezzle, TalentTypes.Numismatics, TalentTypes.StrongBack, TalentTypes.Tenacious } },
-            { 2, new List<TalentTypes> { TalentTypes.BreakAndEnter, TalentTypes.Criminal, TalentTypes.PublicSpeaker, TalentTypes.StrikeToStun } },
-            { 3, new List<TalentTypes> { TalentTypes.Kingpin, TalentTypes.Menacing, TalentTypes.NoseForTrouble, TalentTypes.ReadWrite } },
-            { 4, new List<TalentTypes> { TalentTypes.CommandingPresence, TalentTypes.IronWill, TalentTypes.Savvy, TalentTypes.Schemer } }
+            { 1, new List<Talents> { Types.Talents.Embezzle, Types.Talents.Numismatics, Types.Talents.StrongBack, Types.Talents.Tenacious } },
+            { 2, new List<Talents> { Types.Talents.BreakAndEnter, Types.Talents.Criminal, Types.Talents.PublicSpeaker, Types.Talents.StrikeToStun } },
+            { 3, new List<Talents> { Types.Talents.Kingpin, Types.Talents.Menacing, Types.Talents.NoseForTrouble, Types.Talents.ReadWrite } },
+            { 4, new List<Talents> { Types.Talents.CommandingPresence, Types.Talents.IronWill, Types.Talents.Savvy, Types.Talents.Schemer } }
         };
     }
 }

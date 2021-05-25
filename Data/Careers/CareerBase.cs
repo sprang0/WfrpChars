@@ -32,7 +32,7 @@ namespace WfrpChars.Data.Careers
         public virtual int Willpower { get; }
         public virtual int Fellowship { get; }
 
-        public abstract Dictionary<int, List<SkillTypes>> Skills { get; }
-        public abstract Dictionary<int, List<TalentTypes>> Talents { get; }
+        public abstract Dictionary<int, List<Skills>> Skills { get; }
+        public abstract Dictionary<int, List<Talents>> Talents { get; }
     }
 }

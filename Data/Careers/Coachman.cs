@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Agility => Bonus * Brass;
         public override int Willpower => Bonus * Level;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Charm, SkillTypes.Climb, SkillTypes.Drive, SkillTypes.Endurance, SkillTypes.Perception, SkillTypes.RangedEntangling, SkillTypes.RideHorse } },
-            { 2, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Gossip, SkillTypes.Intuition, SkillTypes.LoreLocal, SkillTypes.Navigation, SkillTypes.RangedBlackpowder } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalTrainingHorse, SkillTypes.Intimidate, SkillTypes.LanguageAny, SkillTypes.LoreRoutes } },
-            { 4, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Leadership } }
+            { 1, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.Charm, Types.Skills.Climb, Types.Skills.Drive, Types.Skills.Endurance, Types.Skills.Perception, Types.Skills.RangedEntangling, Types.Skills.RideHorse } },
+            { 2, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Gossip, Types.Skills.Intuition, Types.Skills.LoreLocal, Types.Skills.Navigation, Types.Skills.RangedBlackpowder } },
+            { 3, new List<Skills> { Types.Skills.AnimalTrainingHorse, Types.Skills.Intimidate, Types.Skills.LanguageAny, Types.Skills.LoreRoutes } },
+            { 4, new List<Skills> { Types.Skills.Charm, Types.Skills.Leadership } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.AnimalAffinity, TalentTypes.SeasonedTraveler, TalentTypes.TrickRiding, TalentTypes.Tenacious } },
-            { 2, new List<TalentTypes> { TalentTypes.Coolheaded, TalentTypes.CrackTheWhip, TalentTypes.Gunner, TalentTypes.StrongMinded } },
-            { 3, new List<TalentTypes> { TalentTypes.AccurateShot, TalentTypes.Dealmaker, TalentTypes.FearlessOutlaws, TalentTypes.NoseForTrouble } },
-            { 4, new List<TalentTypes> { TalentTypes.FearlessBeastmen, TalentTypes.Marksman, TalentTypes.Orientation, TalentTypes.RapidReload } }
+            { 1, new List<Talents> { Types.Talents.AnimalAffinity, Types.Talents.SeasonedTraveler, Types.Talents.TrickRiding, Types.Talents.Tenacious } },
+            { 2, new List<Talents> { Types.Talents.Coolheaded, Types.Talents.CrackTheWhip, Types.Talents.Gunner, Types.Talents.StrongMinded } },
+            { 3, new List<Talents> { Types.Talents.AccurateShot, Types.Talents.Dealmaker, Types.Talents.FearlessOutlaws, Types.Talents.NoseForTrouble } },
+            { 4, new List<Talents> { Types.Talents.FearlessBeastmen, Types.Talents.Marksman, Types.Talents.Orientation, Types.Talents.RapidReload } }
         };
     }
 }

@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Willpower => Bonus * Level;
         public override int Fellowship => Bonus * Gold;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.ChannellingAnyColour, SkillTypes.Dodge, SkillTypes.Intuition, SkillTypes.LanguageMagick, SkillTypes.LoreMagic, SkillTypes.MeleeBasic, SkillTypes.MeleePolearm, SkillTypes.Perception } },
-            { 2, new List<SkillTypes> { SkillTypes.Charm, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Intimidate, SkillTypes.LanguageBattle, SkillTypes.LanguageAny } },
-            { 3, new List<SkillTypes> { SkillTypes.AnimalCare, SkillTypes.Evaluate, SkillTypes.LoreWarfare, SkillTypes.RideHorse } },
-            { 4, new List<SkillTypes> { SkillTypes.LanguageAny, SkillTypes.LoreAny } }
+            { 1, new List<Skills> { Types.Skills.ChannellingAnyColour, Types.Skills.Dodge, Types.Skills.Intuition, Types.Skills.LanguageMagick, Types.Skills.LoreMagic, Types.Skills.MeleeBasic, Types.Skills.MeleePolearm, Types.Skills.Perception } },
+            { 2, new List<Skills> { Types.Skills.Charm, Types.Skills.Cool, Types.Skills.Gossip, Types.Skills.Intimidate, Types.Skills.LanguageBattle, Types.Skills.LanguageAny } },
+            { 3, new List<Skills> { Types.Skills.AnimalCare, Types.Skills.Evaluate, Types.Skills.LoreWarfare, Types.Skills.RideHorse } },
+            { 4, new List<Skills> { Types.Skills.LanguageAny, Types.Skills.LoreAny } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.AethyricAttunement, TalentTypes.PettyMagic, TalentTypes.ReadWrite, TalentTypes.SecondSight } },
-            { 2, new List<TalentTypes> { TalentTypes.ArcaneMagicAnyArcaneLore, TalentTypes.DetectArtefact, TalentTypes.FastHands, TalentTypes.SixthSense } },
-            { 3, new List<TalentTypes> { TalentTypes.DualWielder, TalentTypes.InstinctiveDiction, TalentTypes.MagicalSense, TalentTypes.Menacing } },
-            { 4, new List<TalentTypes> { TalentTypes.CombatAware, TalentTypes.Frightening, TalentTypes.IronWill, TalentTypes.WarWizard } }
+            { 1, new List<Talents> { Types.Talents.AethyricAttunement, Types.Talents.PettyMagic, Types.Talents.ReadWrite, Types.Talents.SecondSight } },
+            { 2, new List<Talents> { Types.Talents.ArcaneMagicAnyArcaneLore, Types.Talents.DetectArtefact, Types.Talents.FastHands, Types.Talents.SixthSense } },
+            { 3, new List<Talents> { Types.Talents.DualWielder, Types.Talents.InstinctiveDiction, Types.Talents.MagicalSense, Types.Talents.Menacing } },
+            { 4, new List<Talents> { Types.Talents.CombatAware, Types.Talents.Frightening, Types.Talents.IronWill, Types.Talents.WarWizard } }
         };
     }
 }

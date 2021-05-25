@@ -2,7 +2,7 @@
 
 namespace WfrpChars.Data.Types
 {
-    enum CareerTypes
+    enum Careers
     {
         Advisor,
         Agitator,

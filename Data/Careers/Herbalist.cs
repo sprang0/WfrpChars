@@ -26,20 +26,20 @@ namespace WfrpChars.Data.Careers
         public override int Intelligence => Bonus * Gold;
         public override int Fellowship => Bonus * Silver;
 
-        public override Dictionary<int, List<SkillTypes>> Skills => new()
+        public override Dictionary<int, List<Skills>> Skills => new()
         {
-            { 1, new List<SkillTypes> { SkillTypes.CharmAnimal, SkillTypes.Climb, SkillTypes.Endurance, SkillTypes.LoreHerbs, SkillTypes.OutdoorSurvival, SkillTypes.Perception, SkillTypes.Swim, SkillTypes.TradeHerbalist } },
-            { 2, new List<SkillTypes> { SkillTypes.ConsumeAlcohol, SkillTypes.Cool, SkillTypes.Gossip, SkillTypes.Haggle, SkillTypes.Heal, SkillTypes.LoreLocal } },
-            { 3, new List<SkillTypes> { SkillTypes.Intuition, SkillTypes.Leadership, SkillTypes.LoreMedicine, SkillTypes.TradePoisons } },
-            { 4, new List<SkillTypes> { SkillTypes.Drive, SkillTypes.Navigation } }
+            { 1, new List<Skills> { Types.Skills.CharmAnimal, Types.Skills.Climb, Types.Skills.Endurance, Types.Skills.LoreHerbs, Types.Skills.OutdoorSurvival, Types.Skills.Perception, Types.Skills.Swim, Types.Skills.TradeHerbalist } },
+            { 2, new List<Skills> { Types.Skills.ConsumeAlcohol, Types.Skills.Cool, Types.Skills.Gossip, Types.Skills.Haggle, Types.Skills.Heal, Types.Skills.LoreLocal } },
+            { 3, new List<Skills> { Types.Skills.Intuition, Types.Skills.Leadership, Types.Skills.LoreMedicine, Types.Skills.TradePoisons } },
+            { 4, new List<Skills> { Types.Skills.Drive, Types.Skills.Navigation } }
         };
 
-        public override Dictionary<int, List<TalentTypes>> Talents => new()
+        public override Dictionary<int, List<Talents>> Talents => new()
         {
-            { 1, new List<TalentTypes> { TalentTypes.AcuteSenseTaste, TalentTypes.Orientation, TalentTypes.Rover, TalentTypes.StriderAny } },
-            { 2, new List<TalentTypes> { TalentTypes.Dealmaker, TalentTypes.NimbleFingered, TalentTypes.Sharp, TalentTypes.Sturdy } },
-            { 3, new List<TalentTypes> { TalentTypes.CraftsmanHerbalist, TalentTypes.FieldDressing, TalentTypes.Hardy, TalentTypes.Savvy } },
-            { 4, new List<TalentTypes> { TalentTypes.Concoct, TalentTypes.MasterTradesmanHerbalist, TalentTypes.ResistancePoison, TalentTypes.SavantHerbs } }
+            { 1, new List<Talents> { Types.Talents.AcuteSenseTaste, Types.Talents.Orientation, Types.Talents.Rover, Types.Talents.StriderAny } },
+            { 2, new List<Talents> { Types.Talents.Dealmaker, Types.Talents.NimbleFingered, Types.Talents.Sharp, Types.Talents.Sturdy } },
+            { 3, new List<Talents> { Types.Talents.CraftsmanHerbalist, Types.Talents.FieldDressing, Types.Talents.Hardy, Types.Talents.Savvy } },
+            { 4, new List<Talents> { Types.Talents.Concoct, Types.Talents.MasterTradesmanHerbalist, Types.Talents.ResistancePoison, Types.Talents.SavantHerbs } }
         };
     }
 }
