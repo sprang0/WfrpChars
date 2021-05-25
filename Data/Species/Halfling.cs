@@ -27,6 +27,8 @@
 
         public int Wounds => 2 * toughness.Bonus() + willpower.Bonus();
 
+        public int CalculateWounds(int strength, int toughness, int willpower) => 2 * toughness.Bonus() + willpower.Bonus();
+
         public int Movement => 3;
     }
 }

@@ -14,5 +14,7 @@
         int Fellowship { get; }
         int Wounds { get; }
         int Movement { get; }
+
+        int CalculateWounds(int strength, int toughness, int willpower);
     }
 }

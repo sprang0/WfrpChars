@@ -38,7 +38,6 @@ namespace WfrpChars.Data
                 Intelligence = Species.Intelligence,
                 Willpower = Species.Willpower,
                 Fellowship = Species.Fellowship,
-                Wounds = Species.Wounds,
                 Movement = Species.Movement
             };
 
@@ -55,6 +54,8 @@ namespace WfrpChars.Data
                 Characteristics.Willpower += career.Willpower;
                 Characteristics.Fellowship += career.Fellowship;
             }
+
+            Characteristics.Wounds = Species.CalculateWounds(Characteristics.Strength, Characteristics.Toughness, Characteristics.Willpower);
         }
 
         void SetSkills()

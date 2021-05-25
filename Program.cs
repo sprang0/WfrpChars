@@ -18,3 +18,7 @@ namespace WfrpChars
                 });
     }
 }
+
+// TODO: starting species rolls
+// TODO: name generator
+// TODO: wounds calc after careers
