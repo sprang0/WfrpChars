@@ -27,7 +27,7 @@ namespace WfrpChars.Data.Careers
 
         public override Dictionary<int, List<SkillType>> Skills => new()
         {
-            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Charm, SkillType.EntertainAny, SkillType.Gossip, SkillType.Haggle, SkillType.PerformAny, SkillType.PlayAny, SkillType.SlightOfHand } },
+            { 1, new List<SkillType> { SkillType.Athletics, SkillType.Charm, SkillType.EntertainAny, SkillType.Gossip, SkillType.Haggle, SkillType.PerformAny, SkillType.PlayAny, SkillType.SleightOfHand } },
             { 2, new List<SkillType> { SkillType.EntertainAny, SkillType.RideAny, SkillType.MeleeBasic, SkillType.PerformAny, SkillType.PlayAny, SkillType.RangedThrowing } },
             { 3, new List<SkillType> { SkillType.AnimalCare, SkillType.AnimalTrainingAny, SkillType.ArtWriting, SkillType.LanguageAny } },
             { 4, new List<SkillType> { SkillType.Drive, SkillType.Leadership } }

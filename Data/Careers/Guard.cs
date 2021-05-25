@@ -37,7 +37,7 @@ namespace WfrpChars.Data.Careers
         {
             { 1, new List<TalentType> { TalentType.Diceman, TalentType.EtiquetteServants, TalentType.StrikeToStun, TalentType.Tenacious } },
             { 2, new List<TalentType> { TalentType.Relentless, TalentType.Reversal, TalentType.Shieldsman, TalentType.StrikeMightyBlow } },
-            { 3, new List<TalentType> { TalentType.FearlessIntruders, TalentType.JumpUp, TalentType.StoutHearted, TalentType.Unshakable } },
+            { 3, new List<TalentType> { TalentType.FearlessIntruders, TalentType.JumpUp, TalentType.StoutHearted, TalentType.Unshakeable } },
             { 4, new List<TalentType> { TalentType.CombatMaster, TalentType.FuriousAssault, TalentType.IronWill, TalentType.Robust } }
         };
     }

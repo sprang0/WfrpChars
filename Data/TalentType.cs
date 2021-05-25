@@ -47,6 +47,7 @@ namespace WfrpChars.Data
         [Description("Careful Strike")]
         CarefulStrike,
         Carouser,
+        Catfall,
         [Description("Cat-tonuged")]
         CatTongued,
         [Description("Combat Aware")]
@@ -86,6 +87,7 @@ namespace WfrpChars.Data
         DirtyFighting,
         Disarm,
         Distract,
+        Drilled,
         [Description("Dual Wielder")]
         DualWielder,
         
@@ -121,6 +123,10 @@ namespace WfrpChars.Data
         FearlessBeastmen,
         [Description("Fearless (Bounties)")]
         FearlessBounties,
+        [Description("Fearless (Criminals)")]
+        FearlessCriminals,
+        [Description("Fearless (Everything)")]
+        FearlessEverything,
         [Description("Fearless (Heretics)")]
         FearlessHeretics,
         [Description("Fearless (Intruders)")]
@@ -131,6 +137,8 @@ namespace WfrpChars.Data
         FearlessOutlaws,
         [Description("Fearless (Rats)")]
         FearlessRats,
+        [Description("Fearless (Riverwardens)")]
+        FearlessRiverwardens,
         [Description("Fearless (Road Wardens)")]
         FearlessRoadWardens,
         [Description("Fearless (Skaven)")]
@@ -165,6 +173,8 @@ namespace WfrpChars.Data
         HatredHeretics,
         [Description("Hatred (Outlaws)")]
         HatredOutlaws,
+        [Description("Holy Hatred")]
+        HolyHatred,
         [Description("Holy Visions")]
         HolyVisions,
         [Description("Hunter's Eye")]
@@ -191,6 +201,8 @@ namespace WfrpChars.Data
         [Description("Lightning Reflexes")]
         LightningReflexes,
         Linguistics,
+        [Description("Lip Reading")]
+        LipReading,
         Luck,
         
         [Description("Magical Sense")]
@@ -231,6 +243,8 @@ namespace WfrpChars.Data
         NoseForTrouble,
         Numismatics,
         
+        [Description("Old Salt")]
+        OldSalt,
         Orientation,
 
         Panhandle,
@@ -285,6 +299,8 @@ namespace WfrpChars.Data
         [Description("Savant (Theology)")]
         SavantTheology,
         Savvy,
+        [Description("Scale Sheer Surface")]
+        ScaleSheerSurface,
         Schemer,
         [Description("Sea Legs")]
         SeaLegs,
@@ -294,6 +310,7 @@ namespace WfrpChars.Data
         SecondSight,
         [Description("Secret Identity")]
         SecretIdentity,
+        Slayer,
         Shadow,
         Sharp,
         Sharpshooter,
@@ -311,6 +328,8 @@ namespace WfrpChars.Data
         StoutHearted,
         [Description("Strider (Any)")]
         StriderAny,
+        [Description("Strider (Coastal)")]
+        StriderCoastal,
         [Description("Strider (Marshes)")]
         StriderMarshes,
         [Description("Strider (Rocky)")]
@@ -350,7 +369,7 @@ namespace WfrpChars.Data
         [Description("Tunnel Rat")]
         TunnelRat,
 
-        Unshakable,
+        Unshakeable,
 
         [Description("Very Resilient")]
         VeryResilient,

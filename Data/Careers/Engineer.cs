@@ -38,7 +38,7 @@ namespace WfrpChars.Data.Careers
             { 1, new List<TalentType> { TalentType.Artistic, TalentType.Gunner, TalentType.ReadWrite, TalentType.Tinker } },
             { 2, new List<TalentType> { TalentType.CraftsmanEngineer, TalentType.EtiquetteGuilder, TalentType.Marksman, TalentType.Orientation } },
             { 3, new List<TalentType> { TalentType.EtiquetteScholar, TalentType.MasterTradesmanEngineering, TalentType.Sniper, TalentType.SuperNumerate } },
-            { 4, new List<TalentType> { TalentType.MagnumOpus, TalentType.RapidReload, TalentType.SavantEngineering, TalentType.Unshakable } }
+            { 4, new List<TalentType> { TalentType.MagnumOpus, TalentType.RapidReload, TalentType.SavantEngineering, TalentType.Unshakeable } }
         };
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WfrpChars.Data.Careers
 {
@@ -39,7 +37,7 @@ namespace WfrpChars.Data.Careers
         {
             { 1, new List<TalentType> { TalentType.EtiquetteAny, TalentType.Roughrider, TalentType.Sturdy, TalentType.WarriorBorn } },
             { 2, new List<TalentType> { TalentType.Menacing, TalentType.SeasonedTraveler, TalentType.Shieldsman, TalentType.StrikeMightyBlow } },
-            { 3, new List<TalentType> { TalentType.FearlessAny, TalentType.StoutHearted, TalentType.Unshakable, TalentType.Warleader } },
+            { 3, new List<TalentType> { TalentType.FearlessAny, TalentType.StoutHearted, TalentType.Unshakeable, TalentType.Warleader } },
             { 4, new List<TalentType> { TalentType.Disarm, TalentType.Inspiring, TalentType.IronWill, TalentType.StrikeToInjure } }
         };
     }

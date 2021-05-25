@@ -70,6 +70,19 @@ namespace WfrpChars.Data
                 CareerType.RoadWarden => new RoadWarden(level),
                 CareerType.Scholar => new Scholar(level),
                 CareerType.Scout => new Scout(level),
+                CareerType.Seaman => new Seaman(level),
+                CareerType.Servant => new Servant(level),
+                CareerType.Slayer => new Slayer(level),
+                CareerType.Smuggler => new Smuggler(level),
+                CareerType.Soldier => new Soldier(level),
+                CareerType.Spy => new Spy(level),
+                CareerType.Stevedore => new Stevedore(level),
+                CareerType.Thief => new Thief(level),
+                CareerType.Townsman => new Townsman(level),
+                CareerType.Villager => new Villager(level),
+                CareerType.Warden => new Warden(level),
+                CareerType.WarriorPriest => new WarriorPriest(level),
+                CareerType.Watchman => new Watchman(level),
                 _ => throw new Exception("No such Career")
             };
         }

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WfrpChars.Data.Careers
 {
@@ -30,7 +28,7 @@ namespace WfrpChars.Data.Careers
         public override Dictionary<int, List<SkillType>> Skills => new()
         {
             { 1, new List<SkillType> { SkillType.Charm, SkillType.Climb, SkillType.Cool, SkillType.Gossip, SkillType.Intuition, SkillType.Perception, SkillType.StealthUrban, SkillType.Track } },
-            { 2, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Dodge, SkillType.LoreLaw, SkillType.MeleeBrawling, SkillType.PickLock, SkillType.SlightOfHand } },
+            { 2, new List<SkillType> { SkillType.ConsumeAlcohol, SkillType.Dodge, SkillType.LoreLaw, SkillType.MeleeBrawling, SkillType.PickLock, SkillType.SleightOfHand } },
             { 3, new List<SkillType> { SkillType.Bribery, SkillType.Evaluate, SkillType.Leadership, SkillType.LoreAny } },
             { 4, new List<SkillType> { SkillType.Intimidate, SkillType.LoreAny } }
         };

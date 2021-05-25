@@ -12,6 +12,8 @@ namespace WfrpChars.Data
         AnimalTrainingDog,
         [Description("Animal Training (Horse)")]
         AnimalTrainingHorse,
+        [Description("Animal Training (Pigeon)")]
+        AnimalTrainingPigeon,
         [Description("Art (Any)")]
         ArtAny,
         [Description("Art (Calligraphy)")]
@@ -97,8 +99,12 @@ namespace WfrpChars.Data
         LoreAstrology,
         [Description("Lore (Beasts)")]
         LoreBeasts,
+        [Description("Lore (Chaos)")]
+        LoreChaos,
         [Description("Lore (Chemistry)")]
         LoreChemistry,
+        [Description("Lore (Draongs)")]
+        LoreDragons,
         [Description("Lore (Empire)")]
         LoreEmpire,
         [Description("Lore (Engineer)")]
@@ -113,6 +119,8 @@ namespace WfrpChars.Data
         LoreGeography,
         [Description("Lore (Geology)")]
         LoreGeology,
+        [Description("Lore (Giants)")]
+        LoreGiants,
         [Description("Lore (Heraldry)")]
         LoreHeraldry,
         [Description("Lore (Herbs)")]
@@ -147,8 +155,12 @@ namespace WfrpChars.Data
         LoreSigmar,
         [Description("Lore (Spirits)")]
         LoreSpirits,
+        [Description("Lore (Taxes)")]
+        LoreTaxes,
         [Description("Lore (Theology)")]
         LoreTheology,
+        [Description("Lore (Trolls)")]
+        LoreTrolls,
         [Description("Lore (Warfare)")]
         LoreWarfare,
         [Description("Lore (Wrecks)")]
@@ -193,6 +205,8 @@ namespace WfrpChars.Data
         PickLock,
         [Description("Play (Any)")]
         PlayAny,
+        [Description("Play (Drum or Fife)")]
+        PlayDrumOrFife,
         Pray,
 
         [Description("Ranged (Any)")]
@@ -221,6 +235,8 @@ namespace WfrpChars.Data
         Row,
         
         Sail,
+        [Description("Secret Signs (Any)")]
+        SecretSignsAny,
         [Description("Secret Signs (Guilder)")]
         SecretSignsGuilder,
         [Description("Secret Signs (Hunter)")]
@@ -229,12 +245,14 @@ namespace WfrpChars.Data
         SecretSignsKnightlyOrder,
         [Description("Secret Signs (Miner)")]
         SecretSignsMiner,
+        [Description("Secret Signs (Smuggler)")]
+        SecretSignsSmuggler,
         [Description("Secret Signs (Thief)")]
         SecretSignsThief,
         [Description("Set Trap")]
         SetTrap,
         [Description("Sleight of Hand")]
-        SlightOfHand,
+        SleightOfHand,
         [Description("Stealth (Any)")]
         StealthAny,
         [Description("Stealth (Rural)")]
@@ -262,6 +280,8 @@ namespace WfrpChars.Data
         TradeBoatbuilding,
         [Description("Trade (Brewer)")]
         TradeBrewer,
+        [Description("Trade (Carpenter)")]
+        TradeCarpenter,
         [Description("Trade (Cartographer)")]
         TradeCartographer,
         [Description("Trade (Charms)")]
