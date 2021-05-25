@@ -9,7 +9,8 @@
 }
 
 .sidebar {
-    background-image: linear-gradient(170deg, #2D4A6D 20%, #8E8C84 80%)
+    background-color: #070512
+    /*background-image: linear-gradient(170deg, #2D4A6D 20%, #8E8C84 80%)*/
     /*background-image: linear-gradient(170deg, #DF3D38, #FADC3F 12%, #E8E43E 17%, #E8E43E 48%, #331710 52%, #67210D 56%, #C46024 60%, #EAE758 69%, #EAE758 85%, #EFEFA3 92%, #9A2B36 97%);*/
 }
 
