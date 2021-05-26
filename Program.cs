@@ -19,6 +19,6 @@ namespace WfrpChars
     }
 }
 
-// TODO: starting species rolls
+// TODO: starting species talents 
 // TODO: name generator
-// TODO: wounds calc after careers
+// TODO: trappings

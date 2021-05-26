@@ -57,22 +57,31 @@
 
 <h3>Riswynn Dokkintroll</h3>
 
-<div class="p-1">
-    <Characteristics Ws="@character.Characteristics.WeaponSkill" Bs="@character.Characteristics.BallisticSkill"
-                     S="@character.Characteristics.Strength" T="@character.Characteristics.Toughness"
-                     I="@character.Characteristics.Initiative" Ag="@character.Characteristics.Agility"
-                     Dex="@character.Characteristics.Dexterity" Int="@character.Characteristics.Intelligence"
-                     Wp="@character.Characteristics.Willpower" Fel="@character.Characteristics.Fellowship"
-                     W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
-</div>
+@if (character.Characteristics.WeaponSkill > 0)
+{
+    <div class="p-1">
+        <Characteristics Ws="@character.Characteristics.WeaponSkill" Bs="@character.Characteristics.BallisticSkill"
+                         S="@character.Characteristics.Strength" T="@character.Characteristics.Toughness"
+                         I="@character.Characteristics.Initiative" Ag="@character.Characteristics.Agility"
+                         Dex="@character.Characteristics.Dexterity" Int="@character.Characteristics.Intelligence"
+                         Wp="@character.Characteristics.Willpower" Fel="@character.Characteristics.Fellowship"
+                         W="@character.Characteristics.Wounds" M="@character.Characteristics.Movement" />
+    </div>
+}
 
 @* Skills and Talents *@
 
-<h4>Skills</h4>
+@if (character.SkillList.Length > 0)
+{
+    <h4>Skills</h4>
+}
 
 @character.SkillList
 
-<h4>Talents</h4>
+@if (character.TalentList.Length > 0)
+{
+    <h4>Talents</h4>
+}
 
 @character.TalentList
 
